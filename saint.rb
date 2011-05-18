@@ -6,6 +6,7 @@ require 'ducks'
 require 'json'
 require 'erb'
 
+# Monkey patches. Patches of monkeys. Patched monkeys.
 class Zappos::Client
   def call_method( method, endpoint, options={} )
     execute( request( method, endpoint, options ) )
@@ -16,11 +17,14 @@ class Zappos::Response
   def code
     @response.code
   end
+  def response
+    @response
+  end
 end
 
 API_KEY = '6fd74cc5be050f2c1760441f3cc203460dcf7cc7'
-zappos = Zappos.client(API_KEY)
-ducks = DucksWADL::Document.new('api.wadl')
+zappos  = Zappos.client(API_KEY)
+ducks   = DucksWADL::Document.new('api.wadl')
 
 helpers do
   include Rack::Utils
@@ -64,10 +68,15 @@ get '/method*/:method' do
 end
 
 post '/call' do
-  response = zappos.call_method( params[:method].capitalize, params[:resource], { :query_params => params[:params] } )
+  call_params = params[:params] || {}
+  call_params.delete_if { |key,value| value.to_s.empty? }
+  response = zappos.call_method( params[:method].capitalize, params[:resource], { :query_params => call_params } )
+  headers = []
+  response.response.each_header { |header,value| headers << [ header, value ] }
   {
-    :code => response.code,
-    :url  => URI.unescape( response.request_uri.to_s ).gsub( API_KEY, '{YOUR_KEY_HERE}' ),
-    :body => response.body
+    :headers => headers,
+    :code    => response.code,
+    :url     => URI.unescape( response.request_uri.to_s ).gsub( API_KEY, '{YOUR_KEY_HERE}' ),
+    :body    => JSON.pretty_generate( response.data )
   }.to_json
 end

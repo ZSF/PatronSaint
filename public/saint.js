@@ -21,8 +21,9 @@ $('#callAPI').live('submit', function(e) {
     data: $(this).serialize(),
     success: function(data) {
       var html = '<h3>' + data.url + ' - ' + data.code + '</h3>' + 
-      '<code>' + data.body + '</code>';
+      '<pre class="prettyprint">' + data.body + '</pre>';
       $('#response').html( html );
+      prettyPrint();
     },
     error: function() {
       alert('Boo - some crazy error.');

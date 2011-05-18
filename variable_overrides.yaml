@@ -1,0 +1,183 @@
+--- 
+/Review: 
+  getProductId: 
+    startId: 
+    productId: 
+    startDate: 
+    page: 
+    offset: 
+  getBrandId: 
+    startId: 
+    startDate: 
+    brandId: 
+/Favorite: 
+  deleteFavoriteStock: 
+    stockId: 
+  getFavoritesForCustomer: 
+    sortDirection: 
+    page: 
+    sort: 
+    limit: 
+    offset: 
+/Points: 
+  viewLoyaltyPoints: 
+    customerId: 
+    type: 
+    t: 
+/CreditCard: 
+  getCreditCardById: 
+    id: 
+  deleteCreditCardById: 
+    id: 
+/Brand: 
+  getCustomerId: 
+    customerId: 
+    collapse: 
+    maxResults: 
+  getId: 
+    id: 
+/ApiDeveloper: 
+  getByApiKeyHash: 
+    lookupKey: 
+  getAll: 
+    page: 
+    sort: 
+    orderBy: 
+    limit: 
+    sortAsc: 
+  getByEmail: 
+    email: 
+/Search: 
+  getGetFacetFields: 
+    filterExpression: 
+  getBatchSearch: 
+    batch: 
+  getGetSolrFieldNames: 
+    filterExpression: 
+  getSearch: 
+    pageCount: 
+    currentPage: 
+    term: 
+    page: 
+    filters: 
+    sort: 
+    limit: 
+    facets: 
+/FavoriteSearch: 
+  deleteFavoriteSearch: 
+    name: 
+    url: 
+/AutoComplete: 
+  getAutoComplete: 
+    term: 
+/Product: 
+  getProductByStockId: 
+    stockId: 
+  getProductById: 
+    id: 
+  getProductByUPC: 
+    upc: 
+  getProductByStyleId: 
+    styleId: 
+/Order: 
+  getOrderByClaimTicketId: 
+    claimTicketId: 
+  getOrderById: 
+    id: 
+    type: 
+  getOrdersForCustomer: 
+    fromDate: 
+    type: 
+    range: 
+    toDate: 
+/Image: 
+  GetStyleOrProductId: 
+    styleId: 
+    productId: 
+    type: 
+    recipe: 
+  GetProductId: 
+    productId: 
+    type: 
+    recipe: 
+  GetStyleId: 
+    styleId: 
+    type: 
+    recipe: 
+/Compatibility: 
+  getVersionInfo: 
+    version: 
+/Customer: 
+  getCustomer: 
+    access_token: 
+/EventLogger: 
+  logEvent: 
+    name: 
+/CoreValue: 
+  getById: 
+    id: 
+/Badge/Feed: 
+  getBadgeFeed: 
+    t: 
+/Address: 
+  deleteAddress: 
+    id: 
+  getVerifiedIds: 
+    list: 
+  getAddressById: 
+    id: 
+/Cart: 
+  bySessionId: 
+    city: 
+    address: 
+    shippingTypeCode: 
+    addressId: 
+    postalCode: 
+    sessionId: 
+    state: 
+/Statistics: 
+  getKillSwitchStatus101: 
+    killSwitchStatusZappos101: 
+  getStatistics: 
+    timespan: 
+    location: 
+    option: 
+    startOrderItemId: 
+    startDate: 
+    type: 
+    filters: 
+    limit: 
+  getKillSwitchStatus102: 
+    killSwitchStatusZappos102: 
+/Search/Similarity: 
+  getSimilaritySearch: 
+    category: 
+    styleId: 
+    productType: 
+    page: 
+    brandId: 
+    type: 
+    emphasis: 
+    limit: 
+    subCategory: 
+/ApiApplication: 
+  getById: 
+    id: 
+  removeAttribute: 
+    id: 
+    apiAttributeId: 
+  getApiAttribute: 
+    id: 
+    apiAttributeId: 
+/Cache: 
+  getCacheById: 
+    id: 
+  clearCacheById: 
+    id: 
+/ApiAttribute: 
+  getById: 
+    id: 
+  getByName: 
+    name: 
+  deleteAttribute: 
+    id: 
