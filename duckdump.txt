@@ -1,0 +1,8628 @@
+/About
+/About
+  getVersionInfo (GET)
+
+/About
+/About
+  getVersionInfo (GET)
+
+/Address
+/Address
+  getAddressByEmail (GET)
+
+/Address/id/{id}
+/Address
+  getAddressById (GET)
+    * id
+  deleteAddress (DELETE)
+    * id
+
+/Address/list/{list}
+/Address
+  getVerifiedIds (GET)
+    * list
+
+/AutoComplete/term/{term}
+/AutoComplete
+  getAutoComplete (GET)
+    * term
+
+/About
+/About
+  getVersionInfo (GET)
+
+/Address
+/Address
+  getAddressByEmail (GET)
+
+/Address/id/{id}
+/Address
+  getAddressById (GET)
+    * id
+  deleteAddress (DELETE)
+    * id
+
+/Address/list/{list}
+/Address
+  getVerifiedIds (GET)
+    * list
+
+/AutoComplete/term/{term}
+/AutoComplete
+  getAutoComplete (GET)
+    * term
+
+/About
+/About
+  getVersionInfo (GET)
+
+/ApiAttribute/id/{id}
+/ApiAttribute
+  getById (GET)
+    * id
+  deleteAttribute (DELETE)
+    * id
+
+/Address
+/Address
+  getAddressByEmail (GET)
+
+/Address/id/{id}
+/Address
+  getAddressById (GET)
+    * id
+  deleteAddress (DELETE)
+    * id
+
+/ApiAttribute/name/{name}
+/ApiAttribute
+  getByName (GET)
+    * name
+
+/Address/list/{list}
+/Address
+  getVerifiedIds (GET)
+    * list
+
+/ApiAttribute
+/ApiAttribute
+  getAllApiAttributes (GET)
+
+/AutoComplete/term/{term}
+/AutoComplete
+  getAutoComplete (GET)
+    * term
+
+/About
+/About
+  getVersionInfo (GET)
+
+/ApiApplication/id/{id}
+/ApiApplication
+  getById (GET)
+    * id
+
+/ApiAttribute/id/{id}
+/ApiAttribute
+  getById (GET)
+    * id
+  deleteAttribute (DELETE)
+    * id
+
+/Address
+/Address
+  getAddressByEmail (GET)
+
+/Address/id/{id}
+/Address
+  getAddressById (GET)
+    * id
+  deleteAddress (DELETE)
+    * id
+
+/ApiAttribute/name/{name}
+/ApiAttribute
+  getByName (GET)
+    * name
+
+/Address/list/{list}
+/Address
+  getVerifiedIds (GET)
+    * list
+
+/ApiApplication/id/{id}/apiAttributeId/{apiAttributeId}
+/ApiApplication
+  getApiAttribute (GET)
+    * id
+    * apiAttributeId
+  removeAttribute (DELETE)
+    * id
+    * apiAttributeId
+
+/ApiAttribute
+/ApiAttribute
+  getAllApiAttributes (GET)
+
+/ApiDeveloper/email/{email}
+/ApiDeveloper
+  getByEmail (GET)
+    * email
+
+/AutoComplete/term/{term}
+/AutoComplete
+  getAutoComplete (GET)
+    * term
+
+/ApiApplication/id/{id}
+/ApiApplication
+  getById (GET)
+    * id
+
+/ApiAttribute/id/{id}
+/ApiAttribute
+  getById (GET)
+    * id
+  deleteAttribute (DELETE)
+    * id
+
+/ApiAttribute/name/{name}
+/ApiAttribute
+  getByName (GET)
+    * name
+
+/ApiDeveloper/limit/{limit}/page/{page}/sort/{sort}/orderBy/{orderBy}/sortAsc/{sortAsc}
+/ApiDeveloper
+  getAll (GET)
+    limit
+    page
+    sort
+    orderBy
+    sortAsc
+
+/About
+/About
+  getVersionInfo (GET)
+
+/ApiDeveloper/lookupKey/{lookupKey}
+/ApiDeveloper
+  getByApiKeyHash (GET)
+    * lookupKey
+
+/Address/id/{id}
+/Address
+  getAddressById (GET)
+    * id
+  deleteAddress (DELETE)
+    * id
+
+/Address
+/Address
+  getAddressByEmail (GET)
+
+/Address/list/{list}
+/Address
+  getVerifiedIds (GET)
+    * list
+
+/ApiApplication/id/{id}/apiAttributeId/{apiAttributeId}
+/ApiApplication
+  getApiAttribute (GET)
+    * id
+    * apiAttributeId
+  removeAttribute (DELETE)
+    * id
+    * apiAttributeId
+
+/ApiAttribute
+/ApiAttribute
+  getAllApiAttributes (GET)
+
+/ApiDeveloper/email/{email}
+/ApiDeveloper
+  getByEmail (GET)
+    * email
+
+/AutoComplete/term/{term}
+/AutoComplete
+  getAutoComplete (GET)
+    * term
+
+/ApiApplication/id/{id}
+/ApiApplication
+  getById (GET)
+    * id
+
+/ApiAttribute/id/{id}
+/ApiAttribute
+  getById (GET)
+    * id
+  deleteAttribute (DELETE)
+    * id
+
+/ApiAttribute/name/{name}
+/ApiAttribute
+  getByName (GET)
+    * name
+
+/ApiDeveloper/limit/{limit}/page/{page}/sort/{sort}/orderBy/{orderBy}/sortAsc/{sortAsc}
+/ApiDeveloper
+  getAll (GET)
+    limit
+    page
+    sort
+    orderBy
+    sortAsc
+
+/About
+/About
+  getVersionInfo (GET)
+
+/ApiDeveloper/lookupKey/{lookupKey}
+/ApiDeveloper
+  getByApiKeyHash (GET)
+    * lookupKey
+
+/Address/id/{id}
+/Address
+  getAddressById (GET)
+    * id
+  deleteAddress (DELETE)
+    * id
+
+/Address
+/Address
+  getAddressByEmail (GET)
+
+/Address/list/{list}
+/Address
+  getVerifiedIds (GET)
+    * list
+
+/ApiApplication/id/{id}/apiAttributeId/{apiAttributeId}
+/ApiApplication
+  getApiAttribute (GET)
+    * id
+    * apiAttributeId
+  removeAttribute (DELETE)
+    * id
+    * apiAttributeId
+
+/ApiAttribute
+/ApiAttribute
+  getAllApiAttributes (GET)
+
+/ApiDeveloper/email/{email}
+/ApiDeveloper
+  getByEmail (GET)
+    * email
+
+/AutoComplete/term/{term}
+/AutoComplete
+  getAutoComplete (GET)
+    * term
+
+/ApiApplication/id/{id}
+/ApiApplication
+  getById (GET)
+    * id
+
+/ApiAttribute/id/{id}
+/ApiAttribute
+  getById (GET)
+    * id
+  deleteAttribute (DELETE)
+    * id
+
+/ApiAttribute/name/{name}
+/ApiAttribute
+  getByName (GET)
+    * name
+
+/ApiDeveloper/limit/{limit}/page/{page}/sort/{sort}/orderBy/{orderBy}/sortAsc/{sortAsc}
+/ApiDeveloper
+  getAll (GET)
+    limit
+    page
+    sort
+    orderBy
+    sortAsc
+
+/Badge/Feed/t/{t}
+/Badge/Feed
+  getBadgeFeed (GET)
+    t
+
+/About
+/About
+  getVersionInfo (GET)
+
+/ApiDeveloper/lookupKey/{lookupKey}
+/ApiDeveloper
+  getByApiKeyHash (GET)
+    * lookupKey
+
+/Address/id/{id}
+/Address
+  getAddressById (GET)
+    * id
+  deleteAddress (DELETE)
+    * id
+
+/Address
+/Address
+  getAddressByEmail (GET)
+
+/Address/list/{list}
+/Address
+  getVerifiedIds (GET)
+    * list
+
+/ApiApplication/id/{id}/apiAttributeId/{apiAttributeId}
+/ApiApplication
+  getApiAttribute (GET)
+    * id
+    * apiAttributeId
+  removeAttribute (DELETE)
+    * id
+    * apiAttributeId
+
+/ApiAttribute
+/ApiAttribute
+  getAllApiAttributes (GET)
+
+/ApiDeveloper/email/{email}
+/ApiDeveloper
+  getByEmail (GET)
+    * email
+
+/AutoComplete/term/{term}
+/AutoComplete
+  getAutoComplete (GET)
+    * term
+
+/Brand/customerId/{customerId}/maxResults/{maxResults}/collapse/{collapse}
+/Brand
+  getCustomerId (GET)
+    * customerId
+    maxResults
+    collapse
+
+/ApiApplication/id/{id}
+/ApiApplication
+  getById (GET)
+    * id
+
+/ApiAttribute/id/{id}
+/ApiAttribute
+  getById (GET)
+    * id
+  deleteAttribute (DELETE)
+    * id
+
+/ApiAttribute/name/{name}
+/ApiAttribute
+  getByName (GET)
+    * name
+
+/ApiDeveloper/limit/{limit}/page/{page}/sort/{sort}/orderBy/{orderBy}/sortAsc/{sortAsc}
+/ApiDeveloper
+  getAll (GET)
+    limit
+    page
+    sort
+    orderBy
+    sortAsc
+
+/Brand/id/{id}
+/Brand
+  getId (GET)
+    * id
+
+/Badge/Feed/t/{t}
+/Badge/Feed
+  getBadgeFeed (GET)
+    t
+
+/About
+/About
+  getVersionInfo (GET)
+
+/ApiDeveloper/lookupKey/{lookupKey}
+/ApiDeveloper
+  getByApiKeyHash (GET)
+    * lookupKey
+
+/Address/id/{id}
+/Address
+  getAddressById (GET)
+    * id
+  deleteAddress (DELETE)
+    * id
+
+/Address
+/Address
+  getAddressByEmail (GET)
+
+/Address/list/{list}
+/Address
+  getVerifiedIds (GET)
+    * list
+
+/ApiApplication/id/{id}/apiAttributeId/{apiAttributeId}
+/ApiApplication
+  getApiAttribute (GET)
+    * id
+    * apiAttributeId
+  removeAttribute (DELETE)
+    * id
+    * apiAttributeId
+
+/ApiAttribute
+/ApiAttribute
+  getAllApiAttributes (GET)
+
+/ApiDeveloper/email/{email}
+/ApiDeveloper
+  getByEmail (GET)
+    * email
+
+/AutoComplete/term/{term}
+/AutoComplete
+  getAutoComplete (GET)
+    * term
+
+/Brand/customerId/{customerId}/maxResults/{maxResults}/collapse/{collapse}
+/Brand
+  getCustomerId (GET)
+    * customerId
+    maxResults
+    collapse
+
+/ApiApplication/id/{id}
+/ApiApplication
+  getById (GET)
+    * id
+
+/Cache
+/Cache
+  getAllCaches (GET)
+
+/ApiAttribute/id/{id}
+/ApiAttribute
+  getById (GET)
+    * id
+  deleteAttribute (DELETE)
+    * id
+
+/ApiAttribute/name/{name}
+/ApiAttribute
+  getByName (GET)
+    * name
+
+/ApiDeveloper/limit/{limit}/page/{page}/sort/{sort}/orderBy/{orderBy}/sortAsc/{sortAsc}
+/ApiDeveloper
+  getAll (GET)
+    limit
+    page
+    sort
+    orderBy
+    sortAsc
+
+/Brand/id/{id}
+/Brand
+  getId (GET)
+    * id
+
+/Badge/Feed/t/{t}
+/Badge/Feed
+  getBadgeFeed (GET)
+    t
+
+/About
+/About
+  getVersionInfo (GET)
+
+/Cache/id/{id}
+/Cache
+  getCacheById (GET)
+    * id
+  clearCacheById (DELETE)
+    id
+
+/ApiDeveloper/lookupKey/{lookupKey}
+/ApiDeveloper
+  getByApiKeyHash (GET)
+    * lookupKey
+
+/Address/id/{id}
+/Address
+  getAddressById (GET)
+    * id
+  deleteAddress (DELETE)
+    * id
+
+/Address
+/Address
+  getAddressByEmail (GET)
+
+/Address/list/{list}
+/Address
+  getVerifiedIds (GET)
+    * list
+
+/ApiApplication/id/{id}/apiAttributeId/{apiAttributeId}
+/ApiApplication
+  getApiAttribute (GET)
+    * id
+    * apiAttributeId
+  removeAttribute (DELETE)
+    * id
+    * apiAttributeId
+
+/ApiAttribute
+/ApiAttribute
+  getAllApiAttributes (GET)
+
+/ApiDeveloper/email/{email}
+/ApiDeveloper
+  getByEmail (GET)
+    * email
+
+/AutoComplete/term/{term}
+/AutoComplete
+  getAutoComplete (GET)
+    * term
+
+/Brand/customerId/{customerId}/maxResults/{maxResults}/collapse/{collapse}
+/Brand
+  getCustomerId (GET)
+    * customerId
+    maxResults
+    collapse
+
+/Cart/sessionId/{sessionId}/addressId/{addressId}/address/{address}/city/{city}/state/{state}/postalCode/{postalCode}/shippingTypeCode/{shippingTypeCode}
+/Cart
+  bySessionId (GET)
+    * sessionId
+    addressId
+    address
+    city
+    state
+    postalCode
+    shippingTypeCode
+
+/ApiApplication/id/{id}
+/ApiApplication
+  getById (GET)
+    * id
+
+/Cache
+/Cache
+  getAllCaches (GET)
+
+/ApiAttribute/id/{id}
+/ApiAttribute
+  getById (GET)
+    * id
+  deleteAttribute (DELETE)
+    * id
+
+/ApiAttribute/name/{name}
+/ApiAttribute
+  getByName (GET)
+    * name
+
+/ApiDeveloper/limit/{limit}/page/{page}/sort/{sort}/orderBy/{orderBy}/sortAsc/{sortAsc}
+/ApiDeveloper
+  getAll (GET)
+    limit
+    page
+    sort
+    orderBy
+    sortAsc
+
+/Brand/id/{id}
+/Brand
+  getId (GET)
+    * id
+
+/Badge/Feed/t/{t}
+/Badge/Feed
+  getBadgeFeed (GET)
+    t
+
+/About
+/About
+  getVersionInfo (GET)
+
+/Cache/id/{id}
+/Cache
+  getCacheById (GET)
+    * id
+  clearCacheById (DELETE)
+    id
+
+/ApiDeveloper/lookupKey/{lookupKey}
+/ApiDeveloper
+  getByApiKeyHash (GET)
+    * lookupKey
+
+/Address/id/{id}
+/Address
+  getAddressById (GET)
+    * id
+  deleteAddress (DELETE)
+    * id
+
+/Address
+/Address
+  getAddressByEmail (GET)
+
+/Address/list/{list}
+/Address
+  getVerifiedIds (GET)
+    * list
+
+/ApiApplication/id/{id}/apiAttributeId/{apiAttributeId}
+/ApiApplication
+  getApiAttribute (GET)
+    * id
+    * apiAttributeId
+  removeAttribute (DELETE)
+    * id
+    * apiAttributeId
+
+/ApiAttribute
+/ApiAttribute
+  getAllApiAttributes (GET)
+
+/ApiDeveloper/email/{email}
+/ApiDeveloper
+  getByEmail (GET)
+    * email
+
+/AutoComplete/term/{term}
+/AutoComplete
+  getAutoComplete (GET)
+    * term
+
+/Brand/customerId/{customerId}/maxResults/{maxResults}/collapse/{collapse}
+/Brand
+  getCustomerId (GET)
+    * customerId
+    maxResults
+    collapse
+
+/Cart/sessionId/{sessionId}/addressId/{addressId}/address/{address}/city/{city}/state/{state}/postalCode/{postalCode}/shippingTypeCode/{shippingTypeCode}
+/Cart
+  bySessionId (GET)
+    * sessionId
+    addressId
+    address
+    city
+    state
+    postalCode
+    shippingTypeCode
+
+/ApiApplication/id/{id}
+/ApiApplication
+  getById (GET)
+    * id
+
+/Cache
+/Cache
+  getAllCaches (GET)
+
+/ApiAttribute/id/{id}
+/ApiAttribute
+  getById (GET)
+    * id
+  deleteAttribute (DELETE)
+    * id
+
+/Compatibility
+/Compatibility
+  getCompatibilityMap (GET)
+
+/Compatibility/version/{version}
+/Compatibility
+  getVersionInfo (GET)
+    * version
+
+/ApiAttribute/name/{name}
+/ApiAttribute
+  getByName (GET)
+    * name
+
+/ApiDeveloper/limit/{limit}/page/{page}/sort/{sort}/orderBy/{orderBy}/sortAsc/{sortAsc}
+/ApiDeveloper
+  getAll (GET)
+    limit
+    page
+    sort
+    orderBy
+    sortAsc
+
+/Brand/id/{id}
+/Brand
+  getId (GET)
+    * id
+
+/Badge/Feed/t/{t}
+/Badge/Feed
+  getBadgeFeed (GET)
+    t
+
+/About
+/About
+  getVersionInfo (GET)
+
+/Cache/id/{id}
+/Cache
+  getCacheById (GET)
+    * id
+  clearCacheById (DELETE)
+    id
+
+/ApiDeveloper/lookupKey/{lookupKey}
+/ApiDeveloper
+  getByApiKeyHash (GET)
+    * lookupKey
+
+/Address/id/{id}
+/Address
+  getAddressById (GET)
+    * id
+  deleteAddress (DELETE)
+    * id
+
+/Address
+/Address
+  getAddressByEmail (GET)
+
+/Address/list/{list}
+/Address
+  getVerifiedIds (GET)
+    * list
+
+/ApiApplication/id/{id}/apiAttributeId/{apiAttributeId}
+/ApiApplication
+  getApiAttribute (GET)
+    * id
+    * apiAttributeId
+  removeAttribute (DELETE)
+    * id
+    * apiAttributeId
+
+/ApiAttribute
+/ApiAttribute
+  getAllApiAttributes (GET)
+
+/ApiDeveloper/email/{email}
+/ApiDeveloper
+  getByEmail (GET)
+    * email
+
+/AutoComplete/term/{term}
+/AutoComplete
+  getAutoComplete (GET)
+    * term
+
+/Brand/customerId/{customerId}/maxResults/{maxResults}/collapse/{collapse}
+/Brand
+  getCustomerId (GET)
+    * customerId
+    maxResults
+    collapse
+
+/Cart/sessionId/{sessionId}/addressId/{addressId}/address/{address}/city/{city}/state/{state}/postalCode/{postalCode}/shippingTypeCode/{shippingTypeCode}
+/Cart
+  bySessionId (GET)
+    * sessionId
+    addressId
+    address
+    city
+    state
+    postalCode
+    shippingTypeCode
+
+/ApiApplication/id/{id}
+/ApiApplication
+  getById (GET)
+    * id
+
+/Cache
+/Cache
+  getAllCaches (GET)
+
+/ApiAttribute/id/{id}
+/ApiAttribute
+  getById (GET)
+    * id
+  deleteAttribute (DELETE)
+    * id
+
+/Compatibility
+/Compatibility
+  getCompatibilityMap (GET)
+
+/Compatibility/version/{version}
+/Compatibility
+  getVersionInfo (GET)
+    * version
+
+/ApiAttribute/name/{name}
+/ApiAttribute
+  getByName (GET)
+    * name
+
+/ApiDeveloper/limit/{limit}/page/{page}/sort/{sort}/orderBy/{orderBy}/sortAsc/{sortAsc}
+/ApiDeveloper
+  getAll (GET)
+    limit
+    page
+    sort
+    orderBy
+    sortAsc
+
+/CoreValue
+/CoreValue
+  getAll (GET)
+
+/CoreValue/id/{id}
+/CoreValue
+  getById (GET)
+    * id
+
+/Brand/id/{id}
+/Brand
+  getId (GET)
+    * id
+
+/Badge/Feed/t/{t}
+/Badge/Feed
+  getBadgeFeed (GET)
+    t
+
+/About
+/About
+  getVersionInfo (GET)
+
+/Cache/id/{id}
+/Cache
+  getCacheById (GET)
+    * id
+  clearCacheById (DELETE)
+    id
+
+/ApiDeveloper/lookupKey/{lookupKey}
+/ApiDeveloper
+  getByApiKeyHash (GET)
+    * lookupKey
+
+/Address/id/{id}
+/Address
+  getAddressById (GET)
+    * id
+  deleteAddress (DELETE)
+    * id
+
+/Address
+/Address
+  getAddressByEmail (GET)
+
+/Address/list/{list}
+/Address
+  getVerifiedIds (GET)
+    * list
+
+/ApiApplication/id/{id}/apiAttributeId/{apiAttributeId}
+/ApiApplication
+  getApiAttribute (GET)
+    * id
+    * apiAttributeId
+  removeAttribute (DELETE)
+    * id
+    * apiAttributeId
+
+/ApiAttribute
+/ApiAttribute
+  getAllApiAttributes (GET)
+
+/CreditCard
+/CreditCard
+  getCreditCardsForCustomer (GET)
+
+/Cache
+/Cache
+  getAllCaches (GET)
+
+/ApiAttribute/name/{name}
+/ApiAttribute
+  getByName (GET)
+    * name
+
+/Compatibility
+/Compatibility
+  getCompatibilityMap (GET)
+
+/About
+/About
+  getVersionInfo (GET)
+
+/Cache/id/{id}
+/Cache
+  getCacheById (GET)
+    * id
+  clearCacheById (DELETE)
+    id
+
+/Address/list/{list}
+/Address
+  getVerifiedIds (GET)
+    * list
+
+/ApiApplication/id/{id}/apiAttributeId/{apiAttributeId}
+/ApiApplication
+  getApiAttribute (GET)
+    * id
+    * apiAttributeId
+  removeAttribute (DELETE)
+    * id
+    * apiAttributeId
+
+/ApiDeveloper/email/{email}
+/ApiDeveloper
+  getByEmail (GET)
+    * email
+
+/AutoComplete/term/{term}
+/AutoComplete
+  getAutoComplete (GET)
+    * term
+
+/Brand/customerId/{customerId}/maxResults/{maxResults}/collapse/{collapse}
+/Brand
+  getCustomerId (GET)
+    * customerId
+    maxResults
+    collapse
+
+/ApiApplication/id/{id}
+/ApiApplication
+  getById (GET)
+    * id
+
+/Cart/sessionId/{sessionId}/addressId/{addressId}/address/{address}/city/{city}/state/{state}/postalCode/{postalCode}/shippingTypeCode/{shippingTypeCode}
+/Cart
+  bySessionId (GET)
+    * sessionId
+    addressId
+    address
+    city
+    state
+    postalCode
+    shippingTypeCode
+
+/ApiAttribute/id/{id}
+/ApiAttribute
+  getById (GET)
+    * id
+  deleteAttribute (DELETE)
+    * id
+
+/Compatibility/version/{version}
+/Compatibility
+  getVersionInfo (GET)
+    * version
+
+/ApiDeveloper/limit/{limit}/page/{page}/sort/{sort}/orderBy/{orderBy}/sortAsc/{sortAsc}
+/ApiDeveloper
+  getAll (GET)
+    limit
+    page
+    sort
+    orderBy
+    sortAsc
+
+/CoreValue
+/CoreValue
+  getAll (GET)
+
+/CoreValue/id/{id}
+/CoreValue
+  getById (GET)
+    * id
+
+/Brand/id/{id}
+/Brand
+  getId (GET)
+    * id
+
+/CreditCard/id/{id}
+/CreditCard
+  getCreditCardById (GET)
+    * id
+  deleteCreditCardById (DELETE)
+    * id
+
+/Badge/Feed/t/{t}
+/Badge/Feed
+  getBadgeFeed (GET)
+    t
+
+/ApiDeveloper/lookupKey/{lookupKey}
+/ApiDeveloper
+  getByApiKeyHash (GET)
+    * lookupKey
+
+/Address
+/Address
+  getAddressByEmail (GET)
+
+/Address/id/{id}
+/Address
+  getAddressById (GET)
+    * id
+  deleteAddress (DELETE)
+    * id
+
+/ApiAttribute
+/ApiAttribute
+  getAllApiAttributes (GET)
+
+/CreditCard
+/CreditCard
+  getCreditCardsForCustomer (GET)
+
+/Cache
+/Cache
+  getAllCaches (GET)
+
+/Customer
+/Customer
+  getDiscoverOptions (GET)
+  getEmailLists (GET)
+
+/ApiAttribute/name/{name}
+/ApiAttribute
+  getByName (GET)
+    * name
+
+/Compatibility
+/Compatibility
+  getCompatibilityMap (GET)
+
+/About
+/About
+  getVersionInfo (GET)
+
+/Cache/id/{id}
+/Cache
+  getCacheById (GET)
+    * id
+  clearCacheById (DELETE)
+    id
+
+/Address/list/{list}
+/Address
+  getVerifiedIds (GET)
+    * list
+
+/ApiApplication/id/{id}/apiAttributeId/{apiAttributeId}
+/ApiApplication
+  getApiAttribute (GET)
+    * id
+    * apiAttributeId
+  removeAttribute (DELETE)
+    * id
+    * apiAttributeId
+
+/ApiDeveloper/email/{email}
+/ApiDeveloper
+  getByEmail (GET)
+    * email
+
+/AutoComplete/term/{term}
+/AutoComplete
+  getAutoComplete (GET)
+    * term
+
+/Brand/customerId/{customerId}/maxResults/{maxResults}/collapse/{collapse}
+/Brand
+  getCustomerId (GET)
+    * customerId
+    maxResults
+    collapse
+
+/ApiApplication/id/{id}
+/ApiApplication
+  getById (GET)
+    * id
+
+/Cart/sessionId/{sessionId}/addressId/{addressId}/address/{address}/city/{city}/state/{state}/postalCode/{postalCode}/shippingTypeCode/{shippingTypeCode}
+/Cart
+  bySessionId (GET)
+    * sessionId
+    addressId
+    address
+    city
+    state
+    postalCode
+    shippingTypeCode
+
+/ApiAttribute/id/{id}
+/ApiAttribute
+  getById (GET)
+    * id
+  deleteAttribute (DELETE)
+    * id
+
+/Customer/access_token/{access_token}
+/Customer
+  getCustomer (GET)
+    * access_token
+
+/Compatibility/version/{version}
+/Compatibility
+  getVersionInfo (GET)
+    * version
+
+/ApiDeveloper/limit/{limit}/page/{page}/sort/{sort}/orderBy/{orderBy}/sortAsc/{sortAsc}
+/ApiDeveloper
+  getAll (GET)
+    limit
+    page
+    sort
+    orderBy
+    sortAsc
+
+/CoreValue
+/CoreValue
+  getAll (GET)
+
+/CoreValue/id/{id}
+/CoreValue
+  getById (GET)
+    * id
+
+/Brand/id/{id}
+/Brand
+  getId (GET)
+    * id
+
+/CreditCard/id/{id}
+/CreditCard
+  getCreditCardById (GET)
+    * id
+  deleteCreditCardById (DELETE)
+    * id
+
+/Badge/Feed/t/{t}
+/Badge/Feed
+  getBadgeFeed (GET)
+    t
+
+/ApiDeveloper/lookupKey/{lookupKey}
+/ApiDeveloper
+  getByApiKeyHash (GET)
+    * lookupKey
+
+/Address
+/Address
+  getAddressByEmail (GET)
+
+/Address/id/{id}
+/Address
+  getAddressById (GET)
+    * id
+  deleteAddress (DELETE)
+    * id
+
+/ApiAttribute
+/ApiAttribute
+  getAllApiAttributes (GET)
+
+/CreditCard
+/CreditCard
+  getCreditCardsForCustomer (GET)
+
+/Cache
+/Cache
+  getAllCaches (GET)
+
+/Customer
+/Customer
+  getDiscoverOptions (GET)
+  getEmailLists (GET)
+
+/ApiAttribute/name/{name}
+/ApiAttribute
+  getByName (GET)
+    * name
+
+/Compatibility
+/Compatibility
+  getCompatibilityMap (GET)
+
+/About
+/About
+  getVersionInfo (GET)
+
+/Cache/id/{id}
+/Cache
+  getCacheById (GET)
+    * id
+  clearCacheById (DELETE)
+    id
+
+/Address/list/{list}
+/Address
+  getVerifiedIds (GET)
+    * list
+
+/ApiApplication/id/{id}/apiAttributeId/{apiAttributeId}
+/ApiApplication
+  getApiAttribute (GET)
+    * id
+    * apiAttributeId
+  removeAttribute (DELETE)
+    * id
+    * apiAttributeId
+
+/ApiDeveloper/email/{email}
+/ApiDeveloper
+  getByEmail (GET)
+    * email
+
+/AutoComplete/term/{term}
+/AutoComplete
+  getAutoComplete (GET)
+    * term
+
+/Brand/customerId/{customerId}/maxResults/{maxResults}/collapse/{collapse}
+/Brand
+  getCustomerId (GET)
+    * customerId
+    maxResults
+    collapse
+
+/ApiApplication/id/{id}
+/ApiApplication
+  getById (GET)
+    * id
+
+/Cart/sessionId/{sessionId}/addressId/{addressId}/address/{address}/city/{city}/state/{state}/postalCode/{postalCode}/shippingTypeCode/{shippingTypeCode}
+/Cart
+  bySessionId (GET)
+    * sessionId
+    addressId
+    address
+    city
+    state
+    postalCode
+    shippingTypeCode
+
+/ApiAttribute/id/{id}
+/ApiAttribute
+  getById (GET)
+    * id
+  deleteAttribute (DELETE)
+    * id
+
+/Points/type/{type}/customerId/{customerId}/t/{t}
+/Points
+  viewLoyaltyPoints (GET)
+    * type
+    customerId
+    t
+
+/Customer/access_token/{access_token}
+/Customer
+  getCustomer (GET)
+    * access_token
+
+/Compatibility/version/{version}
+/Compatibility
+  getVersionInfo (GET)
+    * version
+
+/ApiDeveloper/limit/{limit}/page/{page}/sort/{sort}/orderBy/{orderBy}/sortAsc/{sortAsc}
+/ApiDeveloper
+  getAll (GET)
+    limit
+    page
+    sort
+    orderBy
+    sortAsc
+
+/CoreValue
+/CoreValue
+  getAll (GET)
+
+/CoreValue/id/{id}
+/CoreValue
+  getById (GET)
+    * id
+
+/Brand/id/{id}
+/Brand
+  getId (GET)
+    * id
+
+/CreditCard/id/{id}
+/CreditCard
+  getCreditCardById (GET)
+    * id
+  deleteCreditCardById (DELETE)
+    * id
+
+/Badge/Feed/t/{t}
+/Badge/Feed
+  getBadgeFeed (GET)
+    t
+
+/ApiDeveloper/lookupKey/{lookupKey}
+/ApiDeveloper
+  getByApiKeyHash (GET)
+    * lookupKey
+
+/Address
+/Address
+  getAddressByEmail (GET)
+
+/Address/id/{id}
+/Address
+  getAddressById (GET)
+    * id
+  deleteAddress (DELETE)
+    * id
+
+/ApiAttribute
+/ApiAttribute
+  getAllApiAttributes (GET)
+
+/CreditCard
+/CreditCard
+  getCreditCardsForCustomer (GET)
+
+/Cache
+/Cache
+  getAllCaches (GET)
+
+/Customer
+/Customer
+  getDiscoverOptions (GET)
+  getEmailLists (GET)
+
+/ApiAttribute/name/{name}
+/ApiAttribute
+  getByName (GET)
+    * name
+
+/Compatibility
+/Compatibility
+  getCompatibilityMap (GET)
+
+/About
+/About
+  getVersionInfo (GET)
+
+/Cache/id/{id}
+/Cache
+  getCacheById (GET)
+    * id
+  clearCacheById (DELETE)
+    id
+
+/Address/list/{list}
+/Address
+  getVerifiedIds (GET)
+    * list
+
+/ApiApplication/id/{id}/apiAttributeId/{apiAttributeId}
+/ApiApplication
+  getApiAttribute (GET)
+    * id
+    * apiAttributeId
+  removeAttribute (DELETE)
+    * id
+    * apiAttributeId
+
+/ApiDeveloper/email/{email}
+/ApiDeveloper
+  getByEmail (GET)
+    * email
+
+/AutoComplete/term/{term}
+/AutoComplete
+  getAutoComplete (GET)
+    * term
+
+/Brand/customerId/{customerId}/maxResults/{maxResults}/collapse/{collapse}
+/Brand
+  getCustomerId (GET)
+    * customerId
+    maxResults
+    collapse
+
+/ApiApplication/id/{id}
+/ApiApplication
+  getById (GET)
+    * id
+
+/Cart/sessionId/{sessionId}/addressId/{addressId}/address/{address}/city/{city}/state/{state}/postalCode/{postalCode}/shippingTypeCode/{shippingTypeCode}
+/Cart
+  bySessionId (GET)
+    * sessionId
+    addressId
+    address
+    city
+    state
+    postalCode
+    shippingTypeCode
+
+/ApiAttribute/id/{id}
+/ApiAttribute
+  getById (GET)
+    * id
+  deleteAttribute (DELETE)
+    * id
+
+/Points/type/{type}/customerId/{customerId}/t/{t}
+/Points
+  viewLoyaltyPoints (GET)
+    * type
+    customerId
+    t
+
+/Customer/access_token/{access_token}
+/Customer
+  getCustomer (GET)
+    * access_token
+
+/Compatibility/version/{version}
+/Compatibility
+  getVersionInfo (GET)
+    * version
+
+/ApiDeveloper/limit/{limit}/page/{page}/sort/{sort}/orderBy/{orderBy}/sortAsc/{sortAsc}
+/ApiDeveloper
+  getAll (GET)
+    limit
+    page
+    sort
+    orderBy
+    sortAsc
+
+/CoreValue
+/CoreValue
+  getAll (GET)
+
+/CoreValue/id/{id}
+/CoreValue
+  getById (GET)
+    * id
+
+/Brand/id/{id}
+/Brand
+  getId (GET)
+    * id
+
+/CreditCard/id/{id}
+/CreditCard
+  getCreditCardById (GET)
+    * id
+  deleteCreditCardById (DELETE)
+    * id
+
+/Badge/Feed/t/{t}
+/Badge/Feed
+  getBadgeFeed (GET)
+    t
+
+/EventLogger/name/{name}
+/EventLogger
+  logEvent (GET)
+    name
+
+/ApiDeveloper/lookupKey/{lookupKey}
+/ApiDeveloper
+  getByApiKeyHash (GET)
+    * lookupKey
+
+/Address
+/Address
+  getAddressByEmail (GET)
+
+/Address/id/{id}
+/Address
+  getAddressById (GET)
+    * id
+  deleteAddress (DELETE)
+    * id
+
+/ApiAttribute
+/ApiAttribute
+  getAllApiAttributes (GET)
+
+/Favorite/page/{page}/limit/{limit}/offset/{offset}/sort/{sort}/sortDirection/{sortDirection}
+/Favorite
+  getFavoritesForCustomer (GET)
+    page
+    limit
+    offset
+    sort
+    sortDirection
+
+/CreditCard
+/CreditCard
+  getCreditCardsForCustomer (GET)
+
+/Cache
+/Cache
+  getAllCaches (GET)
+
+/Customer
+/Customer
+  getDiscoverOptions (GET)
+  getEmailLists (GET)
+
+/ApiAttribute/name/{name}
+/ApiAttribute
+  getByName (GET)
+    * name
+
+/Compatibility
+/Compatibility
+  getCompatibilityMap (GET)
+
+/About
+/About
+  getVersionInfo (GET)
+
+/Cache/id/{id}
+/Cache
+  getCacheById (GET)
+    * id
+  clearCacheById (DELETE)
+    id
+
+/Address/list/{list}
+/Address
+  getVerifiedIds (GET)
+    * list
+
+/ApiApplication/id/{id}/apiAttributeId/{apiAttributeId}
+/ApiApplication
+  getApiAttribute (GET)
+    * id
+    * apiAttributeId
+  removeAttribute (DELETE)
+    * id
+    * apiAttributeId
+
+/ApiDeveloper/email/{email}
+/ApiDeveloper
+  getByEmail (GET)
+    * email
+
+/AutoComplete/term/{term}
+/AutoComplete
+  getAutoComplete (GET)
+    * term
+
+/Brand/customerId/{customerId}/maxResults/{maxResults}/collapse/{collapse}
+/Brand
+  getCustomerId (GET)
+    * customerId
+    maxResults
+    collapse
+
+/ApiApplication/id/{id}
+/ApiApplication
+  getById (GET)
+    * id
+
+/Cart/sessionId/{sessionId}/addressId/{addressId}/address/{address}/city/{city}/state/{state}/postalCode/{postalCode}/shippingTypeCode/{shippingTypeCode}
+/Cart
+  bySessionId (GET)
+    * sessionId
+    addressId
+    address
+    city
+    state
+    postalCode
+    shippingTypeCode
+
+/Favorite/stockId/{stockId}
+/Favorite
+  deleteFavoriteStock (DELETE)
+    * stockId
+
+/ApiAttribute/id/{id}
+/ApiAttribute
+  getById (GET)
+    * id
+  deleteAttribute (DELETE)
+    * id
+
+/Points/type/{type}/customerId/{customerId}/t/{t}
+/Points
+  viewLoyaltyPoints (GET)
+    * type
+    customerId
+    t
+
+/Customer/access_token/{access_token}
+/Customer
+  getCustomer (GET)
+    * access_token
+
+/Compatibility/version/{version}
+/Compatibility
+  getVersionInfo (GET)
+    * version
+
+/ApiDeveloper/limit/{limit}/page/{page}/sort/{sort}/orderBy/{orderBy}/sortAsc/{sortAsc}
+/ApiDeveloper
+  getAll (GET)
+    limit
+    page
+    sort
+    orderBy
+    sortAsc
+
+/CoreValue
+/CoreValue
+  getAll (GET)
+
+/CoreValue/id/{id}
+/CoreValue
+  getById (GET)
+    * id
+
+/Brand/id/{id}
+/Brand
+  getId (GET)
+    * id
+
+/CreditCard/id/{id}
+/CreditCard
+  getCreditCardById (GET)
+    * id
+  deleteCreditCardById (DELETE)
+    * id
+
+/Badge/Feed/t/{t}
+/Badge/Feed
+  getBadgeFeed (GET)
+    t
+
+/EventLogger/name/{name}
+/EventLogger
+  logEvent (GET)
+    name
+
+/ApiDeveloper/lookupKey/{lookupKey}
+/ApiDeveloper
+  getByApiKeyHash (GET)
+    * lookupKey
+
+/Address
+/Address
+  getAddressByEmail (GET)
+
+/Address/id/{id}
+/Address
+  getAddressById (GET)
+    * id
+  deleteAddress (DELETE)
+    * id
+
+/ApiAttribute
+/ApiAttribute
+  getAllApiAttributes (GET)
+
+/Favorite/page/{page}/limit/{limit}/offset/{offset}/sort/{sort}/sortDirection/{sortDirection}
+/Favorite
+  getFavoritesForCustomer (GET)
+    page
+    limit
+    offset
+    sort
+    sortDirection
+
+/CreditCard
+/CreditCard
+  getCreditCardsForCustomer (GET)
+
+/Cache
+/Cache
+  getAllCaches (GET)
+
+/Customer
+/Customer
+  getDiscoverOptions (GET)
+  getEmailLists (GET)
+
+/ApiAttribute/name/{name}
+/ApiAttribute
+  getByName (GET)
+    * name
+
+/Compatibility
+/Compatibility
+  getCompatibilityMap (GET)
+
+/About
+/About
+  getVersionInfo (GET)
+
+/Cache/id/{id}
+/Cache
+  getCacheById (GET)
+    * id
+  clearCacheById (DELETE)
+    id
+
+/Address/list/{list}
+/Address
+  getVerifiedIds (GET)
+    * list
+
+/ApiApplication/id/{id}/apiAttributeId/{apiAttributeId}
+/ApiApplication
+  getApiAttribute (GET)
+    * id
+    * apiAttributeId
+  removeAttribute (DELETE)
+    * id
+    * apiAttributeId
+
+/ApiDeveloper/email/{email}
+/ApiDeveloper
+  getByEmail (GET)
+    * email
+
+/AutoComplete/term/{term}
+/AutoComplete
+  getAutoComplete (GET)
+    * term
+
+/Brand/customerId/{customerId}/maxResults/{maxResults}/collapse/{collapse}
+/Brand
+  getCustomerId (GET)
+    * customerId
+    maxResults
+    collapse
+
+/ApiApplication/id/{id}
+/ApiApplication
+  getById (GET)
+    * id
+
+/Cart/sessionId/{sessionId}/addressId/{addressId}/address/{address}/city/{city}/state/{state}/postalCode/{postalCode}/shippingTypeCode/{shippingTypeCode}
+/Cart
+  bySessionId (GET)
+    * sessionId
+    addressId
+    address
+    city
+    state
+    postalCode
+    shippingTypeCode
+
+/Favorite/stockId/{stockId}
+/Favorite
+  deleteFavoriteStock (DELETE)
+    * stockId
+
+/ApiAttribute/id/{id}
+/ApiAttribute
+  getById (GET)
+    * id
+  deleteAttribute (DELETE)
+    * id
+
+/FavoriteSearch/name/{name}/url/{url}
+/FavoriteSearch
+  deleteFavoriteSearch (DELETE)
+    * name
+    * url
+
+/Points/type/{type}/customerId/{customerId}/t/{t}
+/Points
+  viewLoyaltyPoints (GET)
+    * type
+    customerId
+    t
+
+/Customer/access_token/{access_token}
+/Customer
+  getCustomer (GET)
+    * access_token
+
+/Compatibility/version/{version}
+/Compatibility
+  getVersionInfo (GET)
+    * version
+
+/FavoriteSearch
+/FavoriteSearch
+  getFavoriteSearch (GET)
+
+/ApiDeveloper/limit/{limit}/page/{page}/sort/{sort}/orderBy/{orderBy}/sortAsc/{sortAsc}
+/ApiDeveloper
+  getAll (GET)
+    limit
+    page
+    sort
+    orderBy
+    sortAsc
+
+/CoreValue
+/CoreValue
+  getAll (GET)
+
+/CoreValue/id/{id}
+/CoreValue
+  getById (GET)
+    * id
+
+/Brand/id/{id}
+/Brand
+  getId (GET)
+    * id
+
+/CreditCard/id/{id}
+/CreditCard
+  getCreditCardById (GET)
+    * id
+  deleteCreditCardById (DELETE)
+    * id
+
+/Badge/Feed/t/{t}
+/Badge/Feed
+  getBadgeFeed (GET)
+    t
+
+/EventLogger/name/{name}
+/EventLogger
+  logEvent (GET)
+    name
+
+/ApiDeveloper/lookupKey/{lookupKey}
+/ApiDeveloper
+  getByApiKeyHash (GET)
+    * lookupKey
+
+/Address
+/Address
+  getAddressByEmail (GET)
+
+/Address/id/{id}
+/Address
+  getAddressById (GET)
+    * id
+  deleteAddress (DELETE)
+    * id
+
+/ApiAttribute
+/ApiAttribute
+  getAllApiAttributes (GET)
+
+/Favorite/page/{page}/limit/{limit}/offset/{offset}/sort/{sort}/sortDirection/{sortDirection}
+/Favorite
+  getFavoritesForCustomer (GET)
+    page
+    limit
+    offset
+    sort
+    sortDirection
+
+/CreditCard
+/CreditCard
+  getCreditCardsForCustomer (GET)
+
+/Cache
+/Cache
+  getAllCaches (GET)
+
+/Customer
+/Customer
+  getDiscoverOptions (GET)
+  getEmailLists (GET)
+
+/ApiAttribute/name/{name}
+/ApiAttribute
+  getByName (GET)
+    * name
+
+/Compatibility
+/Compatibility
+  getCompatibilityMap (GET)
+
+/Image/productId/{productId}/styleId/{styleId}/type/{type}/recipe/{recipe}
+/Image
+  GetStyleOrProductId (GET)
+    productId
+    styleId
+    type
+    recipe
+
+/About
+/About
+  getVersionInfo (GET)
+
+/Cache/id/{id}
+/Cache
+  getCacheById (GET)
+    * id
+  clearCacheById (DELETE)
+    id
+
+/Address/list/{list}
+/Address
+  getVerifiedIds (GET)
+    * list
+
+/ApiApplication/id/{id}/apiAttributeId/{apiAttributeId}
+/ApiApplication
+  getApiAttribute (GET)
+    * id
+    * apiAttributeId
+  removeAttribute (DELETE)
+    * id
+    * apiAttributeId
+
+/ApiDeveloper/email/{email}
+/ApiDeveloper
+  getByEmail (GET)
+    * email
+
+/AutoComplete/term/{term}
+/AutoComplete
+  getAutoComplete (GET)
+    * term
+
+/Brand/customerId/{customerId}/maxResults/{maxResults}/collapse/{collapse}
+/Brand
+  getCustomerId (GET)
+    * customerId
+    maxResults
+    collapse
+
+/ApiApplication/id/{id}
+/ApiApplication
+  getById (GET)
+    * id
+
+/Cart/sessionId/{sessionId}/addressId/{addressId}/address/{address}/city/{city}/state/{state}/postalCode/{postalCode}/shippingTypeCode/{shippingTypeCode}
+/Cart
+  bySessionId (GET)
+    * sessionId
+    addressId
+    address
+    city
+    state
+    postalCode
+    shippingTypeCode
+
+/Favorite/stockId/{stockId}
+/Favorite
+  deleteFavoriteStock (DELETE)
+    * stockId
+
+/ApiAttribute/id/{id}
+/ApiAttribute
+  getById (GET)
+    * id
+  deleteAttribute (DELETE)
+    * id
+
+/FavoriteSearch/name/{name}/url/{url}
+/FavoriteSearch
+  deleteFavoriteSearch (DELETE)
+    * name
+    * url
+
+/Points/type/{type}/customerId/{customerId}/t/{t}
+/Points
+  viewLoyaltyPoints (GET)
+    * type
+    customerId
+    t
+
+/Customer/access_token/{access_token}
+/Customer
+  getCustomer (GET)
+    * access_token
+
+/Image/productId/{productId}/type/{type}/recipe/{recipe}
+/Image
+  GetProductId (GET)
+    * productId
+    type
+    recipe
+
+/Compatibility/version/{version}
+/Compatibility
+  getVersionInfo (GET)
+    * version
+
+/FavoriteSearch
+/FavoriteSearch
+  getFavoriteSearch (GET)
+
+/ApiDeveloper/limit/{limit}/page/{page}/sort/{sort}/orderBy/{orderBy}/sortAsc/{sortAsc}
+/ApiDeveloper
+  getAll (GET)
+    limit
+    page
+    sort
+    orderBy
+    sortAsc
+
+/CoreValue
+/CoreValue
+  getAll (GET)
+
+/CoreValue/id/{id}
+/CoreValue
+  getById (GET)
+    * id
+
+/Brand/id/{id}
+/Brand
+  getId (GET)
+    * id
+
+/CreditCard/id/{id}
+/CreditCard
+  getCreditCardById (GET)
+    * id
+  deleteCreditCardById (DELETE)
+    * id
+
+/Badge/Feed/t/{t}
+/Badge/Feed
+  getBadgeFeed (GET)
+    t
+
+/EventLogger/name/{name}
+/EventLogger
+  logEvent (GET)
+    name
+
+/ApiDeveloper/lookupKey/{lookupKey}
+/ApiDeveloper
+  getByApiKeyHash (GET)
+    * lookupKey
+
+/Address
+/Address
+  getAddressByEmail (GET)
+
+/Address/id/{id}
+/Address
+  getAddressById (GET)
+    * id
+  deleteAddress (DELETE)
+    * id
+
+/Image/styleId/{styleId}/type/{type}/recipe/{recipe}
+/Image
+  GetStyleId (GET)
+    * styleId
+    type
+    recipe
+
+/Image
+/Image
+  getRecipes (GET)
+
+/ApiAttribute
+/ApiAttribute
+  getAllApiAttributes (GET)
+
+/Favorite/page/{page}/limit/{limit}/offset/{offset}/sort/{sort}/sortDirection/{sortDirection}
+/Favorite
+  getFavoritesForCustomer (GET)
+    page
+    limit
+    offset
+    sort
+    sortDirection
+
+/CreditCard
+/CreditCard
+  getCreditCardsForCustomer (GET)
+
+/Cache
+/Cache
+  getAllCaches (GET)
+
+/Customer
+/Customer
+  getDiscoverOptions (GET)
+  getEmailLists (GET)
+
+/ApiAttribute/name/{name}
+/ApiAttribute
+  getByName (GET)
+    * name
+
+/Compatibility
+/Compatibility
+  getCompatibilityMap (GET)
+
+/Image/productId/{productId}/styleId/{styleId}/type/{type}/recipe/{recipe}
+/Image
+  GetStyleOrProductId (GET)
+    productId
+    styleId
+    type
+    recipe
+
+/About
+/About
+  getVersionInfo (GET)
+
+/Cache/id/{id}
+/Cache
+  getCacheById (GET)
+    * id
+  clearCacheById (DELETE)
+    id
+
+/Address/list/{list}
+/Address
+  getVerifiedIds (GET)
+    * list
+
+/ApiApplication/id/{id}/apiAttributeId/{apiAttributeId}
+/ApiApplication
+  getApiAttribute (GET)
+    * id
+    * apiAttributeId
+  removeAttribute (DELETE)
+    * id
+    * apiAttributeId
+
+/ApiDeveloper/email/{email}
+/ApiDeveloper
+  getByEmail (GET)
+    * email
+
+/AutoComplete/term/{term}
+/AutoComplete
+  getAutoComplete (GET)
+    * term
+
+/Brand/customerId/{customerId}/maxResults/{maxResults}/collapse/{collapse}
+/Brand
+  getCustomerId (GET)
+    * customerId
+    maxResults
+    collapse
+
+/ApiApplication/id/{id}
+/ApiApplication
+  getById (GET)
+    * id
+
+/Cart/sessionId/{sessionId}/addressId/{addressId}/address/{address}/city/{city}/state/{state}/postalCode/{postalCode}/shippingTypeCode/{shippingTypeCode}
+/Cart
+  bySessionId (GET)
+    * sessionId
+    addressId
+    address
+    city
+    state
+    postalCode
+    shippingTypeCode
+
+/Favorite/stockId/{stockId}
+/Favorite
+  deleteFavoriteStock (DELETE)
+    * stockId
+
+/ApiAttribute/id/{id}
+/ApiAttribute
+  getById (GET)
+    * id
+  deleteAttribute (DELETE)
+    * id
+
+/FavoriteSearch/name/{name}/url/{url}
+/FavoriteSearch
+  deleteFavoriteSearch (DELETE)
+    * name
+    * url
+
+/Points/type/{type}/customerId/{customerId}/t/{t}
+/Points
+  viewLoyaltyPoints (GET)
+    * type
+    customerId
+    t
+
+/Customer/access_token/{access_token}
+/Customer
+  getCustomer (GET)
+    * access_token
+
+/Image/productId/{productId}/type/{type}/recipe/{recipe}
+/Image
+  GetProductId (GET)
+    * productId
+    type
+    recipe
+
+/Compatibility/version/{version}
+/Compatibility
+  getVersionInfo (GET)
+    * version
+
+/Info
+/Info
+  getVersionInfo (GET)
+
+/FavoriteSearch
+/FavoriteSearch
+  getFavoriteSearch (GET)
+
+/ApiDeveloper/limit/{limit}/page/{page}/sort/{sort}/orderBy/{orderBy}/sortAsc/{sortAsc}
+/ApiDeveloper
+  getAll (GET)
+    limit
+    page
+    sort
+    orderBy
+    sortAsc
+
+/CoreValue
+/CoreValue
+  getAll (GET)
+
+/CoreValue/id/{id}
+/CoreValue
+  getById (GET)
+    * id
+
+/Brand/id/{id}
+/Brand
+  getId (GET)
+    * id
+
+/CreditCard/id/{id}
+/CreditCard
+  getCreditCardById (GET)
+    * id
+  deleteCreditCardById (DELETE)
+    * id
+
+/Badge/Feed/t/{t}
+/Badge/Feed
+  getBadgeFeed (GET)
+    t
+
+/EventLogger/name/{name}
+/EventLogger
+  logEvent (GET)
+    name
+
+/ApiDeveloper/lookupKey/{lookupKey}
+/ApiDeveloper
+  getByApiKeyHash (GET)
+    * lookupKey
+
+/Address
+/Address
+  getAddressByEmail (GET)
+
+/Address/id/{id}
+/Address
+  getAddressById (GET)
+    * id
+  deleteAddress (DELETE)
+    * id
+
+/Image/styleId/{styleId}/type/{type}/recipe/{recipe}
+/Image
+  GetStyleId (GET)
+    * styleId
+    type
+    recipe
+
+/Image
+/Image
+  getRecipes (GET)
+
+/ApiAttribute
+/ApiAttribute
+  getAllApiAttributes (GET)
+
+/Favorite/page/{page}/limit/{limit}/offset/{offset}/sort/{sort}/sortDirection/{sortDirection}
+/Favorite
+  getFavoritesForCustomer (GET)
+    page
+    limit
+    offset
+    sort
+    sortDirection
+
+/CreditCard
+/CreditCard
+  getCreditCardsForCustomer (GET)
+
+/Cache
+/Cache
+  getAllCaches (GET)
+
+/Order/claimTicketId/{claimTicketId}
+/Order
+  getOrderByClaimTicketId (GET)
+    * claimTicketId
+
+/Customer
+/Customer
+  getDiscoverOptions (GET)
+  getEmailLists (GET)
+
+/ApiAttribute/name/{name}
+/ApiAttribute
+  getByName (GET)
+    * name
+
+/Compatibility
+/Compatibility
+  getCompatibilityMap (GET)
+
+/Image/productId/{productId}/styleId/{styleId}/type/{type}/recipe/{recipe}
+/Image
+  GetStyleOrProductId (GET)
+    productId
+    styleId
+    type
+    recipe
+
+/About
+/About
+  getVersionInfo (GET)
+
+/Order/type/{type}/range/{range}/fromDate/{fromDate}/toDate/{toDate}
+/Order
+  getOrdersForCustomer (GET)
+    * type
+    range
+    fromDate
+    toDate
+
+/Cache/id/{id}
+/Cache
+  getCacheById (GET)
+    * id
+  clearCacheById (DELETE)
+    id
+
+/Address/list/{list}
+/Address
+  getVerifiedIds (GET)
+    * list
+
+/ApiApplication/id/{id}/apiAttributeId/{apiAttributeId}
+/ApiApplication
+  getApiAttribute (GET)
+    * id
+    * apiAttributeId
+  removeAttribute (DELETE)
+    * id
+    * apiAttributeId
+
+/ApiDeveloper/email/{email}
+/ApiDeveloper
+  getByEmail (GET)
+    * email
+
+/AutoComplete/term/{term}
+/AutoComplete
+  getAutoComplete (GET)
+    * term
+
+/Brand/customerId/{customerId}/maxResults/{maxResults}/collapse/{collapse}
+/Brand
+  getCustomerId (GET)
+    * customerId
+    maxResults
+    collapse
+
+/ApiApplication/id/{id}
+/ApiApplication
+  getById (GET)
+    * id
+
+/Cart/sessionId/{sessionId}/addressId/{addressId}/address/{address}/city/{city}/state/{state}/postalCode/{postalCode}/shippingTypeCode/{shippingTypeCode}
+/Cart
+  bySessionId (GET)
+    * sessionId
+    addressId
+    address
+    city
+    state
+    postalCode
+    shippingTypeCode
+
+/Favorite/stockId/{stockId}
+/Favorite
+  deleteFavoriteStock (DELETE)
+    * stockId
+
+/ApiAttribute/id/{id}
+/ApiAttribute
+  getById (GET)
+    * id
+  deleteAttribute (DELETE)
+    * id
+
+/FavoriteSearch/name/{name}/url/{url}
+/FavoriteSearch
+  deleteFavoriteSearch (DELETE)
+    * name
+    * url
+
+/Points/type/{type}/customerId/{customerId}/t/{t}
+/Points
+  viewLoyaltyPoints (GET)
+    * type
+    customerId
+    t
+
+/Customer/access_token/{access_token}
+/Customer
+  getCustomer (GET)
+    * access_token
+
+/Image/productId/{productId}/type/{type}/recipe/{recipe}
+/Image
+  GetProductId (GET)
+    * productId
+    type
+    recipe
+
+/Compatibility/version/{version}
+/Compatibility
+  getVersionInfo (GET)
+    * version
+
+/Info
+/Info
+  getVersionInfo (GET)
+
+/FavoriteSearch
+/FavoriteSearch
+  getFavoriteSearch (GET)
+
+/ApiDeveloper/limit/{limit}/page/{page}/sort/{sort}/orderBy/{orderBy}/sortAsc/{sortAsc}
+/ApiDeveloper
+  getAll (GET)
+    limit
+    page
+    sort
+    orderBy
+    sortAsc
+
+/CoreValue
+/CoreValue
+  getAll (GET)
+
+/CoreValue/id/{id}
+/CoreValue
+  getById (GET)
+    * id
+
+/Brand/id/{id}
+/Brand
+  getId (GET)
+    * id
+
+/CreditCard/id/{id}
+/CreditCard
+  getCreditCardById (GET)
+    * id
+  deleteCreditCardById (DELETE)
+    * id
+
+/Badge/Feed/t/{t}
+/Badge/Feed
+  getBadgeFeed (GET)
+    t
+
+/EventLogger/name/{name}
+/EventLogger
+  logEvent (GET)
+    name
+
+/Order/id/{id}/type/{type}
+/Order
+  getOrderById (GET)
+    * id
+    type
+
+/ApiDeveloper/lookupKey/{lookupKey}
+/ApiDeveloper
+  getByApiKeyHash (GET)
+    * lookupKey
+
+/Address
+/Address
+  getAddressByEmail (GET)
+
+/Address/id/{id}
+/Address
+  getAddressById (GET)
+    * id
+  deleteAddress (DELETE)
+    * id
+
+/Image/styleId/{styleId}/type/{type}/recipe/{recipe}
+/Image
+  GetStyleId (GET)
+    * styleId
+    type
+    recipe
+
+/Image
+/Image
+  getRecipes (GET)
+
+/ApiAttribute
+/ApiAttribute
+  getAllApiAttributes (GET)
+
+/Favorite/page/{page}/limit/{limit}/offset/{offset}/sort/{sort}/sortDirection/{sortDirection}
+/Favorite
+  getFavoritesForCustomer (GET)
+    page
+    limit
+    offset
+    sort
+    sortDirection
+
+/CreditCard
+/CreditCard
+  getCreditCardsForCustomer (GET)
+
+/Product/stockId/{stockId}
+/Product
+  getProductByStockId (GET)
+    * stockId
+
+/Cache
+/Cache
+  getAllCaches (GET)
+
+/Order/claimTicketId/{claimTicketId}
+/Order
+  getOrderByClaimTicketId (GET)
+    * claimTicketId
+
+/Customer
+/Customer
+  getDiscoverOptions (GET)
+  getEmailLists (GET)
+
+/ApiAttribute/name/{name}
+/ApiAttribute
+  getByName (GET)
+    * name
+
+/Compatibility
+/Compatibility
+  getCompatibilityMap (GET)
+
+/Image/productId/{productId}/styleId/{styleId}/type/{type}/recipe/{recipe}
+/Image
+  GetStyleOrProductId (GET)
+    productId
+    styleId
+    type
+    recipe
+
+/About
+/About
+  getVersionInfo (GET)
+
+/Order/type/{type}/range/{range}/fromDate/{fromDate}/toDate/{toDate}
+/Order
+  getOrdersForCustomer (GET)
+    * type
+    range
+    fromDate
+    toDate
+
+/Cache/id/{id}
+/Cache
+  getCacheById (GET)
+    * id
+  clearCacheById (DELETE)
+    id
+
+/Address/list/{list}
+/Address
+  getVerifiedIds (GET)
+    * list
+
+/ApiApplication/id/{id}/apiAttributeId/{apiAttributeId}
+/ApiApplication
+  getApiAttribute (GET)
+    * id
+    * apiAttributeId
+  removeAttribute (DELETE)
+    * id
+    * apiAttributeId
+
+/ApiDeveloper/email/{email}
+/ApiDeveloper
+  getByEmail (GET)
+    * email
+
+/AutoComplete/term/{term}
+/AutoComplete
+  getAutoComplete (GET)
+    * term
+
+/Brand/customerId/{customerId}/maxResults/{maxResults}/collapse/{collapse}
+/Brand
+  getCustomerId (GET)
+    * customerId
+    maxResults
+    collapse
+
+/Product/styleId/{styleId}
+/Product
+  getProductByStyleId (GET)
+    * styleId
+
+/ApiApplication/id/{id}
+/ApiApplication
+  getById (GET)
+    * id
+
+/Cart/sessionId/{sessionId}/addressId/{addressId}/address/{address}/city/{city}/state/{state}/postalCode/{postalCode}/shippingTypeCode/{shippingTypeCode}
+/Cart
+  bySessionId (GET)
+    * sessionId
+    addressId
+    address
+    city
+    state
+    postalCode
+    shippingTypeCode
+
+/Favorite/stockId/{stockId}
+/Favorite
+  deleteFavoriteStock (DELETE)
+    * stockId
+
+/ApiAttribute/id/{id}
+/ApiAttribute
+  getById (GET)
+    * id
+  deleteAttribute (DELETE)
+    * id
+
+/Product/upc/{upc}
+/Product
+  getProductByUPC (GET)
+    * upc
+
+/FavoriteSearch/name/{name}/url/{url}
+/FavoriteSearch
+  deleteFavoriteSearch (DELETE)
+    * name
+    * url
+
+/Points/type/{type}/customerId/{customerId}/t/{t}
+/Points
+  viewLoyaltyPoints (GET)
+    * type
+    customerId
+    t
+
+/Customer/access_token/{access_token}
+/Customer
+  getCustomer (GET)
+    * access_token
+
+/Image/productId/{productId}/type/{type}/recipe/{recipe}
+/Image
+  GetProductId (GET)
+    * productId
+    type
+    recipe
+
+/Compatibility/version/{version}
+/Compatibility
+  getVersionInfo (GET)
+    * version
+
+/Info
+/Info
+  getVersionInfo (GET)
+
+/FavoriteSearch
+/FavoriteSearch
+  getFavoriteSearch (GET)
+
+/ApiDeveloper/limit/{limit}/page/{page}/sort/{sort}/orderBy/{orderBy}/sortAsc/{sortAsc}
+/ApiDeveloper
+  getAll (GET)
+    limit
+    page
+    sort
+    orderBy
+    sortAsc
+
+/Product/id/{id}
+/Product
+  getProductById (GET)
+    * id
+
+/CoreValue
+/CoreValue
+  getAll (GET)
+
+/CoreValue/id/{id}
+/CoreValue
+  getById (GET)
+    * id
+
+/Brand/id/{id}
+/Brand
+  getId (GET)
+    * id
+
+/CreditCard/id/{id}
+/CreditCard
+  getCreditCardById (GET)
+    * id
+  deleteCreditCardById (DELETE)
+    * id
+
+/Badge/Feed/t/{t}
+/Badge/Feed
+  getBadgeFeed (GET)
+    t
+
+/EventLogger/name/{name}
+/EventLogger
+  logEvent (GET)
+    name
+
+/Order/id/{id}/type/{type}
+/Order
+  getOrderById (GET)
+    * id
+    type
+
+/ApiDeveloper/lookupKey/{lookupKey}
+/ApiDeveloper
+  getByApiKeyHash (GET)
+    * lookupKey
+
+/Address
+/Address
+  getAddressByEmail (GET)
+
+/Address/id/{id}
+/Address
+  getAddressById (GET)
+    * id
+  deleteAddress (DELETE)
+    * id
+
+/Image/styleId/{styleId}/type/{type}/recipe/{recipe}
+/Image
+  GetStyleId (GET)
+    * styleId
+    type
+    recipe
+
+/Image
+/Image
+  getRecipes (GET)
+
+/ApiAttribute
+/ApiAttribute
+  getAllApiAttributes (GET)
+
+/Favorite/page/{page}/limit/{limit}/offset/{offset}/sort/{sort}/sortDirection/{sortDirection}
+/Favorite
+  getFavoritesForCustomer (GET)
+    page
+    limit
+    offset
+    sort
+    sortDirection
+
+/CreditCard
+/CreditCard
+  getCreditCardsForCustomer (GET)
+
+/Product/stockId/{stockId}
+/Product
+  getProductByStockId (GET)
+    * stockId
+
+/Cache
+/Cache
+  getAllCaches (GET)
+
+/Order/claimTicketId/{claimTicketId}
+/Order
+  getOrderByClaimTicketId (GET)
+    * claimTicketId
+
+/Customer
+/Customer
+  getDiscoverOptions (GET)
+  getEmailLists (GET)
+
+/ApiAttribute/name/{name}
+/ApiAttribute
+  getByName (GET)
+    * name
+
+/Compatibility
+/Compatibility
+  getCompatibilityMap (GET)
+
+/Image/productId/{productId}/styleId/{styleId}/type/{type}/recipe/{recipe}
+/Image
+  GetStyleOrProductId (GET)
+    productId
+    styleId
+    type
+    recipe
+
+/About
+/About
+  getVersionInfo (GET)
+
+/Order/type/{type}/range/{range}/fromDate/{fromDate}/toDate/{toDate}
+/Order
+  getOrdersForCustomer (GET)
+    * type
+    range
+    fromDate
+    toDate
+
+/Cache/id/{id}
+/Cache
+  getCacheById (GET)
+    * id
+  clearCacheById (DELETE)
+    id
+
+/Address/list/{list}
+/Address
+  getVerifiedIds (GET)
+    * list
+
+/ApiApplication/id/{id}/apiAttributeId/{apiAttributeId}
+/ApiApplication
+  getApiAttribute (GET)
+    * id
+    * apiAttributeId
+  removeAttribute (DELETE)
+    * id
+    * apiAttributeId
+
+/ApiDeveloper/email/{email}
+/ApiDeveloper
+  getByEmail (GET)
+    * email
+
+/AutoComplete/term/{term}
+/AutoComplete
+  getAutoComplete (GET)
+    * term
+
+/Brand/customerId/{customerId}/maxResults/{maxResults}/collapse/{collapse}
+/Brand
+  getCustomerId (GET)
+    * customerId
+    maxResults
+    collapse
+
+/Product/styleId/{styleId}
+/Product
+  getProductByStyleId (GET)
+    * styleId
+
+/ApiApplication/id/{id}
+/ApiApplication
+  getById (GET)
+    * id
+
+/Cart/sessionId/{sessionId}/addressId/{addressId}/address/{address}/city/{city}/state/{state}/postalCode/{postalCode}/shippingTypeCode/{shippingTypeCode}
+/Cart
+  bySessionId (GET)
+    * sessionId
+    addressId
+    address
+    city
+    state
+    postalCode
+    shippingTypeCode
+
+/Favorite/stockId/{stockId}
+/Favorite
+  deleteFavoriteStock (DELETE)
+    * stockId
+
+/ApiAttribute/id/{id}
+/ApiAttribute
+  getById (GET)
+    * id
+  deleteAttribute (DELETE)
+    * id
+
+/Product/upc/{upc}
+/Product
+  getProductByUPC (GET)
+    * upc
+
+/FavoriteSearch/name/{name}/url/{url}
+/FavoriteSearch
+  deleteFavoriteSearch (DELETE)
+    * name
+    * url
+
+/Points/type/{type}/customerId/{customerId}/t/{t}
+/Points
+  viewLoyaltyPoints (GET)
+    * type
+    customerId
+    t
+
+/Customer/access_token/{access_token}
+/Customer
+  getCustomer (GET)
+    * access_token
+
+/Image/productId/{productId}/type/{type}/recipe/{recipe}
+/Image
+  GetProductId (GET)
+    * productId
+    type
+    recipe
+
+/Review/productId/{productId}/startId/{startId}/startDate/{startDate}/page/{page}/offset/{offset}
+/Review
+  getProductId (GET)
+    * productId
+    startId
+    startDate
+    page
+    offset
+
+/Compatibility/version/{version}
+/Compatibility
+  getVersionInfo (GET)
+    * version
+
+/Review/brandId/{brandId}/startId/{startId}/startDate/{startDate}
+/Review
+  getBrandId (GET)
+    * brandId
+    startId
+    startDate
+
+/Info
+/Info
+  getVersionInfo (GET)
+
+/FavoriteSearch
+/FavoriteSearch
+  getFavoriteSearch (GET)
+
+/ApiDeveloper/limit/{limit}/page/{page}/sort/{sort}/orderBy/{orderBy}/sortAsc/{sortAsc}
+/ApiDeveloper
+  getAll (GET)
+    limit
+    page
+    sort
+    orderBy
+    sortAsc
+
+/Product/id/{id}
+/Product
+  getProductById (GET)
+    * id
+
+/CoreValue
+/CoreValue
+  getAll (GET)
+
+/CoreValue/id/{id}
+/CoreValue
+  getById (GET)
+    * id
+
+/Brand/id/{id}
+/Brand
+  getId (GET)
+    * id
+
+/CreditCard/id/{id}
+/CreditCard
+  getCreditCardById (GET)
+    * id
+  deleteCreditCardById (DELETE)
+    * id
+
+/Badge/Feed/t/{t}
+/Badge/Feed
+  getBadgeFeed (GET)
+    t
+
+/EventLogger/name/{name}
+/EventLogger
+  logEvent (GET)
+    name
+
+/Order/id/{id}/type/{type}
+/Order
+  getOrderById (GET)
+    * id
+    type
+
+/ApiDeveloper/lookupKey/{lookupKey}
+/ApiDeveloper
+  getByApiKeyHash (GET)
+    * lookupKey
+
+/Address
+/Address
+  getAddressByEmail (GET)
+
+/Address/id/{id}
+/Address
+  getAddressById (GET)
+    * id
+  deleteAddress (DELETE)
+    * id
+
+/Image/styleId/{styleId}/type/{type}/recipe/{recipe}
+/Image
+  GetStyleId (GET)
+    * styleId
+    type
+    recipe
+
+/Image
+/Image
+  getRecipes (GET)
+
+/ApiAttribute
+/ApiAttribute
+  getAllApiAttributes (GET)
+
+/Favorite/page/{page}/limit/{limit}/offset/{offset}/sort/{sort}/sortDirection/{sortDirection}
+/Favorite
+  getFavoritesForCustomer (GET)
+    page
+    limit
+    offset
+    sort
+    sortDirection
+
+/CreditCard
+/CreditCard
+  getCreditCardsForCustomer (GET)
+
+/Product/stockId/{stockId}
+/Product
+  getProductByStockId (GET)
+    * stockId
+
+/Cache
+/Cache
+  getAllCaches (GET)
+
+/Order/claimTicketId/{claimTicketId}
+/Order
+  getOrderByClaimTicketId (GET)
+    * claimTicketId
+
+/Customer
+/Customer
+  getDiscoverOptions (GET)
+  getEmailLists (GET)
+
+/ApiAttribute/name/{name}
+/ApiAttribute
+  getByName (GET)
+    * name
+
+/Compatibility
+/Compatibility
+  getCompatibilityMap (GET)
+
+/Image/productId/{productId}/styleId/{styleId}/type/{type}/recipe/{recipe}
+/Image
+  GetStyleOrProductId (GET)
+    productId
+    styleId
+    type
+    recipe
+
+/About
+/About
+  getVersionInfo (GET)
+
+/Order/type/{type}/range/{range}/fromDate/{fromDate}/toDate/{toDate}
+/Order
+  getOrdersForCustomer (GET)
+    * type
+    range
+    fromDate
+    toDate
+
+/Cache/id/{id}
+/Cache
+  getCacheById (GET)
+    * id
+  clearCacheById (DELETE)
+    id
+
+/Address/list/{list}
+/Address
+  getVerifiedIds (GET)
+    * list
+
+/ApiApplication/id/{id}/apiAttributeId/{apiAttributeId}
+/ApiApplication
+  getApiAttribute (GET)
+    * id
+    * apiAttributeId
+  removeAttribute (DELETE)
+    * id
+    * apiAttributeId
+
+/ApiDeveloper/email/{email}
+/ApiDeveloper
+  getByEmail (GET)
+    * email
+
+/AutoComplete/term/{term}
+/AutoComplete
+  getAutoComplete (GET)
+    * term
+
+/Brand/customerId/{customerId}/maxResults/{maxResults}/collapse/{collapse}
+/Brand
+  getCustomerId (GET)
+    * customerId
+    maxResults
+    collapse
+
+/Product/styleId/{styleId}
+/Product
+  getProductByStyleId (GET)
+    * styleId
+
+/ApiApplication/id/{id}
+/ApiApplication
+  getById (GET)
+    * id
+
+/Cart/sessionId/{sessionId}/addressId/{addressId}/address/{address}/city/{city}/state/{state}/postalCode/{postalCode}/shippingTypeCode/{shippingTypeCode}
+/Cart
+  bySessionId (GET)
+    * sessionId
+    addressId
+    address
+    city
+    state
+    postalCode
+    shippingTypeCode
+
+/Favorite/stockId/{stockId}
+/Favorite
+  deleteFavoriteStock (DELETE)
+    * stockId
+
+/ApiAttribute/id/{id}
+/ApiAttribute
+  getById (GET)
+    * id
+  deleteAttribute (DELETE)
+    * id
+
+/Product/upc/{upc}
+/Product
+  getProductByUPC (GET)
+    * upc
+
+/FavoriteSearch/name/{name}/url/{url}
+/FavoriteSearch
+  deleteFavoriteSearch (DELETE)
+    * name
+    * url
+
+/Points/type/{type}/customerId/{customerId}/t/{t}
+/Points
+  viewLoyaltyPoints (GET)
+    * type
+    customerId
+    t
+
+/Customer/access_token/{access_token}
+/Customer
+  getCustomer (GET)
+    * access_token
+
+/Image/productId/{productId}/type/{type}/recipe/{recipe}
+/Image
+  GetProductId (GET)
+    * productId
+    type
+    recipe
+
+/Review/productId/{productId}/startId/{startId}/startDate/{startDate}/page/{page}/offset/{offset}
+/Review
+  getProductId (GET)
+    * productId
+    startId
+    startDate
+    page
+    offset
+
+/Compatibility/version/{version}
+/Compatibility
+  getVersionInfo (GET)
+    * version
+
+/Review/brandId/{brandId}/startId/{startId}/startDate/{startDate}
+/Review
+  getBrandId (GET)
+    * brandId
+    startId
+    startDate
+
+/Info
+/Info
+  getVersionInfo (GET)
+
+/FavoriteSearch
+/FavoriteSearch
+  getFavoriteSearch (GET)
+
+/ApiDeveloper/limit/{limit}/page/{page}/sort/{sort}/orderBy/{orderBy}/sortAsc/{sortAsc}
+/ApiDeveloper
+  getAll (GET)
+    limit
+    page
+    sort
+    orderBy
+    sortAsc
+
+/Product/id/{id}
+/Product
+  getProductById (GET)
+    * id
+
+/CoreValue
+/CoreValue
+  getAll (GET)
+
+/CoreValue/id/{id}
+/CoreValue
+  getById (GET)
+    * id
+
+/Brand/id/{id}
+/Brand
+  getId (GET)
+    * id
+
+/CreditCard/id/{id}
+/CreditCard
+  getCreditCardById (GET)
+    * id
+  deleteCreditCardById (DELETE)
+    * id
+
+/Badge/Feed/t/{t}
+/Badge/Feed
+  getBadgeFeed (GET)
+    t
+
+/EventLogger/name/{name}
+/EventLogger
+  logEvent (GET)
+    name
+
+/Order/id/{id}/type/{type}
+/Order
+  getOrderById (GET)
+    * id
+    type
+
+/ApiDeveloper/lookupKey/{lookupKey}
+/ApiDeveloper
+  getByApiKeyHash (GET)
+    * lookupKey
+
+/Address
+/Address
+  getAddressByEmail (GET)
+
+/Address/id/{id}
+/Address
+  getAddressById (GET)
+    * id
+  deleteAddress (DELETE)
+    * id
+
+/Image/styleId/{styleId}/type/{type}/recipe/{recipe}
+/Image
+  GetStyleId (GET)
+    * styleId
+    type
+    recipe
+
+/Image
+/Image
+  getRecipes (GET)
+
+/ApiAttribute
+/ApiAttribute
+  getAllApiAttributes (GET)
+
+/Favorite/page/{page}/limit/{limit}/offset/{offset}/sort/{sort}/sortDirection/{sortDirection}
+/Favorite
+  getFavoritesForCustomer (GET)
+    page
+    limit
+    offset
+    sort
+    sortDirection
+
+/CreditCard
+/CreditCard
+  getCreditCardsForCustomer (GET)
+
+/Product/stockId/{stockId}
+/Product
+  getProductByStockId (GET)
+    * stockId
+
+/Cache
+/Cache
+  getAllCaches (GET)
+
+/Order/claimTicketId/{claimTicketId}
+/Order
+  getOrderByClaimTicketId (GET)
+    * claimTicketId
+
+/Customer
+/Customer
+  getDiscoverOptions (GET)
+  getEmailLists (GET)
+
+/ApiAttribute/name/{name}
+/ApiAttribute
+  getByName (GET)
+    * name
+
+/Compatibility
+/Compatibility
+  getCompatibilityMap (GET)
+
+/Image/productId/{productId}/styleId/{styleId}/type/{type}/recipe/{recipe}
+/Image
+  GetStyleOrProductId (GET)
+    productId
+    styleId
+    type
+    recipe
+
+/About
+/About
+  getVersionInfo (GET)
+
+/Order/type/{type}/range/{range}/fromDate/{fromDate}/toDate/{toDate}
+/Order
+  getOrdersForCustomer (GET)
+    * type
+    range
+    fromDate
+    toDate
+
+/Cache/id/{id}
+/Cache
+  getCacheById (GET)
+    * id
+  clearCacheById (DELETE)
+    id
+
+/Address/list/{list}
+/Address
+  getVerifiedIds (GET)
+    * list
+
+/ApiApplication/id/{id}/apiAttributeId/{apiAttributeId}
+/ApiApplication
+  getApiAttribute (GET)
+    * id
+    * apiAttributeId
+  removeAttribute (DELETE)
+    * id
+    * apiAttributeId
+
+/ApiDeveloper/email/{email}
+/ApiDeveloper
+  getByEmail (GET)
+    * email
+
+/AutoComplete/term/{term}
+/AutoComplete
+  getAutoComplete (GET)
+    * term
+
+/Brand/customerId/{customerId}/maxResults/{maxResults}/collapse/{collapse}
+/Brand
+  getCustomerId (GET)
+    * customerId
+    maxResults
+    collapse
+
+/Product/styleId/{styleId}
+/Product
+  getProductByStyleId (GET)
+    * styleId
+
+/ApiApplication/id/{id}
+/ApiApplication
+  getById (GET)
+    * id
+
+/Cart/sessionId/{sessionId}/addressId/{addressId}/address/{address}/city/{city}/state/{state}/postalCode/{postalCode}/shippingTypeCode/{shippingTypeCode}
+/Cart
+  bySessionId (GET)
+    * sessionId
+    addressId
+    address
+    city
+    state
+    postalCode
+    shippingTypeCode
+
+/Favorite/stockId/{stockId}
+/Favorite
+  deleteFavoriteStock (DELETE)
+    * stockId
+
+/ApiAttribute/id/{id}
+/ApiAttribute
+  getById (GET)
+    * id
+  deleteAttribute (DELETE)
+    * id
+
+/Product/upc/{upc}
+/Product
+  getProductByUPC (GET)
+    * upc
+
+/FavoriteSearch/name/{name}/url/{url}
+/FavoriteSearch
+  deleteFavoriteSearch (DELETE)
+    * name
+    * url
+
+/Points/type/{type}/customerId/{customerId}/t/{t}
+/Points
+  viewLoyaltyPoints (GET)
+    * type
+    customerId
+    t
+
+/Customer/access_token/{access_token}
+/Customer
+  getCustomer (GET)
+    * access_token
+
+/Image/productId/{productId}/type/{type}/recipe/{recipe}
+/Image
+  GetProductId (GET)
+    * productId
+    type
+    recipe
+
+/Review/productId/{productId}/startId/{startId}/startDate/{startDate}/page/{page}/offset/{offset}
+/Review
+  getProductId (GET)
+    * productId
+    startId
+    startDate
+    page
+    offset
+
+/Compatibility/version/{version}
+/Compatibility
+  getVersionInfo (GET)
+    * version
+
+/Review/brandId/{brandId}/startId/{startId}/startDate/{startDate}
+/Review
+  getBrandId (GET)
+    * brandId
+    startId
+    startDate
+
+/Info
+/Info
+  getVersionInfo (GET)
+
+/FavoriteSearch
+/FavoriteSearch
+  getFavoriteSearch (GET)
+
+/ApiDeveloper/limit/{limit}/page/{page}/sort/{sort}/orderBy/{orderBy}/sortAsc/{sortAsc}
+/ApiDeveloper
+  getAll (GET)
+    limit
+    page
+    sort
+    orderBy
+    sortAsc
+
+/Product/id/{id}
+/Product
+  getProductById (GET)
+    * id
+
+/CoreValue
+/CoreValue
+  getAll (GET)
+
+/CoreValue/id/{id}
+/CoreValue
+  getById (GET)
+    * id
+
+/Brand/id/{id}
+/Brand
+  getId (GET)
+    * id
+
+/CreditCard/id/{id}
+/CreditCard
+  getCreditCardById (GET)
+    * id
+  deleteCreditCardById (DELETE)
+    * id
+
+/Badge/Feed/t/{t}
+/Badge/Feed
+  getBadgeFeed (GET)
+    t
+
+/EventLogger/name/{name}
+/EventLogger
+  logEvent (GET)
+    name
+
+/Search/Similarity/type/{type}/limit/{limit}/styleId/{styleId}/emphasis/{emphasis}/productType/{productType}/category/{category}/subCategory/{subCategory}/brandId/{brandId}/page/{page}
+/Search/Similarity
+  getSimilaritySearch (GET)
+    * type
+    * limit
+    styleId
+    emphasis
+    productType
+    category
+    subCategory
+    brandId
+    page
+
+/Order/id/{id}/type/{type}
+/Order
+  getOrderById (GET)
+    * id
+    type
+
+/ApiDeveloper/lookupKey/{lookupKey}
+/ApiDeveloper
+  getByApiKeyHash (GET)
+    * lookupKey
+
+/Address
+/Address
+  getAddressByEmail (GET)
+
+/Address/id/{id}
+/Address
+  getAddressById (GET)
+    * id
+  deleteAddress (DELETE)
+    * id
+
+/Image/styleId/{styleId}/type/{type}/recipe/{recipe}
+/Image
+  GetStyleId (GET)
+    * styleId
+    type
+    recipe
+
+/Image
+/Image
+  getRecipes (GET)
+
+/ApiAttribute
+/ApiAttribute
+  getAllApiAttributes (GET)
+
+/Product/stockId/{stockId}
+/Product
+  getProductByStockId (GET)
+    * stockId
+
+/Compatibility
+/Compatibility
+  getCompatibilityMap (GET)
+
+/ApiAttribute/name/{name}
+/ApiAttribute
+  getByName (GET)
+    * name
+
+/Order/type/{type}/range/{range}/fromDate/{fromDate}/toDate/{toDate}
+/Order
+  getOrdersForCustomer (GET)
+    * type
+    range
+    fromDate
+    toDate
+
+/Address/list/{list}
+/Address
+  getVerifiedIds (GET)
+    * list
+
+/ApiApplication/id/{id}/apiAttributeId/{apiAttributeId}
+/ApiApplication
+  getApiAttribute (GET)
+    * id
+    * apiAttributeId
+  removeAttribute (DELETE)
+    * id
+    * apiAttributeId
+
+/ApiDeveloper/email/{email}
+/ApiDeveloper
+  getByEmail (GET)
+    * email
+
+/Search/batch/{batch}
+/Search
+  getBatchSearch (GET)
+    * batch
+
+/Cart/sessionId/{sessionId}/addressId/{addressId}/address/{address}/city/{city}/state/{state}/postalCode/{postalCode}/shippingTypeCode/{shippingTypeCode}
+/Cart
+  bySessionId (GET)
+    * sessionId
+    addressId
+    address
+    city
+    state
+    postalCode
+    shippingTypeCode
+
+/ApiApplication/id/{id}
+/ApiApplication
+  getById (GET)
+    * id
+
+/Product/styleId/{styleId}
+/Product
+  getProductByStyleId (GET)
+    * styleId
+
+/Favorite/stockId/{stockId}
+/Favorite
+  deleteFavoriteStock (DELETE)
+    * stockId
+
+/Product/upc/{upc}
+/Product
+  getProductByUPC (GET)
+    * upc
+
+/Review/productId/{productId}/startId/{startId}/startDate/{startDate}/page/{page}/offset/{offset}
+/Review
+  getProductId (GET)
+    * productId
+    startId
+    startDate
+    page
+    offset
+
+/ApiDeveloper/limit/{limit}/page/{page}/sort/{sort}/orderBy/{orderBy}/sortAsc/{sortAsc}
+/ApiDeveloper
+  getAll (GET)
+    limit
+    page
+    sort
+    orderBy
+    sortAsc
+
+/CoreValue
+/CoreValue
+  getAll (GET)
+
+/Product/id/{id}
+/Product
+  getProductById (GET)
+    * id
+
+/Search/Similarity/type/{type}/limit/{limit}/styleId/{styleId}/emphasis/{emphasis}/productType/{productType}/category/{category}/subCategory/{subCategory}/brandId/{brandId}/page/{page}
+/Search/Similarity
+  getSimilaritySearch (GET)
+    * type
+    * limit
+    styleId
+    emphasis
+    productType
+    category
+    subCategory
+    brandId
+    page
+
+/Order/id/{id}/type/{type}
+/Order
+  getOrderById (GET)
+    * id
+    type
+
+/Address/id/{id}
+/Address
+  getAddressById (GET)
+    * id
+  deleteAddress (DELETE)
+    * id
+
+/Image/styleId/{styleId}/type/{type}/recipe/{recipe}
+/Image
+  GetStyleId (GET)
+    * styleId
+    type
+    recipe
+
+/ApiAttribute
+/ApiAttribute
+  getAllApiAttributes (GET)
+
+/Image
+/Image
+  getRecipes (GET)
+
+/Favorite/page/{page}/limit/{limit}/offset/{offset}/sort/{sort}/sortDirection/{sortDirection}
+/Favorite
+  getFavoritesForCustomer (GET)
+    page
+    limit
+    offset
+    sort
+    sortDirection
+
+/CreditCard
+/CreditCard
+  getCreditCardsForCustomer (GET)
+
+/Cache
+/Cache
+  getAllCaches (GET)
+
+/Customer
+/Customer
+  getDiscoverOptions (GET)
+  getEmailLists (GET)
+
+/Order/claimTicketId/{claimTicketId}
+/Order
+  getOrderByClaimTicketId (GET)
+    * claimTicketId
+
+/Image/productId/{productId}/styleId/{styleId}/type/{type}/recipe/{recipe}
+/Image
+  GetStyleOrProductId (GET)
+    productId
+    styleId
+    type
+    recipe
+
+/About
+/About
+  getVersionInfo (GET)
+
+/Cache/id/{id}
+/Cache
+  getCacheById (GET)
+    * id
+  clearCacheById (DELETE)
+    id
+
+/AutoComplete/term/{term}
+/AutoComplete
+  getAutoComplete (GET)
+    * term
+
+/Brand/customerId/{customerId}/maxResults/{maxResults}/collapse/{collapse}
+/Brand
+  getCustomerId (GET)
+    * customerId
+    maxResults
+    collapse
+
+/ApiAttribute/id/{id}
+/ApiAttribute
+  getById (GET)
+    * id
+  deleteAttribute (DELETE)
+    * id
+
+/Customer/access_token/{access_token}
+/Customer
+  getCustomer (GET)
+    * access_token
+
+/Points/type/{type}/customerId/{customerId}/t/{t}
+/Points
+  viewLoyaltyPoints (GET)
+    * type
+    customerId
+    t
+
+/FavoriteSearch/name/{name}/url/{url}
+/FavoriteSearch
+  deleteFavoriteSearch (DELETE)
+    * name
+    * url
+
+/Image/productId/{productId}/type/{type}/recipe/{recipe}
+/Image
+  GetProductId (GET)
+    * productId
+    type
+    recipe
+
+/Compatibility/version/{version}
+/Compatibility
+  getVersionInfo (GET)
+    * version
+
+/Review/brandId/{brandId}/startId/{startId}/startDate/{startDate}
+/Review
+  getBrandId (GET)
+    * brandId
+    startId
+    startDate
+
+/FavoriteSearch
+/FavoriteSearch
+  getFavoriteSearch (GET)
+
+/Info
+/Info
+  getVersionInfo (GET)
+
+/CoreValue/id/{id}
+/CoreValue
+  getById (GET)
+    * id
+
+/Search/filterExpression/{filterExpression}
+/Search
+  getGetSolrFieldNames (GET)
+    filterExpression
+  getGetFacetFields (GET)
+    filterExpression
+
+/CreditCard/id/{id}
+/CreditCard
+  getCreditCardById (GET)
+    * id
+  deleteCreditCardById (DELETE)
+    * id
+
+/Brand/id/{id}
+/Brand
+  getId (GET)
+    * id
+
+/Badge/Feed/t/{t}
+/Badge/Feed
+  getBadgeFeed (GET)
+    t
+
+/Search/term/{term}/sort/{sort}/limit/{limit}/page/{page}/facets/{facets}/filters/{filters}/currentPage/{currentPage}/pageCount/{pageCount}
+/Search
+  getSearch (GET)
+    term
+    sort
+    limit
+    page
+    facets
+    filters
+    currentPage
+    pageCount
+
+/EventLogger/name/{name}
+/EventLogger
+  logEvent (GET)
+    name
+
+/ApiDeveloper/lookupKey/{lookupKey}
+/ApiDeveloper
+  getByApiKeyHash (GET)
+    * lookupKey
+
+/Address
+/Address
+  getAddressByEmail (GET)
+
+/Product/stockId/{stockId}
+/Product
+  getProductByStockId (GET)
+    * stockId
+
+/Compatibility
+/Compatibility
+  getCompatibilityMap (GET)
+
+/ApiAttribute/name/{name}
+/ApiAttribute
+  getByName (GET)
+    * name
+
+/Statistics/killSwitchStatusZappos102/{killSwitchStatusZappos102}
+/Statistics
+  getKillSwitchStatus102 (GET)
+    * killSwitchStatusZappos102
+
+/Statistics/type/{type}/option/{option}/location/{location}/timespan/{timespan}/filters/{filters}/startDate/{startDate}/startOrderItemId/{startOrderItemId}/limit/{limit}
+/Statistics
+  getStatistics (GET)
+    * type
+    option
+    location
+    timespan
+    filters
+    startDate
+    startOrderItemId
+    limit
+
+/Order/type/{type}/range/{range}/fromDate/{fromDate}/toDate/{toDate}
+/Order
+  getOrdersForCustomer (GET)
+    * type
+    range
+    fromDate
+    toDate
+
+/Address/list/{list}
+/Address
+  getVerifiedIds (GET)
+    * list
+
+/ApiApplication/id/{id}/apiAttributeId/{apiAttributeId}
+/ApiApplication
+  getApiAttribute (GET)
+    * id
+    * apiAttributeId
+  removeAttribute (DELETE)
+    * id
+    * apiAttributeId
+
+/Statistics/killSwitchStatusZappos101/{killSwitchStatusZappos101}
+/Statistics
+  getKillSwitchStatus101 (GET)
+    * killSwitchStatusZappos101
+
+/ApiDeveloper/email/{email}
+/ApiDeveloper
+  getByEmail (GET)
+    * email
+
+/Search/batch/{batch}
+/Search
+  getBatchSearch (GET)
+    * batch
+
+/Cart/sessionId/{sessionId}/addressId/{addressId}/address/{address}/city/{city}/state/{state}/postalCode/{postalCode}/shippingTypeCode/{shippingTypeCode}
+/Cart
+  bySessionId (GET)
+    * sessionId
+    addressId
+    address
+    city
+    state
+    postalCode
+    shippingTypeCode
+
+/ApiApplication/id/{id}
+/ApiApplication
+  getById (GET)
+    * id
+
+/Product/styleId/{styleId}
+/Product
+  getProductByStyleId (GET)
+    * styleId
+
+/Favorite/stockId/{stockId}
+/Favorite
+  deleteFavoriteStock (DELETE)
+    * stockId
+
+/Product/upc/{upc}
+/Product
+  getProductByUPC (GET)
+    * upc
+
+/Review/productId/{productId}/startId/{startId}/startDate/{startDate}/page/{page}/offset/{offset}
+/Review
+  getProductId (GET)
+    * productId
+    startId
+    startDate
+    page
+    offset
+
+/ApiDeveloper/limit/{limit}/page/{page}/sort/{sort}/orderBy/{orderBy}/sortAsc/{sortAsc}
+/ApiDeveloper
+  getAll (GET)
+    limit
+    page
+    sort
+    orderBy
+    sortAsc
+
+/CoreValue
+/CoreValue
+  getAll (GET)
+
+/Product/id/{id}
+/Product
+  getProductById (GET)
+    * id
+
+/Search/Similarity/type/{type}/limit/{limit}/styleId/{styleId}/emphasis/{emphasis}/productType/{productType}/category/{category}/subCategory/{subCategory}/brandId/{brandId}/page/{page}
+/Search/Similarity
+  getSimilaritySearch (GET)
+    * type
+    * limit
+    styleId
+    emphasis
+    productType
+    category
+    subCategory
+    brandId
+    page
+
+/Order/id/{id}/type/{type}
+/Order
+  getOrderById (GET)
+    * id
+    type
+
+/Address/id/{id}
+/Address
+  getAddressById (GET)
+    * id
+  deleteAddress (DELETE)
+    * id
+
+/Image/styleId/{styleId}/type/{type}/recipe/{recipe}
+/Image
+  GetStyleId (GET)
+    * styleId
+    type
+    recipe
+
+/ApiAttribute
+/ApiAttribute
+  getAllApiAttributes (GET)
+
+/Image
+/Image
+  getRecipes (GET)
+
+/Favorite/page/{page}/limit/{limit}/offset/{offset}/sort/{sort}/sortDirection/{sortDirection}
+/Favorite
+  getFavoritesForCustomer (GET)
+    page
+    limit
+    offset
+    sort
+    sortDirection
+
+/CreditCard
+/CreditCard
+  getCreditCardsForCustomer (GET)
+
+/Cache
+/Cache
+  getAllCaches (GET)
+
+/Customer
+/Customer
+  getDiscoverOptions (GET)
+  getEmailLists (GET)
+
+/Order/claimTicketId/{claimTicketId}
+/Order
+  getOrderByClaimTicketId (GET)
+    * claimTicketId
+
+/Image/productId/{productId}/styleId/{styleId}/type/{type}/recipe/{recipe}
+/Image
+  GetStyleOrProductId (GET)
+    productId
+    styleId
+    type
+    recipe
+
+/About
+/About
+  getVersionInfo (GET)
+
+/Cache/id/{id}
+/Cache
+  getCacheById (GET)
+    * id
+  clearCacheById (DELETE)
+    id
+
+/AutoComplete/term/{term}
+/AutoComplete
+  getAutoComplete (GET)
+    * term
+
+/Brand/customerId/{customerId}/maxResults/{maxResults}/collapse/{collapse}
+/Brand
+  getCustomerId (GET)
+    * customerId
+    maxResults
+    collapse
+
+/ApiAttribute/id/{id}
+/ApiAttribute
+  getById (GET)
+    * id
+  deleteAttribute (DELETE)
+    * id
+
+/Customer/access_token/{access_token}
+/Customer
+  getCustomer (GET)
+    * access_token
+
+/Points/type/{type}/customerId/{customerId}/t/{t}
+/Points
+  viewLoyaltyPoints (GET)
+    * type
+    customerId
+    t
+
+/FavoriteSearch/name/{name}/url/{url}
+/FavoriteSearch
+  deleteFavoriteSearch (DELETE)
+    * name
+    * url
+
+/Image/productId/{productId}/type/{type}/recipe/{recipe}
+/Image
+  GetProductId (GET)
+    * productId
+    type
+    recipe
+
+/Compatibility/version/{version}
+/Compatibility
+  getVersionInfo (GET)
+    * version
+
+/Review/brandId/{brandId}/startId/{startId}/startDate/{startDate}
+/Review
+  getBrandId (GET)
+    * brandId
+    startId
+    startDate
+
+/FavoriteSearch
+/FavoriteSearch
+  getFavoriteSearch (GET)
+
+/Info
+/Info
+  getVersionInfo (GET)
+
+/CoreValue/id/{id}
+/CoreValue
+  getById (GET)
+    * id
+
+/Search/filterExpression/{filterExpression}
+/Search
+  getGetSolrFieldNames (GET)
+    filterExpression
+  getGetFacetFields (GET)
+    filterExpression
+
+/CreditCard/id/{id}
+/CreditCard
+  getCreditCardById (GET)
+    * id
+  deleteCreditCardById (DELETE)
+    * id
+
+/Brand/id/{id}
+/Brand
+  getId (GET)
+    * id
+
+/Badge/Feed/t/{t}
+/Badge/Feed
+  getBadgeFeed (GET)
+    t
+
+/Search/term/{term}/sort/{sort}/limit/{limit}/page/{page}/facets/{facets}/filters/{filters}/currentPage/{currentPage}/pageCount/{pageCount}
+/Search
+  getSearch (GET)
+    term
+    sort
+    limit
+    page
+    facets
+    filters
+    currentPage
+    pageCount
+
+/EventLogger/name/{name}
+/EventLogger
+  logEvent (GET)
+    name
+
+/ApiDeveloper/lookupKey/{lookupKey}
+/ApiDeveloper
+  getByApiKeyHash (GET)
+    * lookupKey
+
+/Address
+/Address
+  getAddressByEmail (GET)
+
+/About
+/About
+  getVersionInfo (GET)
+
+/About
+/About
+  getVersionInfo (GET)
+
+/Address
+/Address
+  getAddressByEmail (GET)
+
+/Address/id/{id}
+/Address
+  getAddressById (GET)
+    * id
+  deleteAddress (DELETE)
+    * id
+
+/Address/list/{list}
+/Address
+  getVerifiedIds (GET)
+    * list
+
+/AutoComplete/term/{term}
+/AutoComplete
+  getAutoComplete (GET)
+    * term
+
+/About
+/About
+  getVersionInfo (GET)
+
+/Address
+/Address
+  getAddressByEmail (GET)
+
+/Address/id/{id}
+/Address
+  getAddressById (GET)
+    * id
+  deleteAddress (DELETE)
+    * id
+
+/Address/list/{list}
+/Address
+  getVerifiedIds (GET)
+    * list
+
+/AutoComplete/term/{term}
+/AutoComplete
+  getAutoComplete (GET)
+    * term
+
+/About
+/About
+  getVersionInfo (GET)
+
+/ApiAttribute/id/{id}
+/ApiAttribute
+  getById (GET)
+    * id
+  deleteAttribute (DELETE)
+    * id
+
+/Address
+/Address
+  getAddressByEmail (GET)
+
+/Address/id/{id}
+/Address
+  getAddressById (GET)
+    * id
+  deleteAddress (DELETE)
+    * id
+
+/ApiAttribute/name/{name}
+/ApiAttribute
+  getByName (GET)
+    * name
+
+/Address/list/{list}
+/Address
+  getVerifiedIds (GET)
+    * list
+
+/ApiAttribute
+/ApiAttribute
+  getAllApiAttributes (GET)
+
+/AutoComplete/term/{term}
+/AutoComplete
+  getAutoComplete (GET)
+    * term
+
+/About
+/About
+  getVersionInfo (GET)
+
+/ApiApplication/id/{id}
+/ApiApplication
+  getById (GET)
+    * id
+
+/ApiAttribute/id/{id}
+/ApiAttribute
+  getById (GET)
+    * id
+  deleteAttribute (DELETE)
+    * id
+
+/Address
+/Address
+  getAddressByEmail (GET)
+
+/Address/id/{id}
+/Address
+  getAddressById (GET)
+    * id
+  deleteAddress (DELETE)
+    * id
+
+/ApiAttribute/name/{name}
+/ApiAttribute
+  getByName (GET)
+    * name
+
+/Address/list/{list}
+/Address
+  getVerifiedIds (GET)
+    * list
+
+/ApiApplication/id/{id}/apiAttributeId/{apiAttributeId}
+/ApiApplication
+  getApiAttribute (GET)
+    * id
+    * apiAttributeId
+  removeAttribute (DELETE)
+    * id
+    * apiAttributeId
+
+/ApiAttribute
+/ApiAttribute
+  getAllApiAttributes (GET)
+
+/ApiDeveloper/email/{email}
+/ApiDeveloper
+  getByEmail (GET)
+    * email
+
+/AutoComplete/term/{term}
+/AutoComplete
+  getAutoComplete (GET)
+    * term
+
+/ApiApplication/id/{id}
+/ApiApplication
+  getById (GET)
+    * id
+
+/ApiAttribute/id/{id}
+/ApiAttribute
+  getById (GET)
+    * id
+  deleteAttribute (DELETE)
+    * id
+
+/ApiAttribute/name/{name}
+/ApiAttribute
+  getByName (GET)
+    * name
+
+/ApiDeveloper/limit/{limit}/page/{page}/sort/{sort}/orderBy/{orderBy}/sortAsc/{sortAsc}
+/ApiDeveloper
+  getAll (GET)
+    limit
+    page
+    sort
+    orderBy
+    sortAsc
+
+/About
+/About
+  getVersionInfo (GET)
+
+/ApiDeveloper/lookupKey/{lookupKey}
+/ApiDeveloper
+  getByApiKeyHash (GET)
+    * lookupKey
+
+/Address/id/{id}
+/Address
+  getAddressById (GET)
+    * id
+  deleteAddress (DELETE)
+    * id
+
+/Address
+/Address
+  getAddressByEmail (GET)
+
+/Address/list/{list}
+/Address
+  getVerifiedIds (GET)
+    * list
+
+/ApiApplication/id/{id}/apiAttributeId/{apiAttributeId}
+/ApiApplication
+  getApiAttribute (GET)
+    * id
+    * apiAttributeId
+  removeAttribute (DELETE)
+    * id
+    * apiAttributeId
+
+/ApiAttribute
+/ApiAttribute
+  getAllApiAttributes (GET)
+
+/ApiDeveloper/email/{email}
+/ApiDeveloper
+  getByEmail (GET)
+    * email
+
+/AutoComplete/term/{term}
+/AutoComplete
+  getAutoComplete (GET)
+    * term
+
+/ApiApplication/id/{id}
+/ApiApplication
+  getById (GET)
+    * id
+
+/ApiAttribute/id/{id}
+/ApiAttribute
+  getById (GET)
+    * id
+  deleteAttribute (DELETE)
+    * id
+
+/ApiAttribute/name/{name}
+/ApiAttribute
+  getByName (GET)
+    * name
+
+/ApiDeveloper/limit/{limit}/page/{page}/sort/{sort}/orderBy/{orderBy}/sortAsc/{sortAsc}
+/ApiDeveloper
+  getAll (GET)
+    limit
+    page
+    sort
+    orderBy
+    sortAsc
+
+/About
+/About
+  getVersionInfo (GET)
+
+/ApiDeveloper/lookupKey/{lookupKey}
+/ApiDeveloper
+  getByApiKeyHash (GET)
+    * lookupKey
+
+/Address/id/{id}
+/Address
+  getAddressById (GET)
+    * id
+  deleteAddress (DELETE)
+    * id
+
+/Address
+/Address
+  getAddressByEmail (GET)
+
+/Address/list/{list}
+/Address
+  getVerifiedIds (GET)
+    * list
+
+/ApiApplication/id/{id}/apiAttributeId/{apiAttributeId}
+/ApiApplication
+  getApiAttribute (GET)
+    * id
+    * apiAttributeId
+  removeAttribute (DELETE)
+    * id
+    * apiAttributeId
+
+/ApiAttribute
+/ApiAttribute
+  getAllApiAttributes (GET)
+
+/ApiDeveloper/email/{email}
+/ApiDeveloper
+  getByEmail (GET)
+    * email
+
+/AutoComplete/term/{term}
+/AutoComplete
+  getAutoComplete (GET)
+    * term
+
+/ApiApplication/id/{id}
+/ApiApplication
+  getById (GET)
+    * id
+
+/ApiAttribute/id/{id}
+/ApiAttribute
+  getById (GET)
+    * id
+  deleteAttribute (DELETE)
+    * id
+
+/ApiAttribute/name/{name}
+/ApiAttribute
+  getByName (GET)
+    * name
+
+/ApiDeveloper/limit/{limit}/page/{page}/sort/{sort}/orderBy/{orderBy}/sortAsc/{sortAsc}
+/ApiDeveloper
+  getAll (GET)
+    limit
+    page
+    sort
+    orderBy
+    sortAsc
+
+/Badge/Feed/t/{t}
+/Badge/Feed
+  getBadgeFeed (GET)
+    t
+
+/About
+/About
+  getVersionInfo (GET)
+
+/ApiDeveloper/lookupKey/{lookupKey}
+/ApiDeveloper
+  getByApiKeyHash (GET)
+    * lookupKey
+
+/Address/id/{id}
+/Address
+  getAddressById (GET)
+    * id
+  deleteAddress (DELETE)
+    * id
+
+/Address
+/Address
+  getAddressByEmail (GET)
+
+/Address/list/{list}
+/Address
+  getVerifiedIds (GET)
+    * list
+
+/ApiApplication/id/{id}/apiAttributeId/{apiAttributeId}
+/ApiApplication
+  getApiAttribute (GET)
+    * id
+    * apiAttributeId
+  removeAttribute (DELETE)
+    * id
+    * apiAttributeId
+
+/ApiAttribute
+/ApiAttribute
+  getAllApiAttributes (GET)
+
+/ApiDeveloper/email/{email}
+/ApiDeveloper
+  getByEmail (GET)
+    * email
+
+/AutoComplete/term/{term}
+/AutoComplete
+  getAutoComplete (GET)
+    * term
+
+/Brand/customerId/{customerId}/maxResults/{maxResults}/collapse/{collapse}
+/Brand
+  getCustomerId (GET)
+    * customerId
+    maxResults
+    collapse
+
+/ApiApplication/id/{id}
+/ApiApplication
+  getById (GET)
+    * id
+
+/ApiAttribute/id/{id}
+/ApiAttribute
+  getById (GET)
+    * id
+  deleteAttribute (DELETE)
+    * id
+
+/ApiAttribute/name/{name}
+/ApiAttribute
+  getByName (GET)
+    * name
+
+/ApiDeveloper/limit/{limit}/page/{page}/sort/{sort}/orderBy/{orderBy}/sortAsc/{sortAsc}
+/ApiDeveloper
+  getAll (GET)
+    limit
+    page
+    sort
+    orderBy
+    sortAsc
+
+/Brand/id/{id}
+/Brand
+  getId (GET)
+    * id
+
+/Badge/Feed/t/{t}
+/Badge/Feed
+  getBadgeFeed (GET)
+    t
+
+/About
+/About
+  getVersionInfo (GET)
+
+/ApiDeveloper/lookupKey/{lookupKey}
+/ApiDeveloper
+  getByApiKeyHash (GET)
+    * lookupKey
+
+/Address/id/{id}
+/Address
+  getAddressById (GET)
+    * id
+  deleteAddress (DELETE)
+    * id
+
+/Address
+/Address
+  getAddressByEmail (GET)
+
+/Address/list/{list}
+/Address
+  getVerifiedIds (GET)
+    * list
+
+/ApiApplication/id/{id}/apiAttributeId/{apiAttributeId}
+/ApiApplication
+  getApiAttribute (GET)
+    * id
+    * apiAttributeId
+  removeAttribute (DELETE)
+    * id
+    * apiAttributeId
+
+/ApiAttribute
+/ApiAttribute
+  getAllApiAttributes (GET)
+
+/ApiDeveloper/email/{email}
+/ApiDeveloper
+  getByEmail (GET)
+    * email
+
+/AutoComplete/term/{term}
+/AutoComplete
+  getAutoComplete (GET)
+    * term
+
+/Brand/customerId/{customerId}/maxResults/{maxResults}/collapse/{collapse}
+/Brand
+  getCustomerId (GET)
+    * customerId
+    maxResults
+    collapse
+
+/ApiApplication/id/{id}
+/ApiApplication
+  getById (GET)
+    * id
+
+/Cache
+/Cache
+  getAllCaches (GET)
+
+/ApiAttribute/id/{id}
+/ApiAttribute
+  getById (GET)
+    * id
+  deleteAttribute (DELETE)
+    * id
+
+/ApiAttribute/name/{name}
+/ApiAttribute
+  getByName (GET)
+    * name
+
+/ApiDeveloper/limit/{limit}/page/{page}/sort/{sort}/orderBy/{orderBy}/sortAsc/{sortAsc}
+/ApiDeveloper
+  getAll (GET)
+    limit
+    page
+    sort
+    orderBy
+    sortAsc
+
+/Brand/id/{id}
+/Brand
+  getId (GET)
+    * id
+
+/Badge/Feed/t/{t}
+/Badge/Feed
+  getBadgeFeed (GET)
+    t
+
+/About
+/About
+  getVersionInfo (GET)
+
+/Cache/id/{id}
+/Cache
+  getCacheById (GET)
+    * id
+  clearCacheById (DELETE)
+    id
+
+/ApiDeveloper/lookupKey/{lookupKey}
+/ApiDeveloper
+  getByApiKeyHash (GET)
+    * lookupKey
+
+/Address/id/{id}
+/Address
+  getAddressById (GET)
+    * id
+  deleteAddress (DELETE)
+    * id
+
+/Address
+/Address
+  getAddressByEmail (GET)
+
+/Address/list/{list}
+/Address
+  getVerifiedIds (GET)
+    * list
+
+/ApiApplication/id/{id}/apiAttributeId/{apiAttributeId}
+/ApiApplication
+  getApiAttribute (GET)
+    * id
+    * apiAttributeId
+  removeAttribute (DELETE)
+    * id
+    * apiAttributeId
+
+/ApiAttribute
+/ApiAttribute
+  getAllApiAttributes (GET)
+
+/ApiDeveloper/email/{email}
+/ApiDeveloper
+  getByEmail (GET)
+    * email
+
+/AutoComplete/term/{term}
+/AutoComplete
+  getAutoComplete (GET)
+    * term
+
+/Brand/customerId/{customerId}/maxResults/{maxResults}/collapse/{collapse}
+/Brand
+  getCustomerId (GET)
+    * customerId
+    maxResults
+    collapse
+
+/Cart/sessionId/{sessionId}/addressId/{addressId}/address/{address}/city/{city}/state/{state}/postalCode/{postalCode}/shippingTypeCode/{shippingTypeCode}
+/Cart
+  bySessionId (GET)
+    * sessionId
+    addressId
+    address
+    city
+    state
+    postalCode
+    shippingTypeCode
+
+/ApiApplication/id/{id}
+/ApiApplication
+  getById (GET)
+    * id
+
+/Cache
+/Cache
+  getAllCaches (GET)
+
+/ApiAttribute/id/{id}
+/ApiAttribute
+  getById (GET)
+    * id
+  deleteAttribute (DELETE)
+    * id
+
+/ApiAttribute/name/{name}
+/ApiAttribute
+  getByName (GET)
+    * name
+
+/ApiDeveloper/limit/{limit}/page/{page}/sort/{sort}/orderBy/{orderBy}/sortAsc/{sortAsc}
+/ApiDeveloper
+  getAll (GET)
+    limit
+    page
+    sort
+    orderBy
+    sortAsc
+
+/Brand/id/{id}
+/Brand
+  getId (GET)
+    * id
+
+/Badge/Feed/t/{t}
+/Badge/Feed
+  getBadgeFeed (GET)
+    t
+
+/About
+/About
+  getVersionInfo (GET)
+
+/Cache/id/{id}
+/Cache
+  getCacheById (GET)
+    * id
+  clearCacheById (DELETE)
+    id
+
+/ApiDeveloper/lookupKey/{lookupKey}
+/ApiDeveloper
+  getByApiKeyHash (GET)
+    * lookupKey
+
+/Address/id/{id}
+/Address
+  getAddressById (GET)
+    * id
+  deleteAddress (DELETE)
+    * id
+
+/Address
+/Address
+  getAddressByEmail (GET)
+
+/Address/list/{list}
+/Address
+  getVerifiedIds (GET)
+    * list
+
+/ApiApplication/id/{id}/apiAttributeId/{apiAttributeId}
+/ApiApplication
+  getApiAttribute (GET)
+    * id
+    * apiAttributeId
+  removeAttribute (DELETE)
+    * id
+    * apiAttributeId
+
+/ApiAttribute
+/ApiAttribute
+  getAllApiAttributes (GET)
+
+/ApiDeveloper/email/{email}
+/ApiDeveloper
+  getByEmail (GET)
+    * email
+
+/AutoComplete/term/{term}
+/AutoComplete
+  getAutoComplete (GET)
+    * term
+
+/Brand/customerId/{customerId}/maxResults/{maxResults}/collapse/{collapse}
+/Brand
+  getCustomerId (GET)
+    * customerId
+    maxResults
+    collapse
+
+/Cart/sessionId/{sessionId}/addressId/{addressId}/address/{address}/city/{city}/state/{state}/postalCode/{postalCode}/shippingTypeCode/{shippingTypeCode}
+/Cart
+  bySessionId (GET)
+    * sessionId
+    addressId
+    address
+    city
+    state
+    postalCode
+    shippingTypeCode
+
+/ApiApplication/id/{id}
+/ApiApplication
+  getById (GET)
+    * id
+
+/Cache
+/Cache
+  getAllCaches (GET)
+
+/ApiAttribute/id/{id}
+/ApiAttribute
+  getById (GET)
+    * id
+  deleteAttribute (DELETE)
+    * id
+
+/Compatibility
+/Compatibility
+  getCompatibilityMap (GET)
+
+/Compatibility/version/{version}
+/Compatibility
+  getVersionInfo (GET)
+    * version
+
+/ApiAttribute/name/{name}
+/ApiAttribute
+  getByName (GET)
+    * name
+
+/ApiDeveloper/limit/{limit}/page/{page}/sort/{sort}/orderBy/{orderBy}/sortAsc/{sortAsc}
+/ApiDeveloper
+  getAll (GET)
+    limit
+    page
+    sort
+    orderBy
+    sortAsc
+
+/Brand/id/{id}
+/Brand
+  getId (GET)
+    * id
+
+/Badge/Feed/t/{t}
+/Badge/Feed
+  getBadgeFeed (GET)
+    t
+
+/About
+/About
+  getVersionInfo (GET)
+
+/Cache/id/{id}
+/Cache
+  getCacheById (GET)
+    * id
+  clearCacheById (DELETE)
+    id
+
+/ApiDeveloper/lookupKey/{lookupKey}
+/ApiDeveloper
+  getByApiKeyHash (GET)
+    * lookupKey
+
+/Address/id/{id}
+/Address
+  getAddressById (GET)
+    * id
+  deleteAddress (DELETE)
+    * id
+
+/Address
+/Address
+  getAddressByEmail (GET)
+
+/Address/list/{list}
+/Address
+  getVerifiedIds (GET)
+    * list
+
+/ApiApplication/id/{id}/apiAttributeId/{apiAttributeId}
+/ApiApplication
+  getApiAttribute (GET)
+    * id
+    * apiAttributeId
+  removeAttribute (DELETE)
+    * id
+    * apiAttributeId
+
+/ApiAttribute
+/ApiAttribute
+  getAllApiAttributes (GET)
+
+/ApiDeveloper/email/{email}
+/ApiDeveloper
+  getByEmail (GET)
+    * email
+
+/AutoComplete/term/{term}
+/AutoComplete
+  getAutoComplete (GET)
+    * term
+
+/Brand/customerId/{customerId}/maxResults/{maxResults}/collapse/{collapse}
+/Brand
+  getCustomerId (GET)
+    * customerId
+    maxResults
+    collapse
+
+/Cart/sessionId/{sessionId}/addressId/{addressId}/address/{address}/city/{city}/state/{state}/postalCode/{postalCode}/shippingTypeCode/{shippingTypeCode}
+/Cart
+  bySessionId (GET)
+    * sessionId
+    addressId
+    address
+    city
+    state
+    postalCode
+    shippingTypeCode
+
+/ApiApplication/id/{id}
+/ApiApplication
+  getById (GET)
+    * id
+
+/Cache
+/Cache
+  getAllCaches (GET)
+
+/ApiAttribute/id/{id}
+/ApiAttribute
+  getById (GET)
+    * id
+  deleteAttribute (DELETE)
+    * id
+
+/Compatibility
+/Compatibility
+  getCompatibilityMap (GET)
+
+/Compatibility/version/{version}
+/Compatibility
+  getVersionInfo (GET)
+    * version
+
+/ApiAttribute/name/{name}
+/ApiAttribute
+  getByName (GET)
+    * name
+
+/ApiDeveloper/limit/{limit}/page/{page}/sort/{sort}/orderBy/{orderBy}/sortAsc/{sortAsc}
+/ApiDeveloper
+  getAll (GET)
+    limit
+    page
+    sort
+    orderBy
+    sortAsc
+
+/CoreValue
+/CoreValue
+  getAll (GET)
+
+/CoreValue/id/{id}
+/CoreValue
+  getById (GET)
+    * id
+
+/Brand/id/{id}
+/Brand
+  getId (GET)
+    * id
+
+/Badge/Feed/t/{t}
+/Badge/Feed
+  getBadgeFeed (GET)
+    t
+
+/About
+/About
+  getVersionInfo (GET)
+
+/Cache/id/{id}
+/Cache
+  getCacheById (GET)
+    * id
+  clearCacheById (DELETE)
+    id
+
+/ApiDeveloper/lookupKey/{lookupKey}
+/ApiDeveloper
+  getByApiKeyHash (GET)
+    * lookupKey
+
+/Address/id/{id}
+/Address
+  getAddressById (GET)
+    * id
+  deleteAddress (DELETE)
+    * id
+
+/Address
+/Address
+  getAddressByEmail (GET)
+
+/Address/list/{list}
+/Address
+  getVerifiedIds (GET)
+    * list
+
+/ApiApplication/id/{id}/apiAttributeId/{apiAttributeId}
+/ApiApplication
+  getApiAttribute (GET)
+    * id
+    * apiAttributeId
+  removeAttribute (DELETE)
+    * id
+    * apiAttributeId
+
+/ApiAttribute
+/ApiAttribute
+  getAllApiAttributes (GET)
+
+/CreditCard
+/CreditCard
+  getCreditCardsForCustomer (GET)
+
+/Cache
+/Cache
+  getAllCaches (GET)
+
+/ApiAttribute/name/{name}
+/ApiAttribute
+  getByName (GET)
+    * name
+
+/Compatibility
+/Compatibility
+  getCompatibilityMap (GET)
+
+/About
+/About
+  getVersionInfo (GET)
+
+/Cache/id/{id}
+/Cache
+  getCacheById (GET)
+    * id
+  clearCacheById (DELETE)
+    id
+
+/Address/list/{list}
+/Address
+  getVerifiedIds (GET)
+    * list
+
+/ApiApplication/id/{id}/apiAttributeId/{apiAttributeId}
+/ApiApplication
+  getApiAttribute (GET)
+    * id
+    * apiAttributeId
+  removeAttribute (DELETE)
+    * id
+    * apiAttributeId
+
+/ApiDeveloper/email/{email}
+/ApiDeveloper
+  getByEmail (GET)
+    * email
+
+/AutoComplete/term/{term}
+/AutoComplete
+  getAutoComplete (GET)
+    * term
+
+/Brand/customerId/{customerId}/maxResults/{maxResults}/collapse/{collapse}
+/Brand
+  getCustomerId (GET)
+    * customerId
+    maxResults
+    collapse
+
+/ApiApplication/id/{id}
+/ApiApplication
+  getById (GET)
+    * id
+
+/Cart/sessionId/{sessionId}/addressId/{addressId}/address/{address}/city/{city}/state/{state}/postalCode/{postalCode}/shippingTypeCode/{shippingTypeCode}
+/Cart
+  bySessionId (GET)
+    * sessionId
+    addressId
+    address
+    city
+    state
+    postalCode
+    shippingTypeCode
+
+/ApiAttribute/id/{id}
+/ApiAttribute
+  getById (GET)
+    * id
+  deleteAttribute (DELETE)
+    * id
+
+/Compatibility/version/{version}
+/Compatibility
+  getVersionInfo (GET)
+    * version
+
+/ApiDeveloper/limit/{limit}/page/{page}/sort/{sort}/orderBy/{orderBy}/sortAsc/{sortAsc}
+/ApiDeveloper
+  getAll (GET)
+    limit
+    page
+    sort
+    orderBy
+    sortAsc
+
+/CoreValue
+/CoreValue
+  getAll (GET)
+
+/CoreValue/id/{id}
+/CoreValue
+  getById (GET)
+    * id
+
+/Brand/id/{id}
+/Brand
+  getId (GET)
+    * id
+
+/CreditCard/id/{id}
+/CreditCard
+  getCreditCardById (GET)
+    * id
+  deleteCreditCardById (DELETE)
+    * id
+
+/Badge/Feed/t/{t}
+/Badge/Feed
+  getBadgeFeed (GET)
+    t
+
+/ApiDeveloper/lookupKey/{lookupKey}
+/ApiDeveloper
+  getByApiKeyHash (GET)
+    * lookupKey
+
+/Address
+/Address
+  getAddressByEmail (GET)
+
+/Address/id/{id}
+/Address
+  getAddressById (GET)
+    * id
+  deleteAddress (DELETE)
+    * id
+
+/ApiAttribute
+/ApiAttribute
+  getAllApiAttributes (GET)
+
+/CreditCard
+/CreditCard
+  getCreditCardsForCustomer (GET)
+
+/Cache
+/Cache
+  getAllCaches (GET)
+
+/Customer
+/Customer
+  getDiscoverOptions (GET)
+  getEmailLists (GET)
+
+/ApiAttribute/name/{name}
+/ApiAttribute
+  getByName (GET)
+    * name
+
+/Compatibility
+/Compatibility
+  getCompatibilityMap (GET)
+
+/About
+/About
+  getVersionInfo (GET)
+
+/Cache/id/{id}
+/Cache
+  getCacheById (GET)
+    * id
+  clearCacheById (DELETE)
+    id
+
+/Address/list/{list}
+/Address
+  getVerifiedIds (GET)
+    * list
+
+/ApiApplication/id/{id}/apiAttributeId/{apiAttributeId}
+/ApiApplication
+  getApiAttribute (GET)
+    * id
+    * apiAttributeId
+  removeAttribute (DELETE)
+    * id
+    * apiAttributeId
+
+/ApiDeveloper/email/{email}
+/ApiDeveloper
+  getByEmail (GET)
+    * email
+
+/AutoComplete/term/{term}
+/AutoComplete
+  getAutoComplete (GET)
+    * term
+
+/Brand/customerId/{customerId}/maxResults/{maxResults}/collapse/{collapse}
+/Brand
+  getCustomerId (GET)
+    * customerId
+    maxResults
+    collapse
+
+/ApiApplication/id/{id}
+/ApiApplication
+  getById (GET)
+    * id
+
+/Cart/sessionId/{sessionId}/addressId/{addressId}/address/{address}/city/{city}/state/{state}/postalCode/{postalCode}/shippingTypeCode/{shippingTypeCode}
+/Cart
+  bySessionId (GET)
+    * sessionId
+    addressId
+    address
+    city
+    state
+    postalCode
+    shippingTypeCode
+
+/ApiAttribute/id/{id}
+/ApiAttribute
+  getById (GET)
+    * id
+  deleteAttribute (DELETE)
+    * id
+
+/Customer/access_token/{access_token}
+/Customer
+  getCustomer (GET)
+    * access_token
+
+/Compatibility/version/{version}
+/Compatibility
+  getVersionInfo (GET)
+    * version
+
+/ApiDeveloper/limit/{limit}/page/{page}/sort/{sort}/orderBy/{orderBy}/sortAsc/{sortAsc}
+/ApiDeveloper
+  getAll (GET)
+    limit
+    page
+    sort
+    orderBy
+    sortAsc
+
+/CoreValue
+/CoreValue
+  getAll (GET)
+
+/CoreValue/id/{id}
+/CoreValue
+  getById (GET)
+    * id
+
+/Brand/id/{id}
+/Brand
+  getId (GET)
+    * id
+
+/CreditCard/id/{id}
+/CreditCard
+  getCreditCardById (GET)
+    * id
+  deleteCreditCardById (DELETE)
+    * id
+
+/Badge/Feed/t/{t}
+/Badge/Feed
+  getBadgeFeed (GET)
+    t
+
+/ApiDeveloper/lookupKey/{lookupKey}
+/ApiDeveloper
+  getByApiKeyHash (GET)
+    * lookupKey
+
+/Address
+/Address
+  getAddressByEmail (GET)
+
+/Address/id/{id}
+/Address
+  getAddressById (GET)
+    * id
+  deleteAddress (DELETE)
+    * id
+
+/ApiAttribute
+/ApiAttribute
+  getAllApiAttributes (GET)
+
+/CreditCard
+/CreditCard
+  getCreditCardsForCustomer (GET)
+
+/Cache
+/Cache
+  getAllCaches (GET)
+
+/Customer
+/Customer
+  getDiscoverOptions (GET)
+  getEmailLists (GET)
+
+/ApiAttribute/name/{name}
+/ApiAttribute
+  getByName (GET)
+    * name
+
+/Compatibility
+/Compatibility
+  getCompatibilityMap (GET)
+
+/About
+/About
+  getVersionInfo (GET)
+
+/Cache/id/{id}
+/Cache
+  getCacheById (GET)
+    * id
+  clearCacheById (DELETE)
+    id
+
+/Address/list/{list}
+/Address
+  getVerifiedIds (GET)
+    * list
+
+/ApiApplication/id/{id}/apiAttributeId/{apiAttributeId}
+/ApiApplication
+  getApiAttribute (GET)
+    * id
+    * apiAttributeId
+  removeAttribute (DELETE)
+    * id
+    * apiAttributeId
+
+/ApiDeveloper/email/{email}
+/ApiDeveloper
+  getByEmail (GET)
+    * email
+
+/AutoComplete/term/{term}
+/AutoComplete
+  getAutoComplete (GET)
+    * term
+
+/Brand/customerId/{customerId}/maxResults/{maxResults}/collapse/{collapse}
+/Brand
+  getCustomerId (GET)
+    * customerId
+    maxResults
+    collapse
+
+/ApiApplication/id/{id}
+/ApiApplication
+  getById (GET)
+    * id
+
+/Cart/sessionId/{sessionId}/addressId/{addressId}/address/{address}/city/{city}/state/{state}/postalCode/{postalCode}/shippingTypeCode/{shippingTypeCode}
+/Cart
+  bySessionId (GET)
+    * sessionId
+    addressId
+    address
+    city
+    state
+    postalCode
+    shippingTypeCode
+
+/ApiAttribute/id/{id}
+/ApiAttribute
+  getById (GET)
+    * id
+  deleteAttribute (DELETE)
+    * id
+
+/Points/type/{type}/customerId/{customerId}/t/{t}
+/Points
+  viewLoyaltyPoints (GET)
+    * type
+    customerId
+    t
+
+/Customer/access_token/{access_token}
+/Customer
+  getCustomer (GET)
+    * access_token
+
+/Compatibility/version/{version}
+/Compatibility
+  getVersionInfo (GET)
+    * version
+
+/ApiDeveloper/limit/{limit}/page/{page}/sort/{sort}/orderBy/{orderBy}/sortAsc/{sortAsc}
+/ApiDeveloper
+  getAll (GET)
+    limit
+    page
+    sort
+    orderBy
+    sortAsc
+
+/CoreValue
+/CoreValue
+  getAll (GET)
+
+/CoreValue/id/{id}
+/CoreValue
+  getById (GET)
+    * id
+
+/Brand/id/{id}
+/Brand
+  getId (GET)
+    * id
+
+/CreditCard/id/{id}
+/CreditCard
+  getCreditCardById (GET)
+    * id
+  deleteCreditCardById (DELETE)
+    * id
+
+/Badge/Feed/t/{t}
+/Badge/Feed
+  getBadgeFeed (GET)
+    t
+
+/ApiDeveloper/lookupKey/{lookupKey}
+/ApiDeveloper
+  getByApiKeyHash (GET)
+    * lookupKey
+
+/Address
+/Address
+  getAddressByEmail (GET)
+
+/Address/id/{id}
+/Address
+  getAddressById (GET)
+    * id
+  deleteAddress (DELETE)
+    * id
+
+/ApiAttribute
+/ApiAttribute
+  getAllApiAttributes (GET)
+
+/CreditCard
+/CreditCard
+  getCreditCardsForCustomer (GET)
+
+/Cache
+/Cache
+  getAllCaches (GET)
+
+/Customer
+/Customer
+  getDiscoverOptions (GET)
+  getEmailLists (GET)
+
+/ApiAttribute/name/{name}
+/ApiAttribute
+  getByName (GET)
+    * name
+
+/Compatibility
+/Compatibility
+  getCompatibilityMap (GET)
+
+/About
+/About
+  getVersionInfo (GET)
+
+/Cache/id/{id}
+/Cache
+  getCacheById (GET)
+    * id
+  clearCacheById (DELETE)
+    id
+
+/Address/list/{list}
+/Address
+  getVerifiedIds (GET)
+    * list
+
+/ApiApplication/id/{id}/apiAttributeId/{apiAttributeId}
+/ApiApplication
+  getApiAttribute (GET)
+    * id
+    * apiAttributeId
+  removeAttribute (DELETE)
+    * id
+    * apiAttributeId
+
+/ApiDeveloper/email/{email}
+/ApiDeveloper
+  getByEmail (GET)
+    * email
+
+/AutoComplete/term/{term}
+/AutoComplete
+  getAutoComplete (GET)
+    * term
+
+/Brand/customerId/{customerId}/maxResults/{maxResults}/collapse/{collapse}
+/Brand
+  getCustomerId (GET)
+    * customerId
+    maxResults
+    collapse
+
+/ApiApplication/id/{id}
+/ApiApplication
+  getById (GET)
+    * id
+
+/Cart/sessionId/{sessionId}/addressId/{addressId}/address/{address}/city/{city}/state/{state}/postalCode/{postalCode}/shippingTypeCode/{shippingTypeCode}
+/Cart
+  bySessionId (GET)
+    * sessionId
+    addressId
+    address
+    city
+    state
+    postalCode
+    shippingTypeCode
+
+/ApiAttribute/id/{id}
+/ApiAttribute
+  getById (GET)
+    * id
+  deleteAttribute (DELETE)
+    * id
+
+/Points/type/{type}/customerId/{customerId}/t/{t}
+/Points
+  viewLoyaltyPoints (GET)
+    * type
+    customerId
+    t
+
+/Customer/access_token/{access_token}
+/Customer
+  getCustomer (GET)
+    * access_token
+
+/Compatibility/version/{version}
+/Compatibility
+  getVersionInfo (GET)
+    * version
+
+/ApiDeveloper/limit/{limit}/page/{page}/sort/{sort}/orderBy/{orderBy}/sortAsc/{sortAsc}
+/ApiDeveloper
+  getAll (GET)
+    limit
+    page
+    sort
+    orderBy
+    sortAsc
+
+/CoreValue
+/CoreValue
+  getAll (GET)
+
+/CoreValue/id/{id}
+/CoreValue
+  getById (GET)
+    * id
+
+/Brand/id/{id}
+/Brand
+  getId (GET)
+    * id
+
+/CreditCard/id/{id}
+/CreditCard
+  getCreditCardById (GET)
+    * id
+  deleteCreditCardById (DELETE)
+    * id
+
+/Badge/Feed/t/{t}
+/Badge/Feed
+  getBadgeFeed (GET)
+    t
+
+/EventLogger/name/{name}
+/EventLogger
+  logEvent (GET)
+    name
+
+/ApiDeveloper/lookupKey/{lookupKey}
+/ApiDeveloper
+  getByApiKeyHash (GET)
+    * lookupKey
+
+/Address
+/Address
+  getAddressByEmail (GET)
+
+/Address/id/{id}
+/Address
+  getAddressById (GET)
+    * id
+  deleteAddress (DELETE)
+    * id
+
+/ApiAttribute
+/ApiAttribute
+  getAllApiAttributes (GET)
+
+/Favorite/page/{page}/limit/{limit}/offset/{offset}/sort/{sort}/sortDirection/{sortDirection}
+/Favorite
+  getFavoritesForCustomer (GET)
+    page
+    limit
+    offset
+    sort
+    sortDirection
+
+/CreditCard
+/CreditCard
+  getCreditCardsForCustomer (GET)
+
+/Cache
+/Cache
+  getAllCaches (GET)
+
+/Customer
+/Customer
+  getDiscoverOptions (GET)
+  getEmailLists (GET)
+
+/ApiAttribute/name/{name}
+/ApiAttribute
+  getByName (GET)
+    * name
+
+/Compatibility
+/Compatibility
+  getCompatibilityMap (GET)
+
+/About
+/About
+  getVersionInfo (GET)
+
+/Cache/id/{id}
+/Cache
+  getCacheById (GET)
+    * id
+  clearCacheById (DELETE)
+    id
+
+/Address/list/{list}
+/Address
+  getVerifiedIds (GET)
+    * list
+
+/ApiApplication/id/{id}/apiAttributeId/{apiAttributeId}
+/ApiApplication
+  getApiAttribute (GET)
+    * id
+    * apiAttributeId
+  removeAttribute (DELETE)
+    * id
+    * apiAttributeId
+
+/ApiDeveloper/email/{email}
+/ApiDeveloper
+  getByEmail (GET)
+    * email
+
+/AutoComplete/term/{term}
+/AutoComplete
+  getAutoComplete (GET)
+    * term
+
+/Brand/customerId/{customerId}/maxResults/{maxResults}/collapse/{collapse}
+/Brand
+  getCustomerId (GET)
+    * customerId
+    maxResults
+    collapse
+
+/ApiApplication/id/{id}
+/ApiApplication
+  getById (GET)
+    * id
+
+/Cart/sessionId/{sessionId}/addressId/{addressId}/address/{address}/city/{city}/state/{state}/postalCode/{postalCode}/shippingTypeCode/{shippingTypeCode}
+/Cart
+  bySessionId (GET)
+    * sessionId
+    addressId
+    address
+    city
+    state
+    postalCode
+    shippingTypeCode
+
+/Favorite/stockId/{stockId}
+/Favorite
+  deleteFavoriteStock (DELETE)
+    * stockId
+
+/ApiAttribute/id/{id}
+/ApiAttribute
+  getById (GET)
+    * id
+  deleteAttribute (DELETE)
+    * id
+
+/Points/type/{type}/customerId/{customerId}/t/{t}
+/Points
+  viewLoyaltyPoints (GET)
+    * type
+    customerId
+    t
+
+/Customer/access_token/{access_token}
+/Customer
+  getCustomer (GET)
+    * access_token
+
+/Compatibility/version/{version}
+/Compatibility
+  getVersionInfo (GET)
+    * version
+
+/ApiDeveloper/limit/{limit}/page/{page}/sort/{sort}/orderBy/{orderBy}/sortAsc/{sortAsc}
+/ApiDeveloper
+  getAll (GET)
+    limit
+    page
+    sort
+    orderBy
+    sortAsc
+
+/CoreValue
+/CoreValue
+  getAll (GET)
+
+/CoreValue/id/{id}
+/CoreValue
+  getById (GET)
+    * id
+
+/Brand/id/{id}
+/Brand
+  getId (GET)
+    * id
+
+/CreditCard/id/{id}
+/CreditCard
+  getCreditCardById (GET)
+    * id
+  deleteCreditCardById (DELETE)
+    * id
+
+/Badge/Feed/t/{t}
+/Badge/Feed
+  getBadgeFeed (GET)
+    t
+
+/EventLogger/name/{name}
+/EventLogger
+  logEvent (GET)
+    name
+
+/ApiDeveloper/lookupKey/{lookupKey}
+/ApiDeveloper
+  getByApiKeyHash (GET)
+    * lookupKey
+
+/Address
+/Address
+  getAddressByEmail (GET)
+
+/Address/id/{id}
+/Address
+  getAddressById (GET)
+    * id
+  deleteAddress (DELETE)
+    * id
+
+/ApiAttribute
+/ApiAttribute
+  getAllApiAttributes (GET)
+
+/Favorite/page/{page}/limit/{limit}/offset/{offset}/sort/{sort}/sortDirection/{sortDirection}
+/Favorite
+  getFavoritesForCustomer (GET)
+    page
+    limit
+    offset
+    sort
+    sortDirection
+
+/CreditCard
+/CreditCard
+  getCreditCardsForCustomer (GET)
+
+/Cache
+/Cache
+  getAllCaches (GET)
+
+/Customer
+/Customer
+  getDiscoverOptions (GET)
+  getEmailLists (GET)
+
+/ApiAttribute/name/{name}
+/ApiAttribute
+  getByName (GET)
+    * name
+
+/Compatibility
+/Compatibility
+  getCompatibilityMap (GET)
+
+/About
+/About
+  getVersionInfo (GET)
+
+/Cache/id/{id}
+/Cache
+  getCacheById (GET)
+    * id
+  clearCacheById (DELETE)
+    id
+
+/Address/list/{list}
+/Address
+  getVerifiedIds (GET)
+    * list
+
+/ApiApplication/id/{id}/apiAttributeId/{apiAttributeId}
+/ApiApplication
+  getApiAttribute (GET)
+    * id
+    * apiAttributeId
+  removeAttribute (DELETE)
+    * id
+    * apiAttributeId
+
+/ApiDeveloper/email/{email}
+/ApiDeveloper
+  getByEmail (GET)
+    * email
+
+/AutoComplete/term/{term}
+/AutoComplete
+  getAutoComplete (GET)
+    * term
+
+/Brand/customerId/{customerId}/maxResults/{maxResults}/collapse/{collapse}
+/Brand
+  getCustomerId (GET)
+    * customerId
+    maxResults
+    collapse
+
+/ApiApplication/id/{id}
+/ApiApplication
+  getById (GET)
+    * id
+
+/Cart/sessionId/{sessionId}/addressId/{addressId}/address/{address}/city/{city}/state/{state}/postalCode/{postalCode}/shippingTypeCode/{shippingTypeCode}
+/Cart
+  bySessionId (GET)
+    * sessionId
+    addressId
+    address
+    city
+    state
+    postalCode
+    shippingTypeCode
+
+/Favorite/stockId/{stockId}
+/Favorite
+  deleteFavoriteStock (DELETE)
+    * stockId
+
+/ApiAttribute/id/{id}
+/ApiAttribute
+  getById (GET)
+    * id
+  deleteAttribute (DELETE)
+    * id
+
+/FavoriteSearch/name/{name}/url/{url}
+/FavoriteSearch
+  deleteFavoriteSearch (DELETE)
+    * name
+    * url
+
+/Points/type/{type}/customerId/{customerId}/t/{t}
+/Points
+  viewLoyaltyPoints (GET)
+    * type
+    customerId
+    t
+
+/Customer/access_token/{access_token}
+/Customer
+  getCustomer (GET)
+    * access_token
+
+/Compatibility/version/{version}
+/Compatibility
+  getVersionInfo (GET)
+    * version
+
+/FavoriteSearch
+/FavoriteSearch
+  getFavoriteSearch (GET)
+
+/ApiDeveloper/limit/{limit}/page/{page}/sort/{sort}/orderBy/{orderBy}/sortAsc/{sortAsc}
+/ApiDeveloper
+  getAll (GET)
+    limit
+    page
+    sort
+    orderBy
+    sortAsc
+
+/CoreValue
+/CoreValue
+  getAll (GET)
+
+/CoreValue/id/{id}
+/CoreValue
+  getById (GET)
+    * id
+
+/Brand/id/{id}
+/Brand
+  getId (GET)
+    * id
+
+/CreditCard/id/{id}
+/CreditCard
+  getCreditCardById (GET)
+    * id
+  deleteCreditCardById (DELETE)
+    * id
+
+/Badge/Feed/t/{t}
+/Badge/Feed
+  getBadgeFeed (GET)
+    t
+
+/EventLogger/name/{name}
+/EventLogger
+  logEvent (GET)
+    name
+
+/ApiDeveloper/lookupKey/{lookupKey}
+/ApiDeveloper
+  getByApiKeyHash (GET)
+    * lookupKey
+
+/Address
+/Address
+  getAddressByEmail (GET)
+
+/Address/id/{id}
+/Address
+  getAddressById (GET)
+    * id
+  deleteAddress (DELETE)
+    * id
+
+/ApiAttribute
+/ApiAttribute
+  getAllApiAttributes (GET)
+
+/Favorite/page/{page}/limit/{limit}/offset/{offset}/sort/{sort}/sortDirection/{sortDirection}
+/Favorite
+  getFavoritesForCustomer (GET)
+    page
+    limit
+    offset
+    sort
+    sortDirection
+
+/CreditCard
+/CreditCard
+  getCreditCardsForCustomer (GET)
+
+/Cache
+/Cache
+  getAllCaches (GET)
+
+/Customer
+/Customer
+  getDiscoverOptions (GET)
+  getEmailLists (GET)
+
+/ApiAttribute/name/{name}
+/ApiAttribute
+  getByName (GET)
+    * name
+
+/Compatibility
+/Compatibility
+  getCompatibilityMap (GET)
+
+/Image/productId/{productId}/styleId/{styleId}/type/{type}/recipe/{recipe}
+/Image
+  GetStyleOrProductId (GET)
+    productId
+    styleId
+    type
+    recipe
+
+/About
+/About
+  getVersionInfo (GET)
+
+/Cache/id/{id}
+/Cache
+  getCacheById (GET)
+    * id
+  clearCacheById (DELETE)
+    id
+
+/Address/list/{list}
+/Address
+  getVerifiedIds (GET)
+    * list
+
+/ApiApplication/id/{id}/apiAttributeId/{apiAttributeId}
+/ApiApplication
+  getApiAttribute (GET)
+    * id
+    * apiAttributeId
+  removeAttribute (DELETE)
+    * id
+    * apiAttributeId
+
+/ApiDeveloper/email/{email}
+/ApiDeveloper
+  getByEmail (GET)
+    * email
+
+/AutoComplete/term/{term}
+/AutoComplete
+  getAutoComplete (GET)
+    * term
+
+/Brand/customerId/{customerId}/maxResults/{maxResults}/collapse/{collapse}
+/Brand
+  getCustomerId (GET)
+    * customerId
+    maxResults
+    collapse
+
+/ApiApplication/id/{id}
+/ApiApplication
+  getById (GET)
+    * id
+
+/Cart/sessionId/{sessionId}/addressId/{addressId}/address/{address}/city/{city}/state/{state}/postalCode/{postalCode}/shippingTypeCode/{shippingTypeCode}
+/Cart
+  bySessionId (GET)
+    * sessionId
+    addressId
+    address
+    city
+    state
+    postalCode
+    shippingTypeCode
+
+/Favorite/stockId/{stockId}
+/Favorite
+  deleteFavoriteStock (DELETE)
+    * stockId
+
+/ApiAttribute/id/{id}
+/ApiAttribute
+  getById (GET)
+    * id
+  deleteAttribute (DELETE)
+    * id
+
+/FavoriteSearch/name/{name}/url/{url}
+/FavoriteSearch
+  deleteFavoriteSearch (DELETE)
+    * name
+    * url
+
+/Points/type/{type}/customerId/{customerId}/t/{t}
+/Points
+  viewLoyaltyPoints (GET)
+    * type
+    customerId
+    t
+
+/Customer/access_token/{access_token}
+/Customer
+  getCustomer (GET)
+    * access_token
+
+/Image/productId/{productId}/type/{type}/recipe/{recipe}
+/Image
+  GetProductId (GET)
+    * productId
+    type
+    recipe
+
+/Compatibility/version/{version}
+/Compatibility
+  getVersionInfo (GET)
+    * version
+
+/FavoriteSearch
+/FavoriteSearch
+  getFavoriteSearch (GET)
+
+/ApiDeveloper/limit/{limit}/page/{page}/sort/{sort}/orderBy/{orderBy}/sortAsc/{sortAsc}
+/ApiDeveloper
+  getAll (GET)
+    limit
+    page
+    sort
+    orderBy
+    sortAsc
+
+/CoreValue
+/CoreValue
+  getAll (GET)
+
+/CoreValue/id/{id}
+/CoreValue
+  getById (GET)
+    * id
+
+/Brand/id/{id}
+/Brand
+  getId (GET)
+    * id
+
+/CreditCard/id/{id}
+/CreditCard
+  getCreditCardById (GET)
+    * id
+  deleteCreditCardById (DELETE)
+    * id
+
+/Badge/Feed/t/{t}
+/Badge/Feed
+  getBadgeFeed (GET)
+    t
+
+/EventLogger/name/{name}
+/EventLogger
+  logEvent (GET)
+    name
+
+/ApiDeveloper/lookupKey/{lookupKey}
+/ApiDeveloper
+  getByApiKeyHash (GET)
+    * lookupKey
+
+/Address
+/Address
+  getAddressByEmail (GET)
+
+/Address/id/{id}
+/Address
+  getAddressById (GET)
+    * id
+  deleteAddress (DELETE)
+    * id
+
+/Image/styleId/{styleId}/type/{type}/recipe/{recipe}
+/Image
+  GetStyleId (GET)
+    * styleId
+    type
+    recipe
+
+/Image
+/Image
+  getRecipes (GET)
+
+/ApiAttribute
+/ApiAttribute
+  getAllApiAttributes (GET)
+
+/Favorite/page/{page}/limit/{limit}/offset/{offset}/sort/{sort}/sortDirection/{sortDirection}
+/Favorite
+  getFavoritesForCustomer (GET)
+    page
+    limit
+    offset
+    sort
+    sortDirection
+
+/CreditCard
+/CreditCard
+  getCreditCardsForCustomer (GET)
+
+/Cache
+/Cache
+  getAllCaches (GET)
+
+/Customer
+/Customer
+  getDiscoverOptions (GET)
+  getEmailLists (GET)
+
+/ApiAttribute/name/{name}
+/ApiAttribute
+  getByName (GET)
+    * name
+
+/Compatibility
+/Compatibility
+  getCompatibilityMap (GET)
+
+/Image/productId/{productId}/styleId/{styleId}/type/{type}/recipe/{recipe}
+/Image
+  GetStyleOrProductId (GET)
+    productId
+    styleId
+    type
+    recipe
+
+/About
+/About
+  getVersionInfo (GET)
+
+/Cache/id/{id}
+/Cache
+  getCacheById (GET)
+    * id
+  clearCacheById (DELETE)
+    id
+
+/Address/list/{list}
+/Address
+  getVerifiedIds (GET)
+    * list
+
+/ApiApplication/id/{id}/apiAttributeId/{apiAttributeId}
+/ApiApplication
+  getApiAttribute (GET)
+    * id
+    * apiAttributeId
+  removeAttribute (DELETE)
+    * id
+    * apiAttributeId
+
+/ApiDeveloper/email/{email}
+/ApiDeveloper
+  getByEmail (GET)
+    * email
+
+/AutoComplete/term/{term}
+/AutoComplete
+  getAutoComplete (GET)
+    * term
+
+/Brand/customerId/{customerId}/maxResults/{maxResults}/collapse/{collapse}
+/Brand
+  getCustomerId (GET)
+    * customerId
+    maxResults
+    collapse
+
+/ApiApplication/id/{id}
+/ApiApplication
+  getById (GET)
+    * id
+
+/Cart/sessionId/{sessionId}/addressId/{addressId}/address/{address}/city/{city}/state/{state}/postalCode/{postalCode}/shippingTypeCode/{shippingTypeCode}
+/Cart
+  bySessionId (GET)
+    * sessionId
+    addressId
+    address
+    city
+    state
+    postalCode
+    shippingTypeCode
+
+/Favorite/stockId/{stockId}
+/Favorite
+  deleteFavoriteStock (DELETE)
+    * stockId
+
+/ApiAttribute/id/{id}
+/ApiAttribute
+  getById (GET)
+    * id
+  deleteAttribute (DELETE)
+    * id
+
+/FavoriteSearch/name/{name}/url/{url}
+/FavoriteSearch
+  deleteFavoriteSearch (DELETE)
+    * name
+    * url
+
+/Points/type/{type}/customerId/{customerId}/t/{t}
+/Points
+  viewLoyaltyPoints (GET)
+    * type
+    customerId
+    t
+
+/Customer/access_token/{access_token}
+/Customer
+  getCustomer (GET)
+    * access_token
+
+/Image/productId/{productId}/type/{type}/recipe/{recipe}
+/Image
+  GetProductId (GET)
+    * productId
+    type
+    recipe
+
+/Compatibility/version/{version}
+/Compatibility
+  getVersionInfo (GET)
+    * version
+
+/Info
+/Info
+  getVersionInfo (GET)
+
+/FavoriteSearch
+/FavoriteSearch
+  getFavoriteSearch (GET)
+
+/ApiDeveloper/limit/{limit}/page/{page}/sort/{sort}/orderBy/{orderBy}/sortAsc/{sortAsc}
+/ApiDeveloper
+  getAll (GET)
+    limit
+    page
+    sort
+    orderBy
+    sortAsc
+
+/CoreValue
+/CoreValue
+  getAll (GET)
+
+/CoreValue/id/{id}
+/CoreValue
+  getById (GET)
+    * id
+
+/Brand/id/{id}
+/Brand
+  getId (GET)
+    * id
+
+/CreditCard/id/{id}
+/CreditCard
+  getCreditCardById (GET)
+    * id
+  deleteCreditCardById (DELETE)
+    * id
+
+/Badge/Feed/t/{t}
+/Badge/Feed
+  getBadgeFeed (GET)
+    t
+
+/EventLogger/name/{name}
+/EventLogger
+  logEvent (GET)
+    name
+
+/ApiDeveloper/lookupKey/{lookupKey}
+/ApiDeveloper
+  getByApiKeyHash (GET)
+    * lookupKey
+
+/Address
+/Address
+  getAddressByEmail (GET)
+
+/Address/id/{id}
+/Address
+  getAddressById (GET)
+    * id
+  deleteAddress (DELETE)
+    * id
+
+/Image/styleId/{styleId}/type/{type}/recipe/{recipe}
+/Image
+  GetStyleId (GET)
+    * styleId
+    type
+    recipe
+
+/Image
+/Image
+  getRecipes (GET)
+
+/ApiAttribute
+/ApiAttribute
+  getAllApiAttributes (GET)
+
+/Favorite/page/{page}/limit/{limit}/offset/{offset}/sort/{sort}/sortDirection/{sortDirection}
+/Favorite
+  getFavoritesForCustomer (GET)
+    page
+    limit
+    offset
+    sort
+    sortDirection
+
+/CreditCard
+/CreditCard
+  getCreditCardsForCustomer (GET)
+
+/Cache
+/Cache
+  getAllCaches (GET)
+
+/Order/claimTicketId/{claimTicketId}
+/Order
+  getOrderByClaimTicketId (GET)
+    * claimTicketId
+
+/Customer
+/Customer
+  getDiscoverOptions (GET)
+  getEmailLists (GET)
+
+/ApiAttribute/name/{name}
+/ApiAttribute
+  getByName (GET)
+    * name
+
+/Compatibility
+/Compatibility
+  getCompatibilityMap (GET)
+
+/Image/productId/{productId}/styleId/{styleId}/type/{type}/recipe/{recipe}
+/Image
+  GetStyleOrProductId (GET)
+    productId
+    styleId
+    type
+    recipe
+
+/About
+/About
+  getVersionInfo (GET)
+
+/Order/type/{type}/range/{range}/fromDate/{fromDate}/toDate/{toDate}
+/Order
+  getOrdersForCustomer (GET)
+    * type
+    range
+    fromDate
+    toDate
+
+/Cache/id/{id}
+/Cache
+  getCacheById (GET)
+    * id
+  clearCacheById (DELETE)
+    id
+
+/Address/list/{list}
+/Address
+  getVerifiedIds (GET)
+    * list
+
+/ApiApplication/id/{id}/apiAttributeId/{apiAttributeId}
+/ApiApplication
+  getApiAttribute (GET)
+    * id
+    * apiAttributeId
+  removeAttribute (DELETE)
+    * id
+    * apiAttributeId
+
+/ApiDeveloper/email/{email}
+/ApiDeveloper
+  getByEmail (GET)
+    * email
+
+/AutoComplete/term/{term}
+/AutoComplete
+  getAutoComplete (GET)
+    * term
+
+/Brand/customerId/{customerId}/maxResults/{maxResults}/collapse/{collapse}
+/Brand
+  getCustomerId (GET)
+    * customerId
+    maxResults
+    collapse
+
+/ApiApplication/id/{id}
+/ApiApplication
+  getById (GET)
+    * id
+
+/Cart/sessionId/{sessionId}/addressId/{addressId}/address/{address}/city/{city}/state/{state}/postalCode/{postalCode}/shippingTypeCode/{shippingTypeCode}
+/Cart
+  bySessionId (GET)
+    * sessionId
+    addressId
+    address
+    city
+    state
+    postalCode
+    shippingTypeCode
+
+/Favorite/stockId/{stockId}
+/Favorite
+  deleteFavoriteStock (DELETE)
+    * stockId
+
+/ApiAttribute/id/{id}
+/ApiAttribute
+  getById (GET)
+    * id
+  deleteAttribute (DELETE)
+    * id
+
+/FavoriteSearch/name/{name}/url/{url}
+/FavoriteSearch
+  deleteFavoriteSearch (DELETE)
+    * name
+    * url
+
+/Points/type/{type}/customerId/{customerId}/t/{t}
+/Points
+  viewLoyaltyPoints (GET)
+    * type
+    customerId
+    t
+
+/Customer/access_token/{access_token}
+/Customer
+  getCustomer (GET)
+    * access_token
+
+/Image/productId/{productId}/type/{type}/recipe/{recipe}
+/Image
+  GetProductId (GET)
+    * productId
+    type
+    recipe
+
+/Compatibility/version/{version}
+/Compatibility
+  getVersionInfo (GET)
+    * version
+
+/Info
+/Info
+  getVersionInfo (GET)
+
+/FavoriteSearch
+/FavoriteSearch
+  getFavoriteSearch (GET)
+
+/ApiDeveloper/limit/{limit}/page/{page}/sort/{sort}/orderBy/{orderBy}/sortAsc/{sortAsc}
+/ApiDeveloper
+  getAll (GET)
+    limit
+    page
+    sort
+    orderBy
+    sortAsc
+
+/CoreValue
+/CoreValue
+  getAll (GET)
+
+/CoreValue/id/{id}
+/CoreValue
+  getById (GET)
+    * id
+
+/Brand/id/{id}
+/Brand
+  getId (GET)
+    * id
+
+/CreditCard/id/{id}
+/CreditCard
+  getCreditCardById (GET)
+    * id
+  deleteCreditCardById (DELETE)
+    * id
+
+/Badge/Feed/t/{t}
+/Badge/Feed
+  getBadgeFeed (GET)
+    t
+
+/EventLogger/name/{name}
+/EventLogger
+  logEvent (GET)
+    name
+
+/Order/id/{id}/type/{type}
+/Order
+  getOrderById (GET)
+    * id
+    type
+
+/ApiDeveloper/lookupKey/{lookupKey}
+/ApiDeveloper
+  getByApiKeyHash (GET)
+    * lookupKey
+
+/Address
+/Address
+  getAddressByEmail (GET)
+
+/Address/id/{id}
+/Address
+  getAddressById (GET)
+    * id
+  deleteAddress (DELETE)
+    * id
+
+/Image/styleId/{styleId}/type/{type}/recipe/{recipe}
+/Image
+  GetStyleId (GET)
+    * styleId
+    type
+    recipe
+
+/Image
+/Image
+  getRecipes (GET)
+
+/ApiAttribute
+/ApiAttribute
+  getAllApiAttributes (GET)
+
+/Favorite/page/{page}/limit/{limit}/offset/{offset}/sort/{sort}/sortDirection/{sortDirection}
+/Favorite
+  getFavoritesForCustomer (GET)
+    page
+    limit
+    offset
+    sort
+    sortDirection
+
+/CreditCard
+/CreditCard
+  getCreditCardsForCustomer (GET)
+
+/Product/stockId/{stockId}
+/Product
+  getProductByStockId (GET)
+    * stockId
+
+/Cache
+/Cache
+  getAllCaches (GET)
+
+/Order/claimTicketId/{claimTicketId}
+/Order
+  getOrderByClaimTicketId (GET)
+    * claimTicketId
+
+/Customer
+/Customer
+  getDiscoverOptions (GET)
+  getEmailLists (GET)
+
+/ApiAttribute/name/{name}
+/ApiAttribute
+  getByName (GET)
+    * name
+
+/Compatibility
+/Compatibility
+  getCompatibilityMap (GET)
+
+/Image/productId/{productId}/styleId/{styleId}/type/{type}/recipe/{recipe}
+/Image
+  GetStyleOrProductId (GET)
+    productId
+    styleId
+    type
+    recipe
+
+/About
+/About
+  getVersionInfo (GET)
+
+/Order/type/{type}/range/{range}/fromDate/{fromDate}/toDate/{toDate}
+/Order
+  getOrdersForCustomer (GET)
+    * type
+    range
+    fromDate
+    toDate
+
+/Cache/id/{id}
+/Cache
+  getCacheById (GET)
+    * id
+  clearCacheById (DELETE)
+    id
+
+/Address/list/{list}
+/Address
+  getVerifiedIds (GET)
+    * list
+
+/ApiApplication/id/{id}/apiAttributeId/{apiAttributeId}
+/ApiApplication
+  getApiAttribute (GET)
+    * id
+    * apiAttributeId
+  removeAttribute (DELETE)
+    * id
+    * apiAttributeId
+
+/ApiDeveloper/email/{email}
+/ApiDeveloper
+  getByEmail (GET)
+    * email
+
+/AutoComplete/term/{term}
+/AutoComplete
+  getAutoComplete (GET)
+    * term
+
+/Brand/customerId/{customerId}/maxResults/{maxResults}/collapse/{collapse}
+/Brand
+  getCustomerId (GET)
+    * customerId
+    maxResults
+    collapse
+
+/Product/styleId/{styleId}
+/Product
+  getProductByStyleId (GET)
+    * styleId
+
+/ApiApplication/id/{id}
+/ApiApplication
+  getById (GET)
+    * id
+
+/Cart/sessionId/{sessionId}/addressId/{addressId}/address/{address}/city/{city}/state/{state}/postalCode/{postalCode}/shippingTypeCode/{shippingTypeCode}
+/Cart
+  bySessionId (GET)
+    * sessionId
+    addressId
+    address
+    city
+    state
+    postalCode
+    shippingTypeCode
+
+/Favorite/stockId/{stockId}
+/Favorite
+  deleteFavoriteStock (DELETE)
+    * stockId
+
+/ApiAttribute/id/{id}
+/ApiAttribute
+  getById (GET)
+    * id
+  deleteAttribute (DELETE)
+    * id
+
+/Product/upc/{upc}
+/Product
+  getProductByUPC (GET)
+    * upc
+
+/FavoriteSearch/name/{name}/url/{url}
+/FavoriteSearch
+  deleteFavoriteSearch (DELETE)
+    * name
+    * url
+
+/Points/type/{type}/customerId/{customerId}/t/{t}
+/Points
+  viewLoyaltyPoints (GET)
+    * type
+    customerId
+    t
+
+/Customer/access_token/{access_token}
+/Customer
+  getCustomer (GET)
+    * access_token
+
+/Image/productId/{productId}/type/{type}/recipe/{recipe}
+/Image
+  GetProductId (GET)
+    * productId
+    type
+    recipe
+
+/Compatibility/version/{version}
+/Compatibility
+  getVersionInfo (GET)
+    * version
+
+/Info
+/Info
+  getVersionInfo (GET)
+
+/FavoriteSearch
+/FavoriteSearch
+  getFavoriteSearch (GET)
+
+/ApiDeveloper/limit/{limit}/page/{page}/sort/{sort}/orderBy/{orderBy}/sortAsc/{sortAsc}
+/ApiDeveloper
+  getAll (GET)
+    limit
+    page
+    sort
+    orderBy
+    sortAsc
+
+/Product/id/{id}
+/Product
+  getProductById (GET)
+    * id
+
+/CoreValue
+/CoreValue
+  getAll (GET)
+
+/CoreValue/id/{id}
+/CoreValue
+  getById (GET)
+    * id
+
+/Brand/id/{id}
+/Brand
+  getId (GET)
+    * id
+
+/CreditCard/id/{id}
+/CreditCard
+  getCreditCardById (GET)
+    * id
+  deleteCreditCardById (DELETE)
+    * id
+
+/Badge/Feed/t/{t}
+/Badge/Feed
+  getBadgeFeed (GET)
+    t
+
+/EventLogger/name/{name}
+/EventLogger
+  logEvent (GET)
+    name
+
+/Order/id/{id}/type/{type}
+/Order
+  getOrderById (GET)
+    * id
+    type
+
+/ApiDeveloper/lookupKey/{lookupKey}
+/ApiDeveloper
+  getByApiKeyHash (GET)
+    * lookupKey
+
+/Address
+/Address
+  getAddressByEmail (GET)
+
+/Address/id/{id}
+/Address
+  getAddressById (GET)
+    * id
+  deleteAddress (DELETE)
+    * id
+
+/Image/styleId/{styleId}/type/{type}/recipe/{recipe}
+/Image
+  GetStyleId (GET)
+    * styleId
+    type
+    recipe
+
+/Image
+/Image
+  getRecipes (GET)
+
+/ApiAttribute
+/ApiAttribute
+  getAllApiAttributes (GET)
+
+/Favorite/page/{page}/limit/{limit}/offset/{offset}/sort/{sort}/sortDirection/{sortDirection}
+/Favorite
+  getFavoritesForCustomer (GET)
+    page
+    limit
+    offset
+    sort
+    sortDirection
+
+/CreditCard
+/CreditCard
+  getCreditCardsForCustomer (GET)
+
+/Product/stockId/{stockId}
+/Product
+  getProductByStockId (GET)
+    * stockId
+
+/Cache
+/Cache
+  getAllCaches (GET)
+
+/Order/claimTicketId/{claimTicketId}
+/Order
+  getOrderByClaimTicketId (GET)
+    * claimTicketId
+
+/Customer
+/Customer
+  getDiscoverOptions (GET)
+  getEmailLists (GET)
+
+/ApiAttribute/name/{name}
+/ApiAttribute
+  getByName (GET)
+    * name
+
+/Compatibility
+/Compatibility
+  getCompatibilityMap (GET)
+
+/Image/productId/{productId}/styleId/{styleId}/type/{type}/recipe/{recipe}
+/Image
+  GetStyleOrProductId (GET)
+    productId
+    styleId
+    type
+    recipe
+
+/About
+/About
+  getVersionInfo (GET)
+
+/Order/type/{type}/range/{range}/fromDate/{fromDate}/toDate/{toDate}
+/Order
+  getOrdersForCustomer (GET)
+    * type
+    range
+    fromDate
+    toDate
+
+/Cache/id/{id}
+/Cache
+  getCacheById (GET)
+    * id
+  clearCacheById (DELETE)
+    id
+
+/Address/list/{list}
+/Address
+  getVerifiedIds (GET)
+    * list
+
+/ApiApplication/id/{id}/apiAttributeId/{apiAttributeId}
+/ApiApplication
+  getApiAttribute (GET)
+    * id
+    * apiAttributeId
+  removeAttribute (DELETE)
+    * id
+    * apiAttributeId
+
+/ApiDeveloper/email/{email}
+/ApiDeveloper
+  getByEmail (GET)
+    * email
+
+/AutoComplete/term/{term}
+/AutoComplete
+  getAutoComplete (GET)
+    * term
+
+/Brand/customerId/{customerId}/maxResults/{maxResults}/collapse/{collapse}
+/Brand
+  getCustomerId (GET)
+    * customerId
+    maxResults
+    collapse
+
+/Product/styleId/{styleId}
+/Product
+  getProductByStyleId (GET)
+    * styleId
+
+/ApiApplication/id/{id}
+/ApiApplication
+  getById (GET)
+    * id
+
+/Cart/sessionId/{sessionId}/addressId/{addressId}/address/{address}/city/{city}/state/{state}/postalCode/{postalCode}/shippingTypeCode/{shippingTypeCode}
+/Cart
+  bySessionId (GET)
+    * sessionId
+    addressId
+    address
+    city
+    state
+    postalCode
+    shippingTypeCode
+
+/Favorite/stockId/{stockId}
+/Favorite
+  deleteFavoriteStock (DELETE)
+    * stockId
+
+/ApiAttribute/id/{id}
+/ApiAttribute
+  getById (GET)
+    * id
+  deleteAttribute (DELETE)
+    * id
+
+/Product/upc/{upc}
+/Product
+  getProductByUPC (GET)
+    * upc
+
+/FavoriteSearch/name/{name}/url/{url}
+/FavoriteSearch
+  deleteFavoriteSearch (DELETE)
+    * name
+    * url
+
+/Points/type/{type}/customerId/{customerId}/t/{t}
+/Points
+  viewLoyaltyPoints (GET)
+    * type
+    customerId
+    t
+
+/Customer/access_token/{access_token}
+/Customer
+  getCustomer (GET)
+    * access_token
+
+/Image/productId/{productId}/type/{type}/recipe/{recipe}
+/Image
+  GetProductId (GET)
+    * productId
+    type
+    recipe
+
+/Review/productId/{productId}/startId/{startId}/startDate/{startDate}/page/{page}/offset/{offset}
+/Review
+  getProductId (GET)
+    * productId
+    startId
+    startDate
+    page
+    offset
+
+/Compatibility/version/{version}
+/Compatibility
+  getVersionInfo (GET)
+    * version
+
+/Review/brandId/{brandId}/startId/{startId}/startDate/{startDate}
+/Review
+  getBrandId (GET)
+    * brandId
+    startId
+    startDate
+
+/Info
+/Info
+  getVersionInfo (GET)
+
+/FavoriteSearch
+/FavoriteSearch
+  getFavoriteSearch (GET)
+
+/ApiDeveloper/limit/{limit}/page/{page}/sort/{sort}/orderBy/{orderBy}/sortAsc/{sortAsc}
+/ApiDeveloper
+  getAll (GET)
+    limit
+    page
+    sort
+    orderBy
+    sortAsc
+
+/Product/id/{id}
+/Product
+  getProductById (GET)
+    * id
+
+/CoreValue
+/CoreValue
+  getAll (GET)
+
+/CoreValue/id/{id}
+/CoreValue
+  getById (GET)
+    * id
+
+/Brand/id/{id}
+/Brand
+  getId (GET)
+    * id
+
+/CreditCard/id/{id}
+/CreditCard
+  getCreditCardById (GET)
+    * id
+  deleteCreditCardById (DELETE)
+    * id
+
+/Badge/Feed/t/{t}
+/Badge/Feed
+  getBadgeFeed (GET)
+    t
+
+/EventLogger/name/{name}
+/EventLogger
+  logEvent (GET)
+    name
+
+/Order/id/{id}/type/{type}
+/Order
+  getOrderById (GET)
+    * id
+    type
+
+/ApiDeveloper/lookupKey/{lookupKey}
+/ApiDeveloper
+  getByApiKeyHash (GET)
+    * lookupKey
+
+/Address
+/Address
+  getAddressByEmail (GET)
+
+/Address/id/{id}
+/Address
+  getAddressById (GET)
+    * id
+  deleteAddress (DELETE)
+    * id
+
+/Image/styleId/{styleId}/type/{type}/recipe/{recipe}
+/Image
+  GetStyleId (GET)
+    * styleId
+    type
+    recipe
+
+/Image
+/Image
+  getRecipes (GET)
+
+/ApiAttribute
+/ApiAttribute
+  getAllApiAttributes (GET)
+
+/Favorite/page/{page}/limit/{limit}/offset/{offset}/sort/{sort}/sortDirection/{sortDirection}
+/Favorite
+  getFavoritesForCustomer (GET)
+    page
+    limit
+    offset
+    sort
+    sortDirection
+
+/CreditCard
+/CreditCard
+  getCreditCardsForCustomer (GET)
+
+/Product/stockId/{stockId}
+/Product
+  getProductByStockId (GET)
+    * stockId
+
+/Cache
+/Cache
+  getAllCaches (GET)
+
+/Order/claimTicketId/{claimTicketId}
+/Order
+  getOrderByClaimTicketId (GET)
+    * claimTicketId
+
+/Customer
+/Customer
+  getDiscoverOptions (GET)
+  getEmailLists (GET)
+
+/ApiAttribute/name/{name}
+/ApiAttribute
+  getByName (GET)
+    * name
+
+/Compatibility
+/Compatibility
+  getCompatibilityMap (GET)
+
+/Image/productId/{productId}/styleId/{styleId}/type/{type}/recipe/{recipe}
+/Image
+  GetStyleOrProductId (GET)
+    productId
+    styleId
+    type
+    recipe
+
+/About
+/About
+  getVersionInfo (GET)
+
+/Order/type/{type}/range/{range}/fromDate/{fromDate}/toDate/{toDate}
+/Order
+  getOrdersForCustomer (GET)
+    * type
+    range
+    fromDate
+    toDate
+
+/Cache/id/{id}
+/Cache
+  getCacheById (GET)
+    * id
+  clearCacheById (DELETE)
+    id
+
+/Address/list/{list}
+/Address
+  getVerifiedIds (GET)
+    * list
+
+/ApiApplication/id/{id}/apiAttributeId/{apiAttributeId}
+/ApiApplication
+  getApiAttribute (GET)
+    * id
+    * apiAttributeId
+  removeAttribute (DELETE)
+    * id
+    * apiAttributeId
+
+/ApiDeveloper/email/{email}
+/ApiDeveloper
+  getByEmail (GET)
+    * email
+
+/AutoComplete/term/{term}
+/AutoComplete
+  getAutoComplete (GET)
+    * term
+
+/Brand/customerId/{customerId}/maxResults/{maxResults}/collapse/{collapse}
+/Brand
+  getCustomerId (GET)
+    * customerId
+    maxResults
+    collapse
+
+/Product/styleId/{styleId}
+/Product
+  getProductByStyleId (GET)
+    * styleId
+
+/ApiApplication/id/{id}
+/ApiApplication
+  getById (GET)
+    * id
+
+/Cart/sessionId/{sessionId}/addressId/{addressId}/address/{address}/city/{city}/state/{state}/postalCode/{postalCode}/shippingTypeCode/{shippingTypeCode}
+/Cart
+  bySessionId (GET)
+    * sessionId
+    addressId
+    address
+    city
+    state
+    postalCode
+    shippingTypeCode
+
+/Favorite/stockId/{stockId}
+/Favorite
+  deleteFavoriteStock (DELETE)
+    * stockId
+
+/ApiAttribute/id/{id}
+/ApiAttribute
+  getById (GET)
+    * id
+  deleteAttribute (DELETE)
+    * id
+
+/Product/upc/{upc}
+/Product
+  getProductByUPC (GET)
+    * upc
+
+/FavoriteSearch/name/{name}/url/{url}
+/FavoriteSearch
+  deleteFavoriteSearch (DELETE)
+    * name
+    * url
+
+/Points/type/{type}/customerId/{customerId}/t/{t}
+/Points
+  viewLoyaltyPoints (GET)
+    * type
+    customerId
+    t
+
+/Customer/access_token/{access_token}
+/Customer
+  getCustomer (GET)
+    * access_token
+
+/Image/productId/{productId}/type/{type}/recipe/{recipe}
+/Image
+  GetProductId (GET)
+    * productId
+    type
+    recipe
+
+/Review/productId/{productId}/startId/{startId}/startDate/{startDate}/page/{page}/offset/{offset}
+/Review
+  getProductId (GET)
+    * productId
+    startId
+    startDate
+    page
+    offset
+
+/Compatibility/version/{version}
+/Compatibility
+  getVersionInfo (GET)
+    * version
+
+/Review/brandId/{brandId}/startId/{startId}/startDate/{startDate}
+/Review
+  getBrandId (GET)
+    * brandId
+    startId
+    startDate
+
+/Info
+/Info
+  getVersionInfo (GET)
+
+/FavoriteSearch
+/FavoriteSearch
+  getFavoriteSearch (GET)
+
+/ApiDeveloper/limit/{limit}/page/{page}/sort/{sort}/orderBy/{orderBy}/sortAsc/{sortAsc}
+/ApiDeveloper
+  getAll (GET)
+    limit
+    page
+    sort
+    orderBy
+    sortAsc
+
+/Product/id/{id}
+/Product
+  getProductById (GET)
+    * id
+
+/CoreValue
+/CoreValue
+  getAll (GET)
+
+/CoreValue/id/{id}
+/CoreValue
+  getById (GET)
+    * id
+
+/Brand/id/{id}
+/Brand
+  getId (GET)
+    * id
+
+/CreditCard/id/{id}
+/CreditCard
+  getCreditCardById (GET)
+    * id
+  deleteCreditCardById (DELETE)
+    * id
+
+/Badge/Feed/t/{t}
+/Badge/Feed
+  getBadgeFeed (GET)
+    t
+
+/EventLogger/name/{name}
+/EventLogger
+  logEvent (GET)
+    name
+
+/Order/id/{id}/type/{type}
+/Order
+  getOrderById (GET)
+    * id
+    type
+
+/ApiDeveloper/lookupKey/{lookupKey}
+/ApiDeveloper
+  getByApiKeyHash (GET)
+    * lookupKey
+
+/Address
+/Address
+  getAddressByEmail (GET)
+
+/Address/id/{id}
+/Address
+  getAddressById (GET)
+    * id
+  deleteAddress (DELETE)
+    * id
+
+/Image/styleId/{styleId}/type/{type}/recipe/{recipe}
+/Image
+  GetStyleId (GET)
+    * styleId
+    type
+    recipe
+
+/Image
+/Image
+  getRecipes (GET)
+
+/ApiAttribute
+/ApiAttribute
+  getAllApiAttributes (GET)
+
+/Favorite/page/{page}/limit/{limit}/offset/{offset}/sort/{sort}/sortDirection/{sortDirection}
+/Favorite
+  getFavoritesForCustomer (GET)
+    page
+    limit
+    offset
+    sort
+    sortDirection
+
+/CreditCard
+/CreditCard
+  getCreditCardsForCustomer (GET)
+
+/Product/stockId/{stockId}
+/Product
+  getProductByStockId (GET)
+    * stockId
+
+/Cache
+/Cache
+  getAllCaches (GET)
+
+/Order/claimTicketId/{claimTicketId}
+/Order
+  getOrderByClaimTicketId (GET)
+    * claimTicketId
+
+/Customer
+/Customer
+  getDiscoverOptions (GET)
+  getEmailLists (GET)
+
+/ApiAttribute/name/{name}
+/ApiAttribute
+  getByName (GET)
+    * name
+
+/Compatibility
+/Compatibility
+  getCompatibilityMap (GET)
+
+/Image/productId/{productId}/styleId/{styleId}/type/{type}/recipe/{recipe}
+/Image
+  GetStyleOrProductId (GET)
+    productId
+    styleId
+    type
+    recipe
+
+/About
+/About
+  getVersionInfo (GET)
+
+/Order/type/{type}/range/{range}/fromDate/{fromDate}/toDate/{toDate}
+/Order
+  getOrdersForCustomer (GET)
+    * type
+    range
+    fromDate
+    toDate
+
+/Cache/id/{id}
+/Cache
+  getCacheById (GET)
+    * id
+  clearCacheById (DELETE)
+    id
+
+/Address/list/{list}
+/Address
+  getVerifiedIds (GET)
+    * list
+
+/ApiApplication/id/{id}/apiAttributeId/{apiAttributeId}
+/ApiApplication
+  getApiAttribute (GET)
+    * id
+    * apiAttributeId
+  removeAttribute (DELETE)
+    * id
+    * apiAttributeId
+
+/ApiDeveloper/email/{email}
+/ApiDeveloper
+  getByEmail (GET)
+    * email
+
+/AutoComplete/term/{term}
+/AutoComplete
+  getAutoComplete (GET)
+    * term
+
+/Brand/customerId/{customerId}/maxResults/{maxResults}/collapse/{collapse}
+/Brand
+  getCustomerId (GET)
+    * customerId
+    maxResults
+    collapse
+
+/Product/styleId/{styleId}
+/Product
+  getProductByStyleId (GET)
+    * styleId
+
+/ApiApplication/id/{id}
+/ApiApplication
+  getById (GET)
+    * id
+
+/Cart/sessionId/{sessionId}/addressId/{addressId}/address/{address}/city/{city}/state/{state}/postalCode/{postalCode}/shippingTypeCode/{shippingTypeCode}
+/Cart
+  bySessionId (GET)
+    * sessionId
+    addressId
+    address
+    city
+    state
+    postalCode
+    shippingTypeCode
+
+/Favorite/stockId/{stockId}
+/Favorite
+  deleteFavoriteStock (DELETE)
+    * stockId
+
+/ApiAttribute/id/{id}
+/ApiAttribute
+  getById (GET)
+    * id
+  deleteAttribute (DELETE)
+    * id
+
+/Product/upc/{upc}
+/Product
+  getProductByUPC (GET)
+    * upc
+
+/FavoriteSearch/name/{name}/url/{url}
+/FavoriteSearch
+  deleteFavoriteSearch (DELETE)
+    * name
+    * url
+
+/Points/type/{type}/customerId/{customerId}/t/{t}
+/Points
+  viewLoyaltyPoints (GET)
+    * type
+    customerId
+    t
+
+/Customer/access_token/{access_token}
+/Customer
+  getCustomer (GET)
+    * access_token
+
+/Image/productId/{productId}/type/{type}/recipe/{recipe}
+/Image
+  GetProductId (GET)
+    * productId
+    type
+    recipe
+
+/Review/productId/{productId}/startId/{startId}/startDate/{startDate}/page/{page}/offset/{offset}
+/Review
+  getProductId (GET)
+    * productId
+    startId
+    startDate
+    page
+    offset
+
+/Compatibility/version/{version}
+/Compatibility
+  getVersionInfo (GET)
+    * version
+
+/Review/brandId/{brandId}/startId/{startId}/startDate/{startDate}
+/Review
+  getBrandId (GET)
+    * brandId
+    startId
+    startDate
+
+/Info
+/Info
+  getVersionInfo (GET)
+
+/FavoriteSearch
+/FavoriteSearch
+  getFavoriteSearch (GET)
+
+/ApiDeveloper/limit/{limit}/page/{page}/sort/{sort}/orderBy/{orderBy}/sortAsc/{sortAsc}
+/ApiDeveloper
+  getAll (GET)
+    limit
+    page
+    sort
+    orderBy
+    sortAsc
+
+/Product/id/{id}
+/Product
+  getProductById (GET)
+    * id
+
+/CoreValue
+/CoreValue
+  getAll (GET)
+
+/CoreValue/id/{id}
+/CoreValue
+  getById (GET)
+    * id
+
+/Brand/id/{id}
+/Brand
+  getId (GET)
+    * id
+
+/CreditCard/id/{id}
+/CreditCard
+  getCreditCardById (GET)
+    * id
+  deleteCreditCardById (DELETE)
+    * id
+
+/Badge/Feed/t/{t}
+/Badge/Feed
+  getBadgeFeed (GET)
+    t
+
+/EventLogger/name/{name}
+/EventLogger
+  logEvent (GET)
+    name
+
+/Search/Similarity/type/{type}/limit/{limit}/styleId/{styleId}/emphasis/{emphasis}/productType/{productType}/category/{category}/subCategory/{subCategory}/brandId/{brandId}/page/{page}
+/Search/Similarity
+  getSimilaritySearch (GET)
+    * type
+    * limit
+    styleId
+    emphasis
+    productType
+    category
+    subCategory
+    brandId
+    page
+
+/Order/id/{id}/type/{type}
+/Order
+  getOrderById (GET)
+    * id
+    type
+
+/ApiDeveloper/lookupKey/{lookupKey}
+/ApiDeveloper
+  getByApiKeyHash (GET)
+    * lookupKey
+
+/Address
+/Address
+  getAddressByEmail (GET)
+
+/Address/id/{id}
+/Address
+  getAddressById (GET)
+    * id
+  deleteAddress (DELETE)
+    * id
+
+/Image/styleId/{styleId}/type/{type}/recipe/{recipe}
+/Image
+  GetStyleId (GET)
+    * styleId
+    type
+    recipe
+
+/Image
+/Image
+  getRecipes (GET)
+
+/ApiAttribute
+/ApiAttribute
+  getAllApiAttributes (GET)
+
+/Product/stockId/{stockId}
+/Product
+  getProductByStockId (GET)
+    * stockId
+
+/Compatibility
+/Compatibility
+  getCompatibilityMap (GET)
+
+/ApiAttribute/name/{name}
+/ApiAttribute
+  getByName (GET)
+    * name
+
+/Order/type/{type}/range/{range}/fromDate/{fromDate}/toDate/{toDate}
+/Order
+  getOrdersForCustomer (GET)
+    * type
+    range
+    fromDate
+    toDate
+
+/Address/list/{list}
+/Address
+  getVerifiedIds (GET)
+    * list
+
+/ApiApplication/id/{id}/apiAttributeId/{apiAttributeId}
+/ApiApplication
+  getApiAttribute (GET)
+    * id
+    * apiAttributeId
+  removeAttribute (DELETE)
+    * id
+    * apiAttributeId
+
+/ApiDeveloper/email/{email}
+/ApiDeveloper
+  getByEmail (GET)
+    * email
+
+/Search/batch/{batch}
+/Search
+  getBatchSearch (GET)
+    * batch
+
+/Cart/sessionId/{sessionId}/addressId/{addressId}/address/{address}/city/{city}/state/{state}/postalCode/{postalCode}/shippingTypeCode/{shippingTypeCode}
+/Cart
+  bySessionId (GET)
+    * sessionId
+    addressId
+    address
+    city
+    state
+    postalCode
+    shippingTypeCode
+
+/ApiApplication/id/{id}
+/ApiApplication
+  getById (GET)
+    * id
+
+/Product/styleId/{styleId}
+/Product
+  getProductByStyleId (GET)
+    * styleId
+
+/Favorite/stockId/{stockId}
+/Favorite
+  deleteFavoriteStock (DELETE)
+    * stockId
+
+/Product/upc/{upc}
+/Product
+  getProductByUPC (GET)
+    * upc
+
+/Review/productId/{productId}/startId/{startId}/startDate/{startDate}/page/{page}/offset/{offset}
+/Review
+  getProductId (GET)
+    * productId
+    startId
+    startDate
+    page
+    offset
+
+/ApiDeveloper/limit/{limit}/page/{page}/sort/{sort}/orderBy/{orderBy}/sortAsc/{sortAsc}
+/ApiDeveloper
+  getAll (GET)
+    limit
+    page
+    sort
+    orderBy
+    sortAsc
+
+/CoreValue
+/CoreValue
+  getAll (GET)
+
+/Product/id/{id}
+/Product
+  getProductById (GET)
+    * id
+
+/Search/Similarity/type/{type}/limit/{limit}/styleId/{styleId}/emphasis/{emphasis}/productType/{productType}/category/{category}/subCategory/{subCategory}/brandId/{brandId}/page/{page}
+/Search/Similarity
+  getSimilaritySearch (GET)
+    * type
+    * limit
+    styleId
+    emphasis
+    productType
+    category
+    subCategory
+    brandId
+    page
+
+/Order/id/{id}/type/{type}
+/Order
+  getOrderById (GET)
+    * id
+    type
+
+/Address/id/{id}
+/Address
+  getAddressById (GET)
+    * id
+  deleteAddress (DELETE)
+    * id
+
+/Image/styleId/{styleId}/type/{type}/recipe/{recipe}
+/Image
+  GetStyleId (GET)
+    * styleId
+    type
+    recipe
+
+/ApiAttribute
+/ApiAttribute
+  getAllApiAttributes (GET)
+
+/Image
+/Image
+  getRecipes (GET)
+
+/Favorite/page/{page}/limit/{limit}/offset/{offset}/sort/{sort}/sortDirection/{sortDirection}
+/Favorite
+  getFavoritesForCustomer (GET)
+    page
+    limit
+    offset
+    sort
+    sortDirection
+
+/CreditCard
+/CreditCard
+  getCreditCardsForCustomer (GET)
+
+/Cache
+/Cache
+  getAllCaches (GET)
+
+/Customer
+/Customer
+  getDiscoverOptions (GET)
+  getEmailLists (GET)
+
+/Order/claimTicketId/{claimTicketId}
+/Order
+  getOrderByClaimTicketId (GET)
+    * claimTicketId
+
+/Image/productId/{productId}/styleId/{styleId}/type/{type}/recipe/{recipe}
+/Image
+  GetStyleOrProductId (GET)
+    productId
+    styleId
+    type
+    recipe
+
+/About
+/About
+  getVersionInfo (GET)
+
+/Cache/id/{id}
+/Cache
+  getCacheById (GET)
+    * id
+  clearCacheById (DELETE)
+    id
+
+/AutoComplete/term/{term}
+/AutoComplete
+  getAutoComplete (GET)
+    * term
+
+/Brand/customerId/{customerId}/maxResults/{maxResults}/collapse/{collapse}
+/Brand
+  getCustomerId (GET)
+    * customerId
+    maxResults
+    collapse
+
+/ApiAttribute/id/{id}
+/ApiAttribute
+  getById (GET)
+    * id
+  deleteAttribute (DELETE)
+    * id
+
+/Customer/access_token/{access_token}
+/Customer
+  getCustomer (GET)
+    * access_token
+
+/Points/type/{type}/customerId/{customerId}/t/{t}
+/Points
+  viewLoyaltyPoints (GET)
+    * type
+    customerId
+    t
+
+/FavoriteSearch/name/{name}/url/{url}
+/FavoriteSearch
+  deleteFavoriteSearch (DELETE)
+    * name
+    * url
+
+/Image/productId/{productId}/type/{type}/recipe/{recipe}
+/Image
+  GetProductId (GET)
+    * productId
+    type
+    recipe
+
+/Compatibility/version/{version}
+/Compatibility
+  getVersionInfo (GET)
+    * version
+
+/Review/brandId/{brandId}/startId/{startId}/startDate/{startDate}
+/Review
+  getBrandId (GET)
+    * brandId
+    startId
+    startDate
+
+/FavoriteSearch
+/FavoriteSearch
+  getFavoriteSearch (GET)
+
+/Info
+/Info
+  getVersionInfo (GET)
+
+/CoreValue/id/{id}
+/CoreValue
+  getById (GET)
+    * id
+
+/Search/filterExpression/{filterExpression}
+/Search
+  getGetSolrFieldNames (GET)
+    filterExpression
+  getGetFacetFields (GET)
+    filterExpression
+
+/CreditCard/id/{id}
+/CreditCard
+  getCreditCardById (GET)
+    * id
+  deleteCreditCardById (DELETE)
+    * id
+
+/Brand/id/{id}
+/Brand
+  getId (GET)
+    * id
+
+/Badge/Feed/t/{t}
+/Badge/Feed
+  getBadgeFeed (GET)
+    t
+
+/Search/term/{term}/sort/{sort}/limit/{limit}/page/{page}/facets/{facets}/filters/{filters}/currentPage/{currentPage}/pageCount/{pageCount}
+/Search
+  getSearch (GET)
+    term
+    sort
+    limit
+    page
+    facets
+    filters
+    currentPage
+    pageCount
+
+/EventLogger/name/{name}
+/EventLogger
+  logEvent (GET)
+    name
+
+/ApiDeveloper/lookupKey/{lookupKey}
+/ApiDeveloper
+  getByApiKeyHash (GET)
+    * lookupKey
+
+/Address
+/Address
+  getAddressByEmail (GET)
+
+/Product/stockId/{stockId}
+/Product
+  getProductByStockId (GET)
+    * stockId
+
+/Compatibility
+/Compatibility
+  getCompatibilityMap (GET)
+
+/ApiAttribute/name/{name}
+/ApiAttribute
+  getByName (GET)
+    * name
+
+/Statistics/killSwitchStatusZappos102/{killSwitchStatusZappos102}
+/Statistics
+  getKillSwitchStatus102 (GET)
+    * killSwitchStatusZappos102
+
+/Statistics/type/{type}/option/{option}/location/{location}/timespan/{timespan}/filters/{filters}/startDate/{startDate}/startOrderItemId/{startOrderItemId}/limit/{limit}
+/Statistics
+  getStatistics (GET)
+    * type
+    option
+    location
+    timespan
+    filters
+    startDate
+    startOrderItemId
+    limit
+
+/Order/type/{type}/range/{range}/fromDate/{fromDate}/toDate/{toDate}
+/Order
+  getOrdersForCustomer (GET)
+    * type
+    range
+    fromDate
+    toDate
+
+/Address/list/{list}
+/Address
+  getVerifiedIds (GET)
+    * list
+
+/ApiApplication/id/{id}/apiAttributeId/{apiAttributeId}
+/ApiApplication
+  getApiAttribute (GET)
+    * id
+    * apiAttributeId
+  removeAttribute (DELETE)
+    * id
+    * apiAttributeId
+
+/Statistics/killSwitchStatusZappos101/{killSwitchStatusZappos101}
+/Statistics
+  getKillSwitchStatus101 (GET)
+    * killSwitchStatusZappos101
+
+/ApiDeveloper/email/{email}
+/ApiDeveloper
+  getByEmail (GET)
+    * email
+
+/Search/batch/{batch}
+/Search
+  getBatchSearch (GET)
+    * batch
+
+/Cart/sessionId/{sessionId}/addressId/{addressId}/address/{address}/city/{city}/state/{state}/postalCode/{postalCode}/shippingTypeCode/{shippingTypeCode}
+/Cart
+  bySessionId (GET)
+    * sessionId
+    addressId
+    address
+    city
+    state
+    postalCode
+    shippingTypeCode
+
+/ApiApplication/id/{id}
+/ApiApplication
+  getById (GET)
+    * id
+
+/Product/styleId/{styleId}
+/Product
+  getProductByStyleId (GET)
+    * styleId
+
+/Favorite/stockId/{stockId}
+/Favorite
+  deleteFavoriteStock (DELETE)
+    * stockId
+
+/Product/upc/{upc}
+/Product
+  getProductByUPC (GET)
+    * upc
+
+/Review/productId/{productId}/startId/{startId}/startDate/{startDate}/page/{page}/offset/{offset}
+/Review
+  getProductId (GET)
+    * productId
+    startId
+    startDate
+    page
+    offset
+
+/ApiDeveloper/limit/{limit}/page/{page}/sort/{sort}/orderBy/{orderBy}/sortAsc/{sortAsc}
+/ApiDeveloper
+  getAll (GET)
+    limit
+    page
+    sort
+    orderBy
+    sortAsc
+
+/CoreValue
+/CoreValue
+  getAll (GET)
+
+/Product/id/{id}
+/Product
+  getProductById (GET)
+    * id
+
+/Search/Similarity/type/{type}/limit/{limit}/styleId/{styleId}/emphasis/{emphasis}/productType/{productType}/category/{category}/subCategory/{subCategory}/brandId/{brandId}/page/{page}
+/Search/Similarity
+  getSimilaritySearch (GET)
+    * type
+    * limit
+    styleId
+    emphasis
+    productType
+    category
+    subCategory
+    brandId
+    page
+
+/Order/id/{id}/type/{type}
+/Order
+  getOrderById (GET)
+    * id
+    type
+
+/Address/id/{id}
+/Address
+  getAddressById (GET)
+    * id
+  deleteAddress (DELETE)
+    * id
+
+/Image/styleId/{styleId}/type/{type}/recipe/{recipe}
+/Image
+  GetStyleId (GET)
+    * styleId
+    type
+    recipe
+
+/ApiAttribute
+/ApiAttribute
+  getAllApiAttributes (GET)
+
+/Image
+/Image
+  getRecipes (GET)
+
+/Favorite/page/{page}/limit/{limit}/offset/{offset}/sort/{sort}/sortDirection/{sortDirection}
+/Favorite
+  getFavoritesForCustomer (GET)
+    page
+    limit
+    offset
+    sort
+    sortDirection
+
+/CreditCard
+/CreditCard
+  getCreditCardsForCustomer (GET)
+
+/Cache
+/Cache
+  getAllCaches (GET)
+
+/Customer
+/Customer
+  getDiscoverOptions (GET)
+  getEmailLists (GET)
+
+/Order/claimTicketId/{claimTicketId}
+/Order
+  getOrderByClaimTicketId (GET)
+    * claimTicketId
+
+/Image/productId/{productId}/styleId/{styleId}/type/{type}/recipe/{recipe}
+/Image
+  GetStyleOrProductId (GET)
+    productId
+    styleId
+    type
+    recipe
+
+/About
+/About
+  getVersionInfo (GET)
+
+/Cache/id/{id}
+/Cache
+  getCacheById (GET)
+    * id
+  clearCacheById (DELETE)
+    id
+
+/AutoComplete/term/{term}
+/AutoComplete
+  getAutoComplete (GET)
+    * term
+
+/Brand/customerId/{customerId}/maxResults/{maxResults}/collapse/{collapse}
+/Brand
+  getCustomerId (GET)
+    * customerId
+    maxResults
+    collapse
+
+/ApiAttribute/id/{id}
+/ApiAttribute
+  getById (GET)
+    * id
+  deleteAttribute (DELETE)
+    * id
+
+/Customer/access_token/{access_token}
+/Customer
+  getCustomer (GET)
+    * access_token
+
+/Points/type/{type}/customerId/{customerId}/t/{t}
+/Points
+  viewLoyaltyPoints (GET)
+    * type
+    customerId
+    t
+
+/FavoriteSearch/name/{name}/url/{url}
+/FavoriteSearch
+  deleteFavoriteSearch (DELETE)
+    * name
+    * url
+
+/Image/productId/{productId}/type/{type}/recipe/{recipe}
+/Image
+  GetProductId (GET)
+    * productId
+    type
+    recipe
+
+/Compatibility/version/{version}
+/Compatibility
+  getVersionInfo (GET)
+    * version
+
+/Review/brandId/{brandId}/startId/{startId}/startDate/{startDate}
+/Review
+  getBrandId (GET)
+    * brandId
+    startId
+    startDate
+
+/FavoriteSearch
+/FavoriteSearch
+  getFavoriteSearch (GET)
+
+/Info
+/Info
+  getVersionInfo (GET)
+
+/CoreValue/id/{id}
+/CoreValue
+  getById (GET)
+    * id
+
+/Search/filterExpression/{filterExpression}
+/Search
+  getGetSolrFieldNames (GET)
+    filterExpression
+  getGetFacetFields (GET)
+    filterExpression
+
+/CreditCard/id/{id}
+/CreditCard
+  getCreditCardById (GET)
+    * id
+  deleteCreditCardById (DELETE)
+    * id
+
+/Brand/id/{id}
+/Brand
+  getId (GET)
+    * id
+
+/Badge/Feed/t/{t}
+/Badge/Feed
+  getBadgeFeed (GET)
+    t
+
+/Search/term/{term}/sort/{sort}/limit/{limit}/page/{page}/facets/{facets}/filters/{filters}/currentPage/{currentPage}/pageCount/{pageCount}
+/Search
+  getSearch (GET)
+    term
+    sort
+    limit
+    page
+    facets
+    filters
+    currentPage
+    pageCount
+
+/EventLogger/name/{name}
+/EventLogger
+  logEvent (GET)
+    name
+
+/ApiDeveloper/lookupKey/{lookupKey}
+/ApiDeveloper
+  getByApiKeyHash (GET)
+    * lookupKey
+
+/Address
+/Address
+  getAddressByEmail (GET)
+

@@ -1,0 +1,12 @@
+<h2>Methods</h2>
+<ul>
+<% @resources.each do |resource| %>
+  <li><%= resource.path %>
+  <ul>
+    <% resource.methods.each do |method| %>
+      <li><a href="/method<%= resource.base_path %>/<%= method.id %>"><%= method.displayName %> (<%= method.name %>)</a></li>
+    <% end %>
+  </ul>
+  </li>
+<% end %>
+</ul>

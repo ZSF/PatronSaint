@@ -1,0 +1,22 @@
+Resources
+<ul>
+<% @resources.each do |resource| %>
+  <li><%= resource.path %>
+    <ul>
+    <% resource.methods.each do |method| %>
+      <li><%= method.displayName%> (<%= method.name %>)
+      <ul>
+      <% method.params.each do |param| %>  
+        <li<%= param.required? ? ' class="required"' : '' %>><%= param.name %>
+          <% if param.default %>
+          (<%= param.default %>)
+          <% end %>
+        </li>
+      <% end %>
+      </ul>
+      </li>
+    <% end %>
+    </ul>
+  </li>
+<% end %>
+</ul>

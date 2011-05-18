@@ -1,0 +1,19 @@
+<h2><%= @resource.base_path %> : <%= @method.displayName %></h2>
+<form action="/call" method="post" id="callAPI">
+<input type="hidden" name="resource" value="<%= h @resource.base_path %>" />
+<input type="hidden" name="method" value="<%= @method.name %>" />
+<% if @method.params.empty? %>
+  <p>No Parameters</p>
+<% else %>
+  <fieldset class="params">
+  <% @method.params.each do |param| %>
+    <div>
+      <label for="<%= param.name %>" <%= param.required? ? ' class="required"' : '' %>><%= param.name %></label>
+      <input type="text" name="params[<%= param.name %>]"<% if param.default %> value="<%= h param.default %>"<% end %> />
+    </div>
+    </label>
+  <% end %>
+  </fieldset>
+<% end %>
+<input type="submit" value="Call" />
+</form>

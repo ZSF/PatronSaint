@@ -1,0 +1,72 @@
+li.required {
+	font-weight: bold;
+}
+
+#resources {
+  width: 300px;
+}
+
+#methods {
+  width: 400px;
+}
+
+#method {
+  width: 600px;
+}
+
+#response {
+  margin-left: 5px;
+  width: 1335px;
+  border: 1px solid black;
+  clear: both;
+  padding: 5px;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+#resources, #methods, #method {
+  border: 1px solid black;
+  float: left;
+  margin-left: 5px;
+  height: 300px;
+  overflow: auto;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+fieldset.params {
+  margin: 5px 0;
+}
+
+fieldset.params label {
+  display: block;
+  width: 150px;
+  float: left;
+  margin-top: 5px;
+}
+
+fieldset.params div {
+  clear: both;
+  margin-bottom: 5px;
+}
+
+fieldset.params label.required {
+  font-weight: bold;
+}
+fieldset.params input {
+  width: 300px;
+}
+
+ul { 
+  list-style-type: none; 
+  margin: 0;
+  padding: 0;
+  padding-left: 10px;
+} 
+
+li {
+  
+}
