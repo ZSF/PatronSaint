@@ -7,12 +7,15 @@
 <% else %>
   <fieldset class="params">
   <% @method.params.each do |param| %>
-    <div>
+    <div class="param">
       <label for="<%= param.name %>" <%= param.required? ? ' class="required"' : '' %>><%= param.name %></label>
       <input type="text" name="params[<%= param.name %>]"<% if param.default %> value="<%= h param.default %>"<% end %> />
     </div>
     </label>
   <% end %>
+  <div class="checkboxes">
+    <%= partial :includes, :locals => { :includes => @includes, :name => 'excludes' } %>
+  </div>
   </fieldset>
 <% end %>
 <input type="submit" value="Call" />

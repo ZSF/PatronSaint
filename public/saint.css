@@ -41,22 +41,22 @@ fieldset.params {
   margin: 5px 0;
 }
 
-fieldset.params label {
+div.param label {
   display: block;
   width: 150px;
   float: left;
   margin-top: 5px;
 }
 
-fieldset.params div {
+div.param {
   clear: both;
   margin-bottom: 5px;
 }
 
-fieldset.params label.required {
+div.param label.required {
   font-weight: bold;
 }
-fieldset.params input {
+div.param input {
   width: 300px;
 }
 
@@ -67,6 +67,10 @@ ul {
   padding-left: 10px;
 } 
 
-li {
-  
+div.checkboxes label {
+  display: block;
+}
+
+div.checkboxes div.nested {
+  margin-left: 30px;
 }

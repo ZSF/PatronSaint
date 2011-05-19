@@ -1,10 +1,10 @@
 require 'rubygems'
 require "bundler/setup"
-require 'ducks'
+require 'lib/ducks'
 require 'yaml'
 
 overrides = {}
-ducks = DucksWADL::Document.new('api.wadl')
+ducks = DucksWADL::Document.new('api/api.wadl')
 ducks.resources.each do |resource|
   overrides[ resource.base_path ] ||= {}
   resource.methods.each do |method|

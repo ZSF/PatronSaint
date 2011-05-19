@@ -138,7 +138,7 @@ end
 if __FILE__ == $0
 
   # ducks = DucksWADL::Document.new('api.wadl')
-  ducks = DucksWADL::Document.new('zappos-wadl.xml')
+  ducks = DucksWADL::Document.new('../api/zappos-wadl.xml')
   ducks.resources.each do |resource|
     puts resource.path
     puts resource.base_path

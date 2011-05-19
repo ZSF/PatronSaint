@@ -2,7 +2,9 @@ require 'rubygems'
 require "bundler/setup"
 require 'sinatra'
 require 'zappos'
-require 'ducks'
+require 'lib/ducks'
+require 'lib/patron_helper'
+require 'lib/partials'
 require 'json'
 require 'erb'
 
@@ -24,46 +26,34 @@ end
 
 API_KEY = '6fd74cc5be050f2c1760441f3cc203460dcf7cc7'
 zappos  = Zappos.client(API_KEY)
-ducks   = DucksWADL::Document.new('api.wadl')
+ducks   = DucksWADL::Document.new('api/api.wadl')
+patron  = PatronHelper.new( ducks, 'api/includes.yaml', 'api/includes.yaml' )
 
 helpers do
+  include Sinatra::Partials
   include Rack::Utils
   alias_method :h, :escape_html
 end
 
 get '/' do
-  @resources = ducks.resources.map { |r| r.base_path }.uniq.sort
+  @resources = patron.resource_list
   erb :index
 end
 
 get '/resource*' do
-  base_path = params[:splat].first
-  @resources = []
-  ducks.resources.each do |resource|
-    @resources << resource if resource.base_path == base_path
-  end
+  @resources = patron.find_resources( params[:splat].first )
   erb :resource, :layout => false
 end
 
 get '/method*/:method' do
   base_path = params[:splat].first
   method_id = params[:method]
-  ducks.resources.each do |resource|
-    if resource.base_path == base_path
-      resource.methods.each do |method|
-        if method.id == method_id
-          @method   = method
-          @resource = resource
-          break
-        end
-      end
-    end
-    break if @resource
-  end
-  if @resource
-    erb :method, :layout => false
+  @resource, @method = patron.find_resource_and_method( base_path, method_id )
+  @includes = patron.includes_checkboxes_for( base_path )
+  if @method
+    erb :method #, :layout => false
   else
-    "Method Not Found"
+    404
   end
 end
 
