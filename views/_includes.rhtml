@@ -1,13 +1,4 @@
-<% includes.each do |field| %>
-  <% if field.is_a?( String ) %>
-    <label><input type="checkbox" name="<%= name %>[]" value="<%= field %>"> <%= field %></label>
-  <% end %>
-  <% if field.is_a?( Hash ) %>
-    <% field.each do |field,includes| %>
-      <label><input type="checkbox" name="<%= name %>[]" value="<%= field %>"> <%= field %></label>
-      <div class="nested">
-        <%= partial :includes, :locals => { :includes => includes, :name => name } %>
-      </div>
-    <% end %>
-  <% end %>
-<% end %>
+<div id="<%= name %>" class="checkboxes">
+  <h2><%= name %></h2>
+  <%= partial :checkboxes, :locals => { :includes => @includes, :name => "params[#{ name }]" } %>
+</div>

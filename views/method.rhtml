@@ -13,9 +13,10 @@
     </div>
     </label>
   <% end %>
-  <div class="checkboxes">
-    <%= partial :includes, :locals => { :includes => @includes, :name => 'excludes' } %>
-  </div>
+  <% unless @includes.empty? %>
+    <%= partial 'includes', { :locals => { :name => 'includes' } } %>
+    <%= partial 'includes', { :locals => { :name => 'excludes' } } %>
+  <% end %>
   </fieldset>
 <% end %>
 <input type="submit" value="Call" />

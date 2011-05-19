@@ -61,6 +61,14 @@
     page: 
     filters: 
     sort: 
+      type: pair
+      keys:
+        productId
+        name
+        goLiveDate
+      values:
+        asc
+        desc
     limit: 
     facets: 
 /FavoriteSearch: 

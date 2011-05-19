@@ -41,3 +41,31 @@
   - sortedWidths
   - isNew
   - measurements
+/Search:
+  - results:
+    - styleId
+    - productId
+    - colorId
+    - brandName
+    - productName
+    - productUrl
+    - thumbnailImageUrl
+    - price
+    - originalPrice
+    - description
+    - videoUrl
+    - videoFileName
+    - videoUploadedDate
+    - productRating
+  - currentResultCount
+  - totalResultCount
+  - limit
+  - currentPage
+  - pageCount
+  - filters
+  - facets:
+    - facetField
+    - facetFieldDisplayName
+    - values
+    - name
+    - count

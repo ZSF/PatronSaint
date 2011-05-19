@@ -35,14 +35,16 @@ helpers do
   alias_method :h, :escape_html
 end
 
+
 get '/' do
   @resources = patron.resource_list
   erb :index
 end
 
 get '/resource*' do
-  @resources = patron.find_resources( params[:splat].first )
-  erb :resource, :layout => false
+  @base_path = params[:splat].first
+  @resources = patron.find_resources( @base_path )
+  erb :resource, :layout => layout?
 end
 
 get '/method*/:method' do
@@ -51,22 +53,29 @@ get '/method*/:method' do
   @resource, @method = patron.find_resource_and_method( base_path, method_id )
   @includes = patron.includes_checkboxes_for( base_path )
   if @method
-    erb :method #, :layout => false
+    erb :method, :layout => layout?
   else
     404
   end
 end
 
 post '/call' do
+  p params
   call_params = params[:params] || {}
   call_params.delete_if { |key,value| value.to_s.empty? }
   response = zappos.call_method( params[:method].capitalize, params[:resource], { :query_params => call_params } )
   headers = []
   response.response.each_header { |header,value| headers << [ header, value ] }
+  puts response.body
+  puts '^--- THAT'
   {
     :headers => headers,
     :code    => response.code,
     :url     => URI.unescape( response.request_uri.to_s ).gsub( API_KEY, '{YOUR_KEY_HERE}' ),
     :body    => JSON.pretty_generate( response.data )
   }.to_json
+end
+
+def layout?
+  params[:inline] ? false : true
 end
