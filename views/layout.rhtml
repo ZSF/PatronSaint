@@ -2,17 +2,33 @@
 <html>
 <head>
   <title>Patron Saint</title>
-  <link rel="stylesheet" type="text/css" media="screen" href="/saint.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="/css/ui-lightness/jquery-ui-1.8.13.custom.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="/prettify/prettify.css" />
-  <script type="text/javascript" src="/jquery.min.js"></script>
-  <script type="text/javascript" src="/saint.js"></script>
+  <link rel="stylesheet" type="text/css" media="screen" href="/saint.css" />
+  <script type="text/javascript" src="/js/vendor/jquery-1.5.1.min.js"></script>
+  <script type="text/javascript" src="/js/vendor/jquery-ui-1.8.13.custom.min.js"></script>
+  <script type="text/javascript" src="/js/vendor/jquery.simplemodal-1.4.1.js"></script>
+  <script type="text/javascript" src="/js/vendor/jquery.combobox.js"></script>  
+  <script type="text/javascript" src="/js/vendor/json2.js"></script>
   <script type="text/javascript" src="/prettify/prettify.js"></script>
-  <script type="text/javascript" src="/jquery.simplemodal-1.4.1.js"></script>
-  <script type="text/javascript" src="/json2.js"></script>  
+  <script type="text/javascript" src="/js/includes_widget.js"></script>
+  <script type="text/javascript" src="/js/deep_linking.js"></script>  
+  <script type="text/javascript" src="/js/saint.js"></script>
 </head>
 <body>
 <div class="border">
 <%= yield %>
 <div>
+  <select id="combo" name="combo">
+    <option>One</option>
+    <option>Two</option>
+    <option>Three</option>
+    <option>Four</option>            
+  </select>
+  <script type="text/javascript">
+    $(function() {
+      $('#combo').combobox();
+    });
+  </script>
 </body>
 </html>

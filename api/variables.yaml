@@ -63,12 +63,12 @@
     sort: 
       type: pair
       keys:
-        productId
-        name
-        goLiveDate
+        - productId
+        - name
+        - goLiveDate
       values:
-        asc
-        desc
+        - asc
+        - desc
     limit: 
     facets: 
 /FavoriteSearch: 
