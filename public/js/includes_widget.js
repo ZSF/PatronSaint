@@ -37,7 +37,8 @@ $(function () {
   
   var widgetizeIncludes = function() {
     $('#includes, #excludes').each(function(i,widget) {
-      var label = $(widget).find('h2').html();
+      var $label = $(widget).find('h2').hide();
+      var label = $label.html();
       var controls = $(
         '<div class="includeControls param">' +
           '<label>' + label + ':</label> ' +
@@ -47,14 +48,28 @@ $(function () {
       updateControls( controls, this );
       controls.find('button').click(function(e) {
         e.preventDefault();
-        $(widget).modal({
-          maxHeight: 500,
-          persist: true,
-          onClose: function() {
-            updateControls( controls, $('#simplemodal-container') );
-            $.modal.close();
-          }
+        var originalNeighbor = $(widget).prev();
+        $(widget).dialog({
+          height: 500,
+          title: label,
+          modal: true,
+          minWidth: 400,
+          close: function(e,ui) {
+            // Destroy the dialog and put the DOM element back where it was
+            $(this).dialog('destroy').insertAfter(originalNeighbor);
+            updateControls( controls, $(this) );            
+            return true;
+          },
+          buttons: [
+            {
+              text: "OK",
+              click: function() {
+                $(this).dialog('close');
+              }
+            }
+          ]
         });
+        
       });
       $(widget).before( controls ).hide();
    });
@@ -68,7 +83,6 @@ $(function () {
   $(document.body).bind('methodLoaded', function() {
     widgetizeIncludes();
   });
-
   widgetizeIncludes();
   
 });
