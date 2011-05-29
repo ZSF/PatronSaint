@@ -1,4 +1,4 @@
-$(function () {
+(function( $ ) {
 
   var checkParents = function( checkbox ) {
     var parentDiv = $(checkbox).parent().parent();
@@ -17,7 +17,7 @@ $(function () {
      });
     }
   }
-
+  
   var getCheckedValues = function( container ) {
     var values = [];
     $(container).find('input:checked').each(function(i,check) {
@@ -34,34 +34,35 @@ $(function () {
       $(controls).find('span').text( JSON.stringify( selected ) );
     }
   };
-  
-  var widgetizeIncludes = function() {
-    $('#includes, #excludes').each(function(i,widget) {
-      var $label = $(widget).find('h2').hide();
-      var label = $label.html();
-      var controls = $(
+
+	$.widget( "ui.patronincludes", {
+  	_create: function() {
+      this.label = $(this.element).find('h2').hide();
+      var title  = this.label.html();
+      this.controls = $(
         '<div class="includeControls param">' +
-          '<label>' + label + ':</label> ' +
+          '<label>' + title + ':</label> ' +
           '<span></span> <button>Edit</button>' +
         '</div>'
       );
-      updateControls( controls, this );
-      controls.find('button').click(function(e) {
+      updateControls( this.controls, this.element );
+      var that = this;
+      this.controls.find('button').click(function(e) {
         e.preventDefault();
-        var originalNeighbor = $(widget).prev();
-        $(widget).dialog({
+        var originalNeighbor = $(that.element).prev();
+        $(that.element).dialog({
           height: 500,
-          title: label,
+          title: title,
           modal: true,
           minWidth: 400,
           close: function(e,ui) {
             // Destroy the dialog and put the DOM element back where it was
             $(this).dialog('destroy').insertAfter(originalNeighbor);
-            updateControls( controls, $(this) );            
+            updateControls( that.controls, this );
             return true;
           },
           buttons: [
-            {
+            { 
               text: "OK",
               click: function() {
                 $(this).dialog('close');
@@ -69,20 +70,32 @@ $(function () {
             }
           ]
         });
-        
-      });
-      $(widget).before( controls ).hide();
-   });
-  };
-
-  $('.checkboxes input[type="checkbox"]').live('change', function(e) {
-    checkParents( this );
-    uncheckChildren( this );
+      });   
+      $(this.element).bind('change', function(e) {
+        if ( e.target.tagName == 'INPUT' && e.target.getAttribute('type') == 'checkbox' ) {
+          checkParents( e.target );
+          uncheckChildren( e.target );
+        }
+      });   
+      $(this.element).before( this.controls ).hide();
+    },
+    destroy: function() {
+      this.label.show();
+      this.element.unbind('change').show();
+      this.controls.remove();
+  		$.Widget.prototype.destroy.call( this );
+  	}
   });
   
-  $(document.body).bind('methodLoaded', function() {
+  // Automatically widgetize stuff - TODO: Move elsewhere
+  var widgetizeIncludes = function() {
+    $('#includes, #excludes').each(function(i,widget) {
+      $(widget).patronincludes();
+    });
+  };
+  $(document).bind( 'ready', function() {
+    $(document.body).bind('methodLoaded', widgetizeIncludes );
     widgetizeIncludes();
   });
-  widgetizeIncludes();
   
-});
+})( jQuery );

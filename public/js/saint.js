@@ -22,7 +22,7 @@ $(function () {
     e.preventDefault();
     $(document.body).trigger('loadMethod', this.getAttribute('href') );
   });
-  
+    
   $('#callAPI').live('submit', function(e) {
     e.preventDefault();
     $.ajax({
