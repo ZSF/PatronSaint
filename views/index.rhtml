@@ -1,11 +1,13 @@
-<h1>Patron Saint</h1>
+<div class="ui-widget-header ui-corner-all ui-helper-clearfix" id="title">
+  <h1>Patron Saint</h1>
+</div>
 <div id="credentials">
   <form action="/credentials">
     <label>API Key: <input type="text" name="api_key" /></label>
     <input type="submit" value="Set" />
   </form>
 </div>
-<div id="resources">
+<div id="resources" class="ui-corner-all">
   <h2>Resources</h2>
   <ul>
   <% @resources.each do |resource| %>
@@ -13,9 +15,9 @@
   <% end %>
   </ul>
 </div>
-<div id="methods">
+<div id="methods" class="ui-corner-all">
 </div>
-<div id="method">
+<div id="method" class="ui-corner-all">
 </div>
-<div id="response">
+<div id="response" class="ui-corner-all">
 </div>

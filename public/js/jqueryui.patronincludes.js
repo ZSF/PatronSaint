@@ -29,9 +29,9 @@
   var updateControls = function( controls, container ) {
     var selected = getCheckedValues( container );
     if ( selected.length == 0 ) {
-      $(controls).find('span').text('');
+      $(controls).find('span:first').text('');
     } else {
-      $(controls).find('span').text( JSON.stringify( selected ) );
+      $(controls).find('span:first').text( JSON.stringify( selected ) );
     }
   };
 

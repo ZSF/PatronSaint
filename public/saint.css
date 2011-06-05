@@ -1,9 +1,24 @@
-.ui-widget {
-	font-size: 80%;
+body {
+  font-family: Verdana,Arial,sans-serif;
+  font-size: 0.9em;  
 }
 
-div.border {
-  border: 10px solid #a7dcce;
+#title {
+  padding: 5px;
+  text-align: center;
+}
+
+#main {
+  border: 1px solid black;
+  padding: 0.5%;
+}
+
+#credentials {
+  padding: .5em;
+}
+
+.ui-widget {
+  font-size: 90%;
 }
 
 li.required {
@@ -11,23 +26,31 @@ li.required {
 }
 
 #resources {
-  width: 300px;
+/*  width: 300px;*/
+  width: 25%;
 }
 
 #methods {
-  width: 400px;
+/*  width: 400px;*/
+  width: 30%;
+  margin-left: 0.5%;
 }
 
 #method {
-  width: 600px;
+/*  width: 600px;*/
+  width: 41.5%;
+  margin-left: 0.5%;  
 }
 
 #response {
-  margin-left: 5px;
-  width: 1335px;
+/*  width: 1335px;*/
+  width: 99%;
   border: 1px solid black;
   clear: both;
   padding: 5px;
+  background-color: white;
+  max-height: 300px;
+  overflow: auto;
 }
 
 h1, h2, h3 {
@@ -38,11 +61,11 @@ h1, h2, h3 {
 #resources, #methods, #method {
   border: 1px solid black;
   float: left;
-  margin-left: 5px;
   height: 300px;
   overflow: auto;
   padding: 5px;
   margin-bottom: 5px;
+  background-color: white;
 }
 
 fieldset.params {
@@ -94,3 +117,36 @@ div.includesBox {
 .ui-button { margin-left: -1px; }
 .ui-button-icon-only .ui-button-text { padding: 0.35em; } 
 .ui-autocomplete-input { margin: 0; padding: 0.48em 0 0.47em 0.45em; }
+
+/* JSON Builder */
+.jsonBuilder .rows {
+  font-size: 1.2em;
+}
+.jsonBuilder .rows input {
+  color: green;
+}
+.jsonBuilder .rows:before {
+  content: "{";
+}
+.jsonBuilder .rows:after {
+  content: "}";
+}
+.jsonBuilder .rows > div:after {
+  content: ",";
+}
+.jsonBuilder .rows > div {
+  padding-left: 10px;
+}
+.jsonBuilder .rowForm {
+  margin-top: 10px;
+}
+
+input[type="text"] {
+  border: 1px solid #c5dbec;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  font-size: 16px;
+  padding: 4px;
+  
+}

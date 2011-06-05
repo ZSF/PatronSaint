@@ -10,6 +10,7 @@ $(function () {
   $(document.body).bind('loadMethod', function(e,href) {
     $('#method').load( href + '?inline=1', function() {
       $(document.body).trigger("methodLoaded", { href: href });
+      $('button').button();
     });
   });
 
