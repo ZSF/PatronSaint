@@ -119,8 +119,8 @@ div.includesBox {
 .ui-autocomplete-input { margin: 0; padding: 0.48em 0 0.47em 0.45em; }
 
 /* JSON Builder */
-.jsonBuilder .rows {
-  font-size: 1.2em;
+.jsonBuilder input {
+  width: 160px;
 }
 .jsonBuilder .rows input {
   color: green;
@@ -140,6 +140,13 @@ div.includesBox {
 .jsonBuilder .rowForm {
   margin-top: 10px;
 }
+.jsonBuilder textarea {
+  width: 100%;
+  height: 200px;
+}
+.jsonBuilder .rows .alt {
+  background-color: #d9dada;
+}
 
 input[type="text"] {
   border: 1px solid #c5dbec;
@@ -150,3 +157,12 @@ input[type="text"] {
   padding: 4px;
   
 }
+
+.ui-autocomplete {
+		max-height: 200px;
+		overflow-y: auto;
+		/* prevent horizontal scrollbar */
+		overflow-x: hidden;
+		/* add padding to account for vertical scrollbar */
+		padding-right: 20px;
+	}

@@ -1,11 +1,26 @@
 (function( $ ) {
   
+  var globalCache = {};
+  
   $.widget( "ui.hintedinput", {
+    
   	_create: function() {
+  	  var hintedinput = this;
   	  var input = $(this.element).autocomplete({
 				delay: 0,
 				minLength: 0,
-				source: [ 'Cat', 'Dog', 'Fish' ]
+				source: function(request, response) {
+				  var params = [];
+          params.push( 'term=' + escape( request.term ) );
+          if ( hintedinput.options.link ) {
+            params.push( 'key=' + escape( $(hintedinput.options.link).val() ) );
+          }
+          var sourceUrl = '/autocomplete/' + hintedinput.options.source + '?' + params.join('&');
+          console.log( sourceUrl );
+          $.getJSON(sourceUrl, function(data) {
+            response( data );
+          });
+				}
   	  })
   	  .addClass( "ui-widget ui-widget-content ui-corner-left" );
   	  

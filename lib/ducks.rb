@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'nokogiri'
+require 'simple_memoize'
 
 module DucksWADL
 
@@ -23,6 +24,7 @@ module DucksWADL
       # TODO : This is a hack for Jason's bug
       resource_list.uniq
     end
+    memoize( :resources )
     
   end
 
@@ -57,8 +59,9 @@ module DucksWADL
             method_params = []
         end
       end
-      method_list
+      return method_list
     end
+    memoize( :methods )
     
     # TODO : This is a hack for Jason's bug
     def hash
@@ -78,7 +81,7 @@ module DucksWADL
     
     def initialize( method, params=[] )
       @method = method
-      @params = params
+      @parameters = params
     end
     
     def name
@@ -101,14 +104,10 @@ module DucksWADL
       return false
     end
 
-    # TODO: Belongs on the method? Look at APIAttribute method
     def params
-      param_list = []
-      @params.each do |param|
-        param_list << Param.new( param )
-      end
-      param_list
+      @parameters.collect { |p| Param.new( p ) }
     end
+    memoize( :params )
 
   end  
   
@@ -118,16 +117,25 @@ module DucksWADL
     
     def initialize( param )
       @param = param
+      @extensions = {}
     end
-    
+        
     [ :name, :type, :style, :default ].each do |method|
       define_method( method ) do
-        @param.attr( method.to_s )
+        @extensions[ method.to_s ] || @param.attr( method.to_s )
       end
+    end
+
+    def method_missing( name, *args )
+      @extensions[ name.to_s ]
+    end
+    
+    def set( name, value )
+      @extensions[ name ] = value
     end
         
     def required?
-      required = @param.attr('required') 
+      required = @param.attr('required')
       required && required.match(/true/i)
     end
     

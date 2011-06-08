@@ -9,7 +9,14 @@
   <% @method.params.each do |param| %>
     <div class="param">
       <label for="<%= param.name %>" <%= param.required? ? ' class="required"' : '' %>><%= param.name %></label>
-      <input type="text" name="params[<%= param.name %>]"<% if param.default %> value="<%= h param.default %>"<% end %> />
+      <input type="text" 
+        name="params[<%= param.name %>]"
+        <% if param.default %> value="<%= h param.default %>"<% end %>
+        <% if param.type == 'jsonMap' %>class="jsonMap"<% end %>
+        <% if param.autocomplete %>data-autocomplete="<%= param.autocomplete %>"<% end %>
+        <% if param.key_autocomplete %>data-key-autocomplete="<%= param.key_autocomplete %>"<% end %>
+        <% if param.value_autocomplete %>data-value-autocomplete="<%= param.value_autocomplete %>"<% end %>
+        />
     </div>
     </label>
   <% end %>

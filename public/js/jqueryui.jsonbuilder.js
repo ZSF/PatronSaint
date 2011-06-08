@@ -16,12 +16,15 @@
       .click(function(event,ui) {
         $(this).parent().remove();
       })
-      .appendTo( row );    
+      .appendTo( row );
     return row;
   };
   
   $.widget( "ui.jsonbuilder", {
   	_create: function() {
+      this.options.key_autocomplete = this.element.attr('data-key-autocomplete');
+      this.options.value_autocomplete = this.element.attr('data-value-autocomplete');      
+  	  
   	  var jsonBuilder = this;
   	  this.button = $( "<button type='button'>&nbsp;</button>" )
 				.insertAfter( this.element )
@@ -43,14 +46,16 @@
                 .addClass('rowForm')
                 .bind('keydown', function(e) {
                   if ( e.keyCode == 13 ) {
-                    var field = $(e.target);
+                    var field = $(e.target)
+                      .blur(); // closes autocomplete box if hinting is on
                     if ( field.attr('name') == 'key[]' ) {
-                      field.next('input').focus();
+                      field.nextAll('input:first').focus();
                     } else {
                       jsonBuilder.addRow();                      
                     }
                   }
                 });
+              jsonBuilder.addHinting( jsonBuilder.rowForm );
               $('<button>&nbsp;</button>')
                 .sidebutton({
                   icon: 'ui-icon-plus',
@@ -60,10 +65,20 @@
                 .click(function() {
                   jsonBuilder.addRow();
                 });
-              jsonBuilder.rowForm
-                .appendTo( this )
-                .find('input:first').focus();
-              jsonBuilder.deserialize();
+              var deserializedOk = jsonBuilder.deserialize();;
+              if ( deserializedOk ) {
+                jsonBuilder.textArea = null;
+                jsonBuilder.rowForm
+                  .appendTo( this )
+                  .find('input:first').focus();                
+              } else {
+                jsonBuilder.textArea = $('<textarea />', {
+                  name: 'jsonBlob'
+                }).val( jsonBuilder.element.val() );
+                $(this).html( jsonBuilder.textArea );
+                jsonBuilder.textArea.focus();
+                alert("Could not parse the JSON in the form field. You'll get a big textarea until you can write valid JSON.");                
+              }
             },
             close: function(event, ui) {
               $(this).remove();
@@ -78,15 +93,25 @@
               { 
                 text: "OK",
                 click: function() {
-                  var json = jsonBuilder.serialize();
-                  jsonBuilder.element.val( json );
-                  $(this).dialog('close');
+                  if ( jsonBuilder.textArea ) {
+                    // Textarea for invalid JSON
+                    jsonBuilder.element.val( jsonBuilder.textArea.val() );
+                    $(this).dialog('close');                    
+                  } else {
+                    // Normal form builder
+                    var noErrors = jsonBuilder.checkLastRow();
+                    if ( noErrors ) {
+                      var json = jsonBuilder.serialize();
+                      jsonBuilder.element.val( json );
+                      $(this).dialog('close');
+                    }                    
+                  }
                 }
               }              
             ]
           });
 				  
-				}).click();
+				});
 	  },
 	  serialize: function() {
       var object={},
@@ -112,22 +137,63 @@
         try {
           data = JSON.parse( json );
         } catch( error ) {
-          alert("Could not parse JSON in the form field.");
-          return;
+          return false;
         }
         var jsonBuilder = this;
         $.each( data, function(key,value) {
-          newRow( key, value )
-            .appendTo( jsonBuilder.rows );          
+          var addedRow = newRow( key, value )
+            .appendTo( jsonBuilder.rows );
+          jsonBuilder.addHinting( addedRow );
         });
+      }
+      return true;
+	  },
+	  checkLastRow: function() {
+      // Check if the user left something in the last form field
+      var nonEmpty = $.grep( this.rowForm.find('input'), function(f) {
+        return $(f).val().length > 0;
+      });
+      if ( nonEmpty.length > 0 && confirm('Add the last row?') ) {
+        var rowAdded = this.addRow();
+        return rowAdded;
+      } else {
+        return true;
       }
 	  },
 	  addRow: function() {
-      var fields = this.rowForm.find('input');
-      newRow( $(fields[0]).val(), $(fields[1]).val() )
-        .appendTo( this.rows );
-      $(fields).val('');
-      $(fields[0]).focus();
+	    // Check for duplicate keys
+      var fields = this.rowForm.find('input'),
+        key = $(fields[0]).val(),
+        value = $(fields[1]).val();
+      var duplicateKeys = $.grep( this.rows.find('input[name="key[]"]'), function(f) {
+        return key == $(f).val();
+      });
+      if ( duplicateKeys.length > 0 ) {
+        alert("A key for '" + key + "' already exists.");
+        $(duplicateKeys[0]).focus();
+        return false;
+      } else {
+        var addedRow = newRow( key, value )
+          .appendTo( this.rows );
+        this.addHinting( addedRow );
+        $(fields).val('');
+        $(fields[0]).focus();
+        return true;
+      }
+	  },
+	  addHinting: function( node ) {
+      var fields = node.find('input');
+      if ( this.options.key_autocomplete ) {
+        $(fields[0]).hintedinput({
+          source: this.options.key_autocomplete
+        });
+      }
+      if ( this.options.value_autocomplete ) {
+        $(fields[1]).hintedinput({
+          source: this.options.value_autocomplete,
+          link: fields[0]
+        });
+      }
 	  },
 	  destroy: function() {
 	    this.button.remove();

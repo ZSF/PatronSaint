@@ -59,16 +59,10 @@
     currentPage: 
     term: 
     page: 
-    filters: 
-    sort: 
-      type: pair
-      keys:
-        - productId
-        - name
-        - goLiveDate
-      values:
-        - asc
-        - desc
+    filters:
+      type: jsonMap
+      autocomplete: { facets: facetValues }
+    sort:
     limit: 
     facets: 
 /FavoriteSearch: 

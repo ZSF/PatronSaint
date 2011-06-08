@@ -5,8 +5,13 @@ require 'zappos'
 require 'lib/ducks'
 require 'lib/patron_helper'
 require 'lib/partials'
+require 'lib/mu/cache'
 require 'json'
 require 'erb'
+
+# use Rack::Auth::Basic, "Restricted Area" do |username, password|
+#   [username, password] == ['admin', 'admin']
+# end
 
 # Monkey patches. Patches of monkeys. Patched monkeys.
 class Zappos::Client
@@ -27,7 +32,7 @@ end
 API_KEY = '6fd74cc5be050f2c1760441f3cc203460dcf7cc7'
 zappos  = Zappos.client(API_KEY)
 ducks   = DucksWADL::Document.new('api/api.wadl')
-patron  = PatronHelper.new( ducks, 'api/includes.yaml', 'api/includes.yaml' )
+patron  = PatronHelper.new( ducks, 'api/variables.yaml', 'api/includes.yaml', 'api/autocompletes.yaml' )
 
 helpers do
   include Sinatra::Partials
@@ -35,6 +40,9 @@ helpers do
   alias_method :h, :escape_html
 end
 
+def cache
+   @@cache ||= Mu::Cache.new :max_size => 1024, :max_time => 30.0
+end
 
 get '/' do
   @resources = patron.resource_list
@@ -59,15 +67,29 @@ get '/method*/:method' do
   end
 end
 
+get '/autocomplete/:source' do
+  data = case params[:source]
+  when 'facets'
+    cache.fetch 'facets' do
+      zappos.search_facet_list
+    end
+  when 'facetValues'
+    zappos.search_facet_values( params[:key] ).collect { |f| f[:name] }
+  else
+    []
+  end
+  if term = params[:term]
+    data = data.select { |v| v.downcase.include?( term.downcase ) }
+  end
+  data.to_json
+end
+
 post '/call' do
-  p params
   call_params = params[:params] || {}
   call_params.delete_if { |key,value| value.to_s.empty? }
   response = zappos.call_method( params[:method].capitalize, params[:resource], { :query_params => call_params } )
   headers = []
   response.response.each_header { |header,value| headers << [ header, value ] }
-  puts response.body
-  puts '^--- THAT'
   {
     :headers => headers,
     :code    => response.code,

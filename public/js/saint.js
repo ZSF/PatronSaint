@@ -8,12 +8,15 @@ $(function () {
   });
 
   $(document.body).bind('loadMethod', function(e,href) {
-    $('#method').load( href + '?inline=1', function() {
+    var methodContainer = $('#method');
+    methodContainer.load( href + '?inline=1', function() {
       $(document.body).trigger("methodLoaded", { href: href });
-      $('button').button();
+      methodContainer
+        .find('button').button().end()
+        .find('input.jsonMap').jsonbuilder();
     });
   });
-
+  
   $('#resources a').live('click', function(e) {
     e.preventDefault();
     $(document.body).trigger('loadMethodList', this.getAttribute('href') );
