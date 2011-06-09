@@ -1,5 +1,6 @@
 <h2><%= @resource.base_path %> : <%= @method.displayName %></h2>
 <form action="/call" method="post" id="callAPI">
+<div class="scrollable">
 <fieldset class="params ui-corner-all">  
 <input type="hidden" name="resource" value="<%= h @resource.base_path %>" />
 <input type="hidden" name="method" value="<%= @method.name %>" />
@@ -28,6 +29,7 @@
   <% end %>
 <% end %>
 </fieldset>
+</div>
 <div class="ui-dialog-buttonpane">
   <button type="submit" value="Call">Call API Method</button>
 </div>

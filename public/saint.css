@@ -77,7 +77,7 @@ h1, h2, h3 {
   overflow: hidden;
 }
 
-#method fieldset {
+#method .scrollable {
   height: 210px;
   overflow: auto;
 }
