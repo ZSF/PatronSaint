@@ -102,7 +102,7 @@ post '/call' do
   {
     :headers => headers,
     :code    => response.code,
-    :url     => URI.unescape( response.request_uri.to_s ).gsub( API_KEY, '{YOUR_KEY_HERE}' ),
+    :url     => URI.unescape( response.request_uri.to_s ), #.gsub( API_KEY, '{YOUR_KEY_HERE}' ),
     :body    => JSON.pretty_generate( response.data )
   }.to_json
 end
