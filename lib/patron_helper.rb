@@ -9,6 +9,23 @@ class PatronHelper
     @autocompletes = YAML.load_file( autocompletes )
   end
   
+  module Helpers
+    
+    # Prints a checkbox for includes, handling the special '.' notation to denote a default include.
+    def includes_checkbox( name, field )
+      if matches = field.match(/^\.(.*)/)
+        %Q{<label class="default"><input type="checkbox" name="#{name}[]" class="default" value="#{matches[1]}"> #{matches[1]}</label>}
+      else
+        %Q{<label><input type="checkbox" name="#{name}[]" value="#{field}"> #{field}</label>}
+      end
+    end
+    
+  end
+  
+  def autocomplete_values( source )
+    return @autocompletes[ source ] || []
+  end
+  
   def resource_list
     @ducks.resources.map { |r| r.base_path }.uniq.sort
   end
@@ -38,9 +55,9 @@ class PatronHelper
   end
   
   private
-  
+    
   def extend_params( resource, method )
-    if extension = @variables[ resource.base_path ][ method.id ]
+    if extension = @variables[ resource.base_path ][ method.id ] rescue nil
       method.params.each do |param|
         if param_extension = extension[ param.name ]
           param_extension.each do |key,value|
@@ -68,18 +85,21 @@ end
 
 if __FILE__ == $0
   require 'ducks'
+  require 'pp'
   
   ducks   = DucksWADL::Document.new('../api/api.wadl')
   
-  p = PatronHelper.new( ducks, '../api/variables.yaml', '../api/includes.yaml', '../api/autocompletes.yaml' )
-  resource, method = p.find_resource_and_method( '/Search', 'getSearch' )
+  p = PatronHelper.new( ducks, '../api/parameters.yaml', '../api/includes.yaml', '../api/autocompletes.yaml' )
+  pp p.includes_checkboxes_for( '/Search' )
   
-  method.params.each do |param|
-    puts param.name
-    puts param.type
-    puts param.key_autocomplete
-    puts param.value_autocomplete
-    puts '---'
-  end
+  # resource, method = p.find_resource_and_method( '/Search', 'getSearch' )
+  # 
+  # method.params.each do |param|
+  #   puts param.name
+  #   puts param.type
+  #   puts param.key_autocomplete
+  #   puts param.value_autocomplete
+  #   puts '---'
+  # end
   
 end

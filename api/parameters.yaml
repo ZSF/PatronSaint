@@ -3,6 +3,7 @@
   getProductId: 
     startId: 
     productId: 
+      autocomplete: productId
     startDate: 
     page: 
     offset: 
@@ -10,6 +11,7 @@
     startId: 
     startDate: 
     brandId: 
+      autocomplete: brandId
 /Favorite: 
   deleteFavoriteStock: 
     stockId: 
@@ -35,7 +37,8 @@
     collapse: 
     maxResults: 
   getId: 
-    id: 
+    id:
+      autocomplete: brandId
 /ApiDeveloper: 
   getByApiKeyHash: 
     lookupKey: 
@@ -62,9 +65,13 @@
     filters:
       type: jsonMap
       autocomplete: { facets: facetValues }
+      force_array: true
     sort:
+      type: jsonMap
+      autocomplete: { sortBy: sortOrder }
     limit: 
     facets: 
+      autocomplete: facets
 /FavoriteSearch: 
   deleteFavoriteSearch: 
     name: 
@@ -76,11 +83,13 @@
   getProductByStockId: 
     stockId: 
   getProductById: 
-    id: 
+    id:
+      autocomplete: productId
   getProductByUPC: 
     upc: 
   getProductByStyleId: 
-    styleId: 
+    styleId:
+      autocomplete: styleId
 /Order: 
   getOrderByClaimTicketId: 
     claimTicketId: 
@@ -94,16 +103,20 @@
     toDate: 
 /Image: 
   GetStyleOrProductId: 
-    styleId: 
+    styleId:
+      autocomplete: styleId
     productId: 
+      autocomplete: productId
     type: 
     recipe: 
   GetProductId: 
     productId: 
+      autocomplete: productId
     type: 
     recipe: 
   GetStyleId: 
-    styleId: 
+    styleId:
+      autocomplete: styleId
     type: 
     recipe: 
 /Compatibility: 
@@ -147,6 +160,7 @@
     startOrderItemId: 
     startDate: 
     type: 
+      autocomplete: statisticsType
     filters: 
     limit: 
   getKillSwitchStatus102: 
@@ -155,11 +169,15 @@
   getSimilaritySearch: 
     category: 
     styleId: 
+      autocomplete: styleId
     productType: 
     page: 
     brandId: 
+      autocomplete: brandId
     type: 
-    emphasis: 
+      autocomplete: similarityType
+    emphasis:
+      autocomplete: similarityEmphasis
     limit: 
     subCategory: 
 /ApiApplication: 

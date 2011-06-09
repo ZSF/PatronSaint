@@ -1,10 +1,10 @@
 ---
 /Product:
-  - productId
-  - brandName
-  - productName
-  - defaultProductUrl
-  - defaultImageUrl
+  - .productId
+  - .brandName
+  - .productName
+  - .defaultProductUrl
+  - .defaultImageUrl
   - rootProductType
   - productType
   - description
@@ -18,12 +18,12 @@
   - archFit
   - productRating
   - styles:
-    - styleId
-    - color
-    - originalPrice
-    - price
-    - productUrl
-    - imageUrl
+    - .styleId
+    - .color
+    - .originalPrice
+    - .price
+    - .productUrl
+    - .imageUrl
     - thumbnailImageUrl
     - goLiveDate
     - productId
@@ -42,30 +42,30 @@
   - isNew
   - measurements
 /Search:
-  - results:
-    - styleId
-    - productId
-    - colorId
-    - brandName
-    - productName
-    - productUrl
-    - thumbnailImageUrl
-    - price
-    - originalPrice
+  - .results:
+    - .styleId
+    - .productId
+    - .colorId
+    - .brandName
+    - .productName
+    - .productUrl
+    - .thumbnailImageUrl
+    - .price
+    - .originalPrice
     - description
     - videoUrl
     - videoFileName
     - videoUploadedDate
     - productRating
-  - currentResultCount
-  - totalResultCount
+  - .currentResultCount
+  - .totalResultCount
   - limit
   - currentPage
   - pageCount
   - filters
   - facets:
-    - facetField
-    - facetFieldDisplayName
-    - values
-    - name
-    - count
+    - .facetField
+    - .facetFieldDisplayName
+    - .values
+    - .name
+    - .count

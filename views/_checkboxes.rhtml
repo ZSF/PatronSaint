@@ -1,10 +1,10 @@
 <% includes.each do |field| %>
   <% if field.is_a?( String ) %>
-    <label><input type="checkbox" name="<%= name %>[]" value="<%= field %>"> <%= field %></label>
+    <%= includes_checkbox name, field %>
   <% end %>
   <% if field.is_a?( Hash ) %>
     <% field.each do |field,includes| %>
-      <label><input type="checkbox" name="<%= name %>[]" value="<%= field %>"> <%= field %></label>
+      <%= includes_checkbox name, field %>
       <div class="nested">
         <%= partial :checkboxes, :locals => { :includes => includes, :name => name } %>
       </div>

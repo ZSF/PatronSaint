@@ -6,6 +6,9 @@
     
   	_create: function() {
   	  var hintedinput = this;
+  	  if ( !this.options.source ) {
+  	    this.options.source = this.element.attr('data-autocomplete');
+  	  }
   	  var input = $(this.element).autocomplete({
 				delay: 0,
 				minLength: 0,
@@ -16,7 +19,6 @@
             params.push( 'key=' + escape( $(hintedinput.options.link).val() ) );
           }
           var sourceUrl = '/autocomplete/' + hintedinput.options.source + '?' + params.join('&');
-          console.log( sourceUrl );
           $.getJSON(sourceUrl, function(data) {
             response( data );
           });

@@ -1,21 +1,23 @@
 <h2><%= @resource.base_path %> : <%= @method.displayName %></h2>
 <form action="/call" method="post" id="callAPI">
+<fieldset class="params ui-corner-all">  
 <input type="hidden" name="resource" value="<%= h @resource.base_path %>" />
 <input type="hidden" name="method" value="<%= @method.name %>" />
 <% if @method.params.empty? %>
   <p>No Parameters</p>
 <% else %>
-  <fieldset class="params">
   <% @method.params.each do |param| %>
     <div class="param">
       <label for="<%= param.name %>" <%= param.required? ? ' class="required"' : '' %>><%= param.name %></label>
       <input type="text" 
         name="params[<%= param.name %>]"
         <% if param.default %> value="<%= h param.default %>"<% end %>
-        <% if param.type == 'jsonMap' %>class="jsonMap"<% end %>
+        class="<% if param.type == 'jsonMap' %>jsonMap<% end %> <% if param.autocomplete %>hinted<% end %>"
+        
         <% if param.autocomplete %>data-autocomplete="<%= param.autocomplete %>"<% end %>
         <% if param.key_autocomplete %>data-key-autocomplete="<%= param.key_autocomplete %>"<% end %>
         <% if param.value_autocomplete %>data-value-autocomplete="<%= param.value_autocomplete %>"<% end %>
+        <% if param.force_array %>data-force-array="true"<% end %>
         />
     </div>
     </label>
@@ -24,9 +26,9 @@
     <%= partial 'includes', { :locals => { :name => 'includes' } } %>
     <%= partial 'includes', { :locals => { :name => 'excludes' } } %>
   <% end %>
-  </fieldset>
-  <div class="ui-dialog-buttonpane">
-    <button type="submit" value="Call">Call</button>
-  </div>
 <% end %>
+</fieldset>
+<div class="ui-dialog-buttonpane">
+  <button type="submit" value="Call">Call API Method</button>
+</div>
 </form>

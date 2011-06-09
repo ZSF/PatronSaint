@@ -9,9 +9,9 @@ require 'lib/mu/cache'
 require 'json'
 require 'erb'
 
-# use Rack::Auth::Basic, "Restricted Area" do |username, password|
-#   [username, password] == ['admin', 'admin']
-# end
+use Rack::Auth::Basic, "Restricted Area" do |username, password|
+  [username, password] == ['zappos', 'zappos']
+end
 
 # Monkey patches. Patches of monkeys. Patched monkeys.
 class Zappos::Client
@@ -32,11 +32,12 @@ end
 API_KEY = '6fd74cc5be050f2c1760441f3cc203460dcf7cc7'
 zappos  = Zappos.client(API_KEY)
 ducks   = DucksWADL::Document.new('api/api.wadl')
-patron  = PatronHelper.new( ducks, 'api/variables.yaml', 'api/includes.yaml', 'api/autocompletes.yaml' )
+patron  = PatronHelper.new( ducks, 'api/parameters.yaml', 'api/includes.yaml', 'api/autocompletes.yaml' )
 
 helpers do
   include Sinatra::Partials
   include Rack::Utils
+  include PatronHelper::Helpers
   alias_method :h, :escape_html
 end
 
@@ -73,10 +74,18 @@ get '/autocomplete/:source' do
     cache.fetch 'facets' do
       zappos.search_facet_list
     end
-  when 'facetValues'
+  when 'facetValues'    
     zappos.search_facet_values( params[:key] ).collect { |f| f[:name] }
+  when 'productId'
+    zappos.statistics( :type => 'latestStyles', :limit => 25 ).results.collect { |r| r.productId }
+  when 'styleId'
+    zappos.statistics( :type => 'latestStyles', :limit => 25 ).results.collect { |r| r.styleId }
+  when 'brandId'
+    cache.fetch 'brands' do
+      zappos.search( :excludes => ['results'], :facets => 'brandId' ).facets[0][:values].collect { |f| f.name }
+    end
   else
-    []
+    patron.autocomplete_values( params[:source] )
   end
   if term = params[:term]
     data = data.select { |v| v.downcase.include?( term.downcase ) }

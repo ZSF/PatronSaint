@@ -5,7 +5,9 @@
     if ( parentDiv.hasClass('nested') ) {
       var parentCheckbox = parentDiv.prev().find('input[type="checkbox"]');
       checkParents( parentCheckbox[0] );
-      parentCheckbox.attr( 'checked', 'checked' );
+      if ( !parentCheckbox.hasClass('default') ) {
+        parentCheckbox.attr( 'checked', 'checked' );
+      }
     }
   }
   
@@ -37,6 +39,7 @@
 
 	$.widget( "ui.patronincludes", {
   	_create: function() {
+  	  var patronincludes = this;
       this.label = $(this.element).find('h2').hide();
       var title  = this.label.html();
       this.controls = $(
@@ -73,8 +76,10 @@
       });   
       $(this.element).bind('change', function(e) {
         if ( e.target.tagName == 'INPUT' && e.target.getAttribute('type') == 'checkbox' ) {
-          checkParents( e.target );
-          uncheckChildren( e.target );
+          if ( patronincludes.options.mode == 'includes' ) {
+            checkParents( e.target );
+            uncheckChildren( e.target );
+          }
         }
       });   
       $(this.element).before( this.controls ).hide();
@@ -85,17 +90,6 @@
       this.controls.remove();
   		$.Widget.prototype.destroy.call( this );
   	}
-  });
-  
-  // Automatically widgetize stuff - TODO: Move elsewhere
-  var widgetizeIncludes = function() {
-    $('#includes, #excludes').each(function(i,widget) {
-      $(widget).patronincludes();
-    });
-  };
-  $(document).bind( 'ready', function() {
-    $(document.body).bind('methodLoaded', widgetizeIncludes );
-    widgetizeIncludes();
   });
   
 })( jQuery );

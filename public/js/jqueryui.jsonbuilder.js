@@ -21,9 +21,13 @@
   };
   
   $.widget( "ui.jsonbuilder", {
+    options: {
+      force_array: false
+    },
   	_create: function() {
       this.options.key_autocomplete = this.element.attr('data-key-autocomplete');
-      this.options.value_autocomplete = this.element.attr('data-value-autocomplete');      
+      this.options.value_autocomplete = this.element.attr('data-value-autocomplete');
+      this.options.force_array = this.element.attr('data-force-array') ? true : false;
   	  
   	  var jsonBuilder = this;
   	  this.button = $( "<button type='button'>&nbsp;</button>" )
@@ -120,12 +124,17 @@
       if ( fields.length == 0 ) {
         return '';
       }
+      var that = this;
       fields.each(function(i,f) {
         var $f = $(f);
         if ( $f.attr('name') == 'key[]' ) {
           key = $f.val();
         } else {
-          object[ key ] = $f.val();
+          if ( that.options.force_array ) {
+            object[ key ] = [ $f.val() ];  
+          } else {
+            object[ key ] = $f.val();  
+          }
         }
       });
       return JSON.stringify( object );

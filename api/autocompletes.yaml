@@ -1,0 +1,21 @@
+---
+sortBy:
+  - price
+  - goLiveDate
+  - productPopularity
+  - recentSales
+  - brandNameFacet
+sortOrder:
+  - asc
+  - desc
+similarityType:
+  - visualSearch
+  - moreLikeThis
+similarityEmphasis:
+  - color
+  - shape
+  - texture
+  - style
+statisticsType:
+  - topStyles
+  - latestStyles
