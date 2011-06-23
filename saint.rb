@@ -13,22 +13,6 @@ use Rack::Auth::Basic, "Restricted Area" do |username, password|
   [username, password] == ['zappos', 'zappos']
 end
 
-# Monkey patches. Patches of monkeys. Patched monkeys.
-class Zappos::Client
-  def call_method( method, endpoint, options={} )
-    execute( request( method, endpoint, options ) )
-  end
-end
-
-class Zappos::Response
-  def code
-    @response.code
-  end
-  def response
-    @response
-  end
-end
-
 API_KEY = '6fd74cc5be050f2c1760441f3cc203460dcf7cc7'
 zappos  = Zappos.client(API_KEY)
 ducks   = DucksWADL::Document.new('api/api.wadl')
@@ -96,7 +80,7 @@ end
 post '/call' do
   call_params = params[:params] || {}
   call_params.delete_if { |key,value| value.to_s.empty? }
-  response = zappos.call_method( params[:method].capitalize, params[:resource], { :query_params => call_params } )
+  response = zappos.call_endpoint( params[:method].capitalize, params[:resource], { :query_params => call_params } )
   headers = []
   response.response.each_header { |header,value| headers << [ header, value ] }
   {

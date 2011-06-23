@@ -1,8 +1,8 @@
 GIT
   remote: git://github.com/makenai/zappos.git
-  revision: f8387ccd48787b5103ebb685ed1bdcbbcdb4c070
+  revision: b1be3d7f5de8a1dd879e8da4e3e95ab7a0e4f87d
   specs:
-    zappos (0.2.3)
+    zappos (0.3.0)
       hashie (~> 1.0.0)
       json (~> 1.4.0)
 
@@ -11,7 +11,7 @@ GEM
   specs:
     hashie (1.0.0)
     json (1.4.6)
-    nokogiri (1.4.4)
+    nokogiri (1.4.6)
     rack (1.3.0)
     simple_memoize (1.1.2)
     sinatra (1.2.6)
